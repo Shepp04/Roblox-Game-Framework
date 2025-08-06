@@ -233,7 +233,11 @@ function ProductDefinitions:GetSmallestRequiredCurrencyPack(currencyID : string,
 		return a.Amount < b.Amount
 	end)
 	
-	local stringID = (#productArray > 0 and productArray[1].StringID or biggestCurrencyPack.StringID)
+	if (#productArray == 0) then
+		return biggestCurrencyPack and biggestCurrencyPack.StringID or "nil"
+	end
+
+	local stringID = #productArray > 0 and productArray[1].StringID or "nil"
 	return stringID
 end
 

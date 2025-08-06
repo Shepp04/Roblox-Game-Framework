@@ -1,6 +1,7 @@
 --!strict
 -- // Services
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local CollectionService = game:GetService("CollectionService")
 
 -- // Config
 local Config = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Config"))
@@ -35,7 +36,7 @@ function Component:Update(p: Player): boolean
 	end
 
 	-- Apply tag type
-	local tagType = Config.NAMETAG_TYPE or "Default"
+	local tagType = Config.NAMETAGS.DefaultType or "Default"
 	if tagType == "None" then return false end
 
 	local tagData = Config.NAMETAGS.Types[tagType]
@@ -62,6 +63,9 @@ function Component:Update(p: Player): boolean
 		end
 
 		tag.Parent = char
+
+		-- Assign a tag
+		CollectionService:AddTag(tag, "_Nametag")
 	end
 
 	-- Attach animation script once

@@ -11,6 +11,7 @@ local Config = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Co
 local SharedPackages = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Packages"))
 local CollectableCurrency = SharedPackages.Collectables
 local Remotes = SharedPackages.Remotes
+local UI = SharedPackages.UI
 
 -- // Remotes
 local PromoteProductRemote = Remotes:GetRemote("RemoteEvent", "PromoteProduct")
@@ -21,7 +22,7 @@ local ProductDefinitions = require('../Monetisation/ProductDefinitions')
 local CurrencyService = {}
 
 -- // Public API
-function CurrencyService:CanAfford(p : Player, currencyID : string, amount : number, promptPurchase : boolean?)
+function CurrencyService:CanAfford(p : Player, currencyID : string, amount : number, promptUser : boolean?, promptPurchase : boolean?)
 	-- Get player data
 	local profile = DataInterface:GetPlayerProfile(p)
 	if not (profile) then
@@ -40,8 +41,15 @@ function CurrencyService:CanAfford(p : Player, currencyID : string, amount : num
 	end
 	
 	if (balance < amount) then
-		-- Prompt purchase
 		local amountRequired = amount - balance
+
+		-- Prompt the user
+		if (promptUser) then
+			local text = "You need " .. Config.CURRENCY:GetCurrencyText(currencyID, amountRequired) .. " more!"
+			UI.Messages:ShowMessage(p, text, "Error")
+		end
+
+		-- Prompt purchase
 		local stringID = ProductDefinitions:GetSmallestRequiredCurrencyPack(currencyID, amountRequired)
 		if (stringID) then
 			PromoteProductRemote:FireClient(p, "DevProduct", stringID)
@@ -52,6 +60,7 @@ function CurrencyService:CanAfford(p : Player, currencyID : string, amount : num
 end
 
 function CurrencyService:GiveCurrency(p : Player, currencyID : string, amount : number, useMultipliers : boolean, showDrops : boolean)
+	print(p, currencyID, amount, useMultipliers, showDrops)
 	-- Get player data
 	local profile = DataInterface:GetPlayerProfile(p)
 	if not (profile) then
@@ -61,6 +70,7 @@ function CurrencyService:GiveCurrency(p : Player, currencyID : string, amount : 
 	
 	-- Check that the currency ID is valid
 	local currencyInfo = Config.CURRENCY:GetCurrencyFromID(currencyID)
+	print(currencyInfo)
 	if not (currencyInfo) then return end
 	
 	-- Make sure amount is positive
@@ -94,7 +104,7 @@ function CurrencyService:GiveCurrency(p : Player, currencyID : string, amount : 
 		end)
 	end
 	
-	-- print("Gave", p, amount, currencyID)
+	print("Gave", p, amount, currencyID)
 	return true -- Success
 end
 
@@ -111,7 +121,7 @@ function CurrencyService:SpendCurrency(p : Player, currencyID : string, amount :
 	if not (currencyInfo) then return end
 	
 	-- Check that they can afford this amount
-	local canAfford = CurrencyService:CanAfford(p, currencyID, amount)
+	local canAfford = CurrencyService:CanAfford(p, currencyID, amount, true)
 	if not (canAfford) then
 		warn("Currency Error:", p, "can't afford to spend", amount, currencyID)
 		return false

@@ -27,6 +27,8 @@ local function onPlayerAdded(p: Player)
         warn("Failed to load profile for player: " .. p.Name)
         return
     end
+
+    print(`[Server]: {p.Name}'s profile was loaded!`)
     
     -- Wait for their character to load
     local char = p.Character or p.CharacterAdded:Wait()

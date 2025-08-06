@@ -19,7 +19,7 @@ local GuiFolder = script:WaitForChild("Assets")
 local NametagConfig = {} :: NametagConfig
 
 -- // CUSTOMISE // --
-NametagConfig.DefaultType = "Default" :: NametagType
+NametagConfig.DefaultType = "Modern" :: NametagType
 NametagConfig.Types = {
     Default = {
         Gui = GuiFolder:WaitForChild("Default") :: BillboardGui,

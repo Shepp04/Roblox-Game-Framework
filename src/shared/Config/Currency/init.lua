@@ -27,8 +27,8 @@ local CurrencySounds = script:WaitForChild("Sounds")
 
 -- // Configuration
 CurrencyConfig.Types = {
-	Coins = {
-        Name = "Coins",
+	Cash = {
+        Name = "Cash",
         Symbol = "₵",
         DefaultValue = 50,
         UseFriendBoost = true,
@@ -75,8 +75,8 @@ CurrencyConfig.Types = {
 
 -- // Public API
 function CurrencyConfig:GetCurrencyFromID(currencyID : string): Currency?
-    if not (currencyID and self.Types[currencyID]) then return nil end
-    return self.Types[currencyID]
+    if not (currencyID and CurrencyConfig.Types[currencyID]) then return nil end
+    return CurrencyConfig.Types[currencyID]
 end
 
 function CurrencyConfig:GetCurrencyText(currencyID : string, amount : number): string

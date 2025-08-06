@@ -1,5 +1,6 @@
 --!strict
 --// Services
+local CollectionService = game:GetService("CollectionService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
@@ -41,28 +42,32 @@ end
 
 local function showNametag(gui: BillboardGui)
 	if TAG_TYPE == "None" then return end
+	if TAG_TYPE == "Default" then return end
 	if TAG_TYPE == "Modern" then
 		local t = tweens[gui] or createTweens(gui)
 		t.In:Play()
-	elseif TAG_TYPE == "Default" then
-		gui.Frame.GroupTransparency = 0
-		gui.Frame.Position = UDim2.fromScale(0, 0)
 	end
 end
 
 local function hideNametag(gui: BillboardGui)
 	if TAG_TYPE == "None" then return end
+	if TAG_TYPE == "Default" then return end
 	if TAG_TYPE == "Modern" then
 		local t = tweens[gui] or createTweens(gui)
 		t.Out:Play()
-	elseif TAG_TYPE == "Default" then
-		gui.Frame.GroupTransparency = 1
-		gui.Frame.Position = UDim2.fromScale(0, 1)
 	end
 end
 
 local function initialise()
 	if TAG_TYPE == "None" then return end
+
+	-- Find the player's nametag
+	local char = Player.Character or Player.CharacterAdded:Wait()
+	if (char) then
+		-- Hide the tag initially
+		local tag = char:WaitForChild("_Nametag")
+		hideNametag(tag)
+	end
 
 	if UserInputService.MouseEnabled then
 		UserInputService.InputChanged:Connect(function()
@@ -138,6 +143,19 @@ local function initialise()
 			lastNearbyPlayers = updatedNearby
 		end)
 	end
+
+	-- Hide all nametags initially
+	for _, v in CollectionService:GetTagged("_Nametag") do
+		if (v.Parent:FindFirstChild("Humanoid") and v:IsA("BillboardGui") and v.Name == "_Nametag") then
+			hideNametag(v)
+		end
+	end
+
+	CollectionService:GetInstanceAddedSignal("_Nametag"):Connect(function(v)
+		if (v.Parent:FindFirstChild("Humanoid") and v:IsA("BillboardGui") and v.Name == "_Nametag") then
+			hideNametag(v)
+		end
+	end)
 end
 
 -- Initialisation

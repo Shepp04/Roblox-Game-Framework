@@ -68,13 +68,18 @@ local function onProfileLoad(player: Player, profile: Config.PlayerProfile)
 	-- Save join time locally for playtime calc
 	profile.Info.JoinTime = os.time()
 
+	print(player, "Before Reconciling all sections. Stats:", unpack(profile.Data.Stats))
+
 	-- Reconcile all sections into data
 	DataManager:ReconcileAllSections(player)
-	
+	print(player, "Reconciled all sections. Stats:", unpack(profile.Data.Stats))
+
 	-- Replicate to client
 	ReplicatedData:SetData("PlayerData", profile.Data, { player })
 	ReplicatedData:SetData("PlayerInfo", profile.Info, { player })
 	ReplicatedData:SetData("Stats", profile.Data.Stats, { player })
+
+	
 end
 
 --// Public API
