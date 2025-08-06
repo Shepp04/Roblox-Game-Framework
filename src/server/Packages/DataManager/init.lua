@@ -5,9 +5,12 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
 
---// Modules
+--// Packages
 local ProfileStore = require(script:WaitForChild("ProfileStore"))
-local ReplicatedData = require(ReplicatedStorage:WaitForChild("Packages")).ReplicatedData
+
+local SharedPackages = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Packages"))
+local ReplicatedData = SharedPackages.ReplicatedData
+
 local Config = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Config"))
 
 --// Templates
@@ -16,7 +19,7 @@ local INFO_TEMPLATE = Config.INFO_TEMPLATE
 
 --// ProfileStore Setup
 local PlayerStore = ProfileStore.New("PlayerStore", PROFILE_TEMPLATE)
-local Profiles: { [Player]: ProfileStore.Profile } = {}
+local Profiles: { [Player]: Config.PlayerProfile } = {}
 
 --// Module
 local DataManager = {}
@@ -35,7 +38,7 @@ local function deepClone(original)
 end
 
 --// Private: Called when a profile is loaded
-local function onProfileLoad(player: Player, profile: ProfileStore.Profile)
+local function onProfileLoad(player: Player, profile: Config.PlayerProfile)
 	-- Initialise Info
 	profile.Info = deepClone(INFO_TEMPLATE)
 
@@ -57,7 +60,7 @@ end
 
 --// Public API
 
-function DataManager:GetPlayerProfile(player: Player, yield: boolean?): ProfileStore.Profile?
+function DataManager:GetPlayerProfile(player: Player, yield: boolean?): Config.PlayerProfile?
 	if Profiles[player] then return Profiles[player] end
 
 	if yield then
@@ -99,7 +102,7 @@ end
 
 --// Events
 
-function DataManager:OnPlayerAdded(player: Player)
+function DataManager:LoadPlayerProfile(player: Player): Config.PlayerProfile?
 	local profile = PlayerStore:StartSessionAsync(tostring(player.UserId), {
 		Cancel = function()
 			return not player:IsDescendantOf(Players)
@@ -108,7 +111,7 @@ function DataManager:OnPlayerAdded(player: Player)
 
 	if not profile then
 		player:Kick("Profile load failed. Please rejoin.")
-		return false
+		return nil
 	end
 
 	profile:AddUserId(player.UserId)
@@ -127,10 +130,10 @@ function DataManager:OnPlayerAdded(player: Player)
 		profile:EndSession()
 	end
 
-	return false
+	return nil
 end
 
-function DataManager:OnPlayerRemove(player: Player)
+function DataManager:ReleasePlayerProfile(player: Player)
 	local profile = Profiles[player]
 	if profile then
 		profile.Data.Analytics.LastLeaveTime = os.time()
