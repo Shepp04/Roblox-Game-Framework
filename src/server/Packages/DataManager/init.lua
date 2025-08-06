@@ -24,7 +24,13 @@ local Profiles: { [Player]: Config.PlayerProfile } = {}
 --// Module
 local DataManager = {}
 
--- Deep clone utility
+-- // Private Variables
+local ReconcileSections = {
+	Info = {},
+	Data = {},
+}
+
+--// Helpers
 local function deepClone(original)
 	local copy = {}
 	for k, v in pairs(original) do
@@ -62,6 +68,9 @@ local function onProfileLoad(player: Player, profile: Config.PlayerProfile)
 	-- Save join time locally for playtime calc
 	profile.Info.JoinTime = os.time()
 
+	-- Reconcile all sections into data
+	DataManager:ReconcileAllSections(player)
+	
 	-- Replicate to client
 	ReplicatedData:SetData("PlayerData", profile.Data, { player })
 	ReplicatedData:SetData("PlayerInfo", profile.Info, { player })
@@ -69,7 +78,6 @@ local function onProfileLoad(player: Player, profile: Config.PlayerProfile)
 end
 
 --// Public API
-
 function DataManager:GetPlayerProfile(player: Player, yield: boolean?): Config.PlayerProfile?
 	if Profiles[player] then return Profiles[player] end
 
@@ -94,12 +102,28 @@ function DataManager:ResetData(player: Player): boolean
 	profile:Reconcile()
 	onProfileLoad(player, profile)
 
-	profile.Data.Stats.Cash = 99999999 -- dev override
 	warn("Reset data for", player)
 	return true
 end
 
---// Modular Support: Reconcile a new section into existing data
+--// Modular Support: Reconcile sections into data
+function DataManager:ReconcileAllSections(player: Player)
+	for sectionName, template in pairs(ReconcileSections.Info) do
+		self:ReconcileProfileSection(player, "Info", sectionName, template)
+	end
+	for sectionName, template in pairs(ReconcileSections.Data) do
+		self:ReconcileProfileSection(player, "Data", sectionName, template)
+	end
+end
+
+function DataManager:RegisterReconcileSection(sectionType: "Info" | "Data", sectionName: string, template: {})
+	ReconcileSections[sectionType][sectionName] = template
+
+	if (Config.DEV_MODE) then
+		print(`[SERVER | DataManager] Registered section '{sectionType}.{sectionName}' for reconciliation`)
+	end
+end
+
 function DataManager:ReconcileProfileSection(player: Player, sectionType: "Info" | "Data", sectionName: string, template: {}): boolean
 	local profile = self:GetPlayerProfile(player)
 	if not profile then return false end
@@ -108,7 +132,6 @@ function DataManager:ReconcileProfileSection(player: Player, sectionType: "Info"
 		profile.Info[sectionName] = profile.Info[sectionName] or {}
 		deepReconcile(profile.Info[sectionName], template)
 		ReplicatedData:SetData("PlayerInfo", profile.Info, { player })
-
 	elseif sectionType == "Data" then
 		profile.Data[sectionName] = profile.Data[sectionName] or {}
 		deepReconcile(profile.Data[sectionName], template)

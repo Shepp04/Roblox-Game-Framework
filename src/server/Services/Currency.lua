@@ -9,6 +9,7 @@ local Config = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Co
 
 -- // Packages
 local SharedPackages = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Packages"))
+local CollectableCurrency = SharedPackages.Collectables
 local Remotes = SharedPackages.Remotes
 
 -- // Remotes
@@ -16,9 +17,6 @@ local PromoteProductRemote = Remotes:GetRemote("RemoteEvent", "PromoteProduct")
 
 -- // Monetisation
 local ProductDefinitions = require('../Monetisation/ProductDefinitions')
-
--- // Components
-local CollectableCurrency = require('@self/Collectables')
 
 local CurrencyService = {}
 
@@ -232,6 +230,7 @@ function CurrencyService:SetMultiplier(p: Player, multiplierID: string, currency
 	return true
 end
 
+-- // Player Added
 local function onPlayerAdded(p : Player)
 	-- Give them leaderstats
 	local leaderstats = p:FindFirstChild("leaderstats")
@@ -247,7 +246,7 @@ local function onPlayerAdded(p : Player)
     end
 
     local statsTemplate = {}
-	for currencyID, currencyInfo in Config.CURRENCY_TYPES do
+	for currencyID, currencyInfo in Config.CURRENCY.Types do
         statsTemplate[currencyID] = 0
 		if not (profile and profile.Data.Stats[currencyID]) then
 			profile.Data.Stats[currencyID] = 0
@@ -259,13 +258,23 @@ local function onPlayerAdded(p : Player)
 			val.Parent = leaderstats
 		end
 	end
+end
 
-    -- Replicate multipliers and stats to the client
-    DataInterface:ReconcileProfileSection(p, "Info", "Multipliers", {})
-    DataInterface:ReconcileProfileSection(p, "Data", "Stats", statsTemplate)
+-- // Setup
+local function registerReconcileSections()
+	-- Register all currency types for reconciliation
+	-- And multipliers
+	local statsTemplate = {}
+	for currencyID, currencyInfo in Config.CURRENCY.Types do
+        statsTemplate[currencyID] = currencyInfo.DefaultValue or 0
+	end
+
+	DataInterface:RegisterReconcileSection("Info", "Multipliers", {})
+	DataInterface:RegisterReconcileSection("Data", "Stats", statsTemplate)
 end
 
 local function initialise()
+	registerReconcileSections()
 	for _, p in Players:GetPlayers() do
 		onPlayerAdded(p)
 	end

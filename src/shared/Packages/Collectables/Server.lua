@@ -3,10 +3,9 @@
 local PhysicsService = game:GetService("PhysicsService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
--- // Packages
-local SharedPackages = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Packages"))
-local Remotes = SharedPackages.Remotes
-local Debounce = SharedPackages.Debounce
+-- // Dependencies
+local Remotes = require('../Remotes')
+local Debounce = require('../Debounce')
 
 -- // Remotes
 local DropCurrencyRemote = Remotes:GetRemote("RemoteEvent", "DropCurrency")

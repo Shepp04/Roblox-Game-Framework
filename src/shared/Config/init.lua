@@ -16,6 +16,9 @@ export type PlayerProfile = {
 
 -- // CONFIGURATION // --
 Config = {
+	-- // DEVELOPMENT MODE
+	DEV_MODE = true,
+	
 	-- // Currency Data
 	CURRENCY = require('@self/Currency'),
 
@@ -32,7 +35,6 @@ Config = {
 	},
 	INFO_TEMPLATE = {
 		JoinTime = 0;
-		Multipliers = {};
 	},
 };
 

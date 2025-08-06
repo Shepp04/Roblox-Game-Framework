@@ -19,7 +19,7 @@ function DataInterface:GetPlayerProfile(p: Player, yield: boolean?): Config.Play
         return nil
     end
 
-    return DataManager.DeepClone(profile)
+    return profile
 end
 
 function DataInterface:LoadPlayerProfile(p: Player): Config.PlayerProfile?
@@ -38,9 +38,9 @@ function DataInterface:ReleasePlayerProfile(p: Player): boolean
     return DataManager:ReleasePlayerProfile(p)
 end
 
-function DataInterface:ReconcileProfileSection(p: Player, sectionType: "Info" | "Data", sectionName: string, template: {}): boolean
-    -- Reconcile a new section into existing data
-    return DataManager:ReconcileProfileSection(p, sectionType, sectionName, template)
+function DataInterface:RegisterReconcileSection(sectionType: "Info" | "Data", sectionName: string, template: {}): boolean
+    -- Register a new section for reconciliation
+    return DataManager:RegisterReconcileSection(sectionType, sectionName, template)
 end
 
 return DataInterface

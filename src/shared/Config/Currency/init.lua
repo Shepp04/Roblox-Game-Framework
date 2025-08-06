@@ -5,6 +5,7 @@ local CurrencyConfig : { Types: { [string]: Currency } } = { Types = {} }
 export type Currency = {
 	Name : string,
 	Symbol : string,
+    DefaultValue : number?,
 	RebirthMultiplier : number,
 	UseLeaderstats : boolean,
 	UseFriendBoost : boolean,
@@ -29,6 +30,7 @@ CurrencyConfig.Types = {
 	Coins = {
         Name = "Coins",
         Symbol = "₵",
+        DefaultValue = 50,
         UseFriendBoost = true,
         RebirthMultiplier = 1.25,
         UseLeaderstats = true,
@@ -50,6 +52,7 @@ CurrencyConfig.Types = {
 	Rebirths = {
         Name = "Rebirths",
         Symbol = "♻️",
+        DefaultValue = 1,
         UseFriendBoost = true,
         RebirthMultiplier = 1.25,
         UseLeaderstats = true,
