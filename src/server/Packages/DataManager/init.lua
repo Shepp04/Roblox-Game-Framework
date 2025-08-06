@@ -37,6 +37,16 @@ local function deepClone(original)
 	return copy
 end
 
+local function deepReconcile(target: {}, template: {})
+	for k, v in pairs(template) do
+		if typeof(v) == "table" and typeof(target[k]) == "table" then
+			deepReconcile(target[k], v)
+		elseif target[k] == nil then
+			target[k] = v
+		end
+	end
+end
+
 --// Private: Called when a profile is loaded
 local function onProfileLoad(player: Player, profile: Config.PlayerProfile)
 	-- Initialise Info
@@ -90,12 +100,20 @@ function DataManager:ResetData(player: Player): boolean
 end
 
 --// Modular Support: Reconcile a new section into existing data
-function DataManager:ReconcileProfileSection(player: Player, sectionName: string, template: {})
+function DataManager:ReconcileProfileSection(player: Player, sectionType: "Info" | "Data", sectionName: string, template: {}): boolean
 	local profile = self:GetPlayerProfile(player)
 	if not profile then return false end
 
-	profile.Data[sectionName] = profile.Data[sectionName] or table.clone(template)
-	ReplicatedData:SetData(sectionName, profile.Data[sectionName], { player })
+	if sectionType == "Info" then
+		profile.Info[sectionName] = profile.Info[sectionName] or {}
+		deepReconcile(profile.Info[sectionName], template)
+		ReplicatedData:SetData("PlayerInfo", profile.Info, { player })
+
+	elseif sectionType == "Data" then
+		profile.Data[sectionName] = profile.Data[sectionName] or {}
+		deepReconcile(profile.Data[sectionName], template)
+		ReplicatedData:SetData("PlayerData", profile.Data, { player })
+	end
 
 	return true
 end

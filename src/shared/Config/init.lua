@@ -14,21 +14,26 @@ export type PlayerProfile = {
 	OnSessionEnd: RBXScriptSignal,
 }
 
--- // Data Templates
-Config.PROFILE_TEMPLATE = {
-	Stats = {
-		Cash = 0;
-	};
-	Analytics = {
-		TotalLogins = 0;
-		TotalPlaytime = 0;
-		LastLeaveTime = nil;
-	};
-}
+-- // CONFIGURATION // --
+Config = {
+	-- // Currency Data
+	CURRENCY = require('@self/Currency'),
 
-Config.INFO_TEMPLATE = {
-	JoinTime = 0;
-	Multipliers = {};
-}
+	-- // Player Profile Template
+	PROFILE_TEMPLATE = {
+		Stats = {
+			Cash = 0;
+		};
+		Analytics = {
+			TotalLogins = 0;
+			TotalPlaytime = 0;
+			LastLeaveTime = nil;
+		};
+	},
+	INFO_TEMPLATE = {
+		JoinTime = 0;
+		Multipliers = {};
+	},
+};
 
 return Config

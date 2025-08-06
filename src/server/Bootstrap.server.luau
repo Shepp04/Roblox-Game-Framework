@@ -7,3 +7,7 @@ local Packages = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("
 -- Require Core
 local PlayerHandler = require('./Core/PlayerHandler')
 PlayerHandler:Init()
+
+-- Require Services
+local DataInterface = require('./Services/DataInterface')
+local CurrencyService = require('./Services/Currency')

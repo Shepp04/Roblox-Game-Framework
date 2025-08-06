@@ -9035,7 +9035,7 @@ Packages.UI:OpenMenu(menu1, true, true, 90)]]></ProtectedString>
 			<BinaryString name="Tags"></BinaryString>
 			<UniqueId name="UniqueId">774a92fe3f3077d308a27d420000036b</UniqueId>
 		</Properties>
-		<Item class="AvatarRules" referent="RBX7b36c51911dd49a4879c25988d2380ba">
+		<Item class="AvatarRules" referent="RBX7f9580e6c7d94a7e8df872d0dab15ed1">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<token name="AvatarType">1</token>
@@ -9045,9 +9045,9 @@ Packages.UI:OpenMenu(menu1, true, true, 90)]]></ProtectedString>
 				<string name="Name">DefaultAvatarRules</string>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
-				<UniqueId name="UniqueId">1e89c5cace45089c08a4c88c000004b7</UniqueId>
+				<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000004c2</UniqueId>
 			</Properties>
-			<Item class="AvatarBodyRules" referent="RBXca21f51c2b994dd981256b6996f06822">
+			<Item class="AvatarBodyRules" referent="RBX361aa68f9cde4d07857bbf635c6285e3">
 				<Properties>
 					<token name="AppearanceMode">0</token>
 					<BinaryString name="AttributesSerialize"></BinaryString>
@@ -9088,10 +9088,10 @@ Packages.UI:OpenMenu(menu1, true, true, 90)]]></ProtectedString>
 					<token name="ScaleMode">0</token>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
-					<UniqueId name="UniqueId">1e89c5cace45089c08a4c88c000004b8</UniqueId>
+					<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000004c3</UniqueId>
 				</Properties>
 			</Item>
-			<Item class="AvatarCollisionRules" referent="RBX630b213fb64c4994bfe958493b26bc88">
+			<Item class="AvatarCollisionRules" referent="RBXe4163f8d2d9641e79639cd63f9977651">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -9108,10 +9108,10 @@ Packages.UI:OpenMenu(menu1, true, true, 90)]]></ProtectedString>
 					</Vector3>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
-					<UniqueId name="UniqueId">1e89c5cace45089c08a4c88c000004b9</UniqueId>
+					<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000004c4</UniqueId>
 				</Properties>
 			</Item>
-			<Item class="AvatarAnimationRules" referent="RBX3b9729169e134681b359b67074f979cd">
+			<Item class="AvatarAnimationRules" referent="RBXc10ddb84355d4900916c72db0d571ee8">
 				<Properties>
 					<token name="AnimationClipsMode">0</token>
 					<token name="AnimationPacksMode">0</token>
@@ -9142,10 +9142,10 @@ Packages.UI:OpenMenu(menu1, true, true, 90)]]></ProtectedString>
 					<string name="Name">AvatarAnimationRules</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
-					<UniqueId name="UniqueId">1e89c5cace45089c08a4c88c000004ba</UniqueId>
+					<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000004c5</UniqueId>
 				</Properties>
 			</Item>
-			<Item class="AvatarAccessoryRules" referent="RBX22699bc4af2445fa821bf37c67f03564">
+			<Item class="AvatarAccessoryRules" referent="RBXe1d6eea113894a1090ead39334a0fbf1">
 				<Properties>
 					<token name="AccessoryMode">0</token>
 					<BinaryString name="AttributesSerialize"></BinaryString>
@@ -9180,10 +9180,10 @@ Packages.UI:OpenMenu(menu1, true, true, 90)]]></ProtectedString>
 					<string name="Name">AvatarAccessoryRules</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
-					<UniqueId name="UniqueId">1e89c5cace45089c08a4c88c000004bb</UniqueId>
+					<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000004c6</UniqueId>
 				</Properties>
 			</Item>
-			<Item class="AvatarClothingRules" referent="RBX8fdc71e2f305440686b160a52ec98afd">
+			<Item class="AvatarClothingRules" referent="RBXb83288ff82b14048907e9a64ea4b9086">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -9223,7 +9223,7 @@ Packages.UI:OpenMenu(menu1, true, true, 90)]]></ProtectedString>
 					<string name="Name">AvatarClothingRules</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
-					<UniqueId name="UniqueId">1e89c5cace45089c08a4c88c000004bc</UniqueId>
+					<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000004c7</UniqueId>
 				</Properties>
 			</Item>
 		</Item>
@@ -9367,6 +9367,7 @@ Packages.Sounds = require(script.Sounds)
 Packages.UI = require(script.UI)
 Packages.Remotes = require(script.Remotes)
 Packages.Debounce = require(script.Debounce)
+Packages.ReplicatedData = require(script.ReplicatedData)
 
 return Packages]]></ProtectedString>
 					<int64 name="SourceAssetId">-1</int64>
@@ -10874,6 +10875,736 @@ return Debounce]]></ProtectedString>
 						<UniqueId name="UniqueId">1e89c5cace45089c08a4c88c00002219</UniqueId>
 					</Properties>
 				</Item>
+				<Item class="ModuleScript" referent="RBXe780629630714207b25f693ecadda340">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+						<bool name="DefinesCapabilities">false</bool>
+						<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">TimedRewards</string>
+						<string name="ScriptGuid">{4f0924dc-7730-4c43-8a8a-1898b5fec116}</string>
+						<ProtectedString name="Source"><![CDATA[--!strict
+local TimedRewards = {}
+
+-- // Paths
+TimedRewards.PlaytimeRewards = require(script.PlaytimeRewards)
+TimedRewards.DailyRewards = require(script.DailyRewards)
+
+return TimedRewards]]></ProtectedString>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+						<UniqueId name="UniqueId">1e89c5cace45089c08a4c88c00002593</UniqueId>
+					</Properties>
+					<Item class="Folder" referent="RBX070b54ef85a346129f43061ef3cb3009">
+						<Properties>
+							<BinaryString name="AttributesSerialize"></BinaryString>
+							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+							<bool name="DefinesCapabilities">false</bool>
+							<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+							<string name="Name">PlaytimeRewards</string>
+							<int64 name="SourceAssetId">-1</int64>
+							<BinaryString name="Tags"></BinaryString>
+							<UniqueId name="UniqueId">1e89c5cace45089c08a4c88c00002595</UniqueId>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="ModuleScript" referent="RBX037a15661c7345ccbeac388c269fd853">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+						<bool name="DefinesCapabilities">false</bool>
+						<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">ReplicatedData</string>
+						<string name="ScriptGuid">{a58665f4-73a2-4191-8481-a24cd4c8415c}</string>
+						<ProtectedString name="Source"><![CDATA[--!strict
+-- // Services
+local RunService = game:GetService("RunService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local HttpService = game:GetService("HttpService")
+
+local Remotes = ReplicatedStorage:WaitForChild("Remotes")
+local DataRemoteEvent : RemoteEvent
+
+-- // Constants
+local DEBUG_CATEGORIES -- Categories that will print on update (for debugging)
+	= {}
+
+-- // Module // --
+local ReplicatedData = {}
+
+if RunService:IsServer() then
+	-- Server code
+	DataRemoteEvent = Instance.new("RemoteEvent", Remotes)
+	DataRemoteEvent.Name = "GetData"
+	
+	ReplicatedData.Replications = {Public = {}, Private = {}}
+	
+	-- playertable is optional, if no table replicate to all
+	function ReplicatedData:SetData(category, data, playerTable)
+		if playerTable then
+			-- Private data to a group of players
+			table.insert(ReplicatedData.Replications.Private, {category, data, playerTable})
+		else
+			-- Public data
+			ReplicatedData.Replications.Public[category] = data
+		end
+	end
+	
+	function ReplicatedData:UpdateData(category, data, playerTable)
+		if playerTable then
+			for _, localPlayer in ipairs(playerTable) do
+				DataRemoteEvent:FireClient(localPlayer, category, data)
+			end
+		else
+			DataRemoteEvent:FireAllClients(category, data)
+		end
+	end
+	
+	function ReplicatedData:RemoveData(category)
+		if ReplicatedData.Replications.Public[category] then
+			ReplicatedData.Replications.Public[category] = nil
+		end
+		for index, replicationInfo in ipairs(ReplicatedData.Replications.Private) do
+			if replicationInfo[1] == category then
+				table.remove(ReplicatedData.Replications.Private, index)
+			end
+		end
+	end
+	
+	DataRemoteEvent.OnServerEvent:Connect(function(p)
+		-- Return all public data
+		for publicCategory, publicData in ipairs(ReplicatedData.Replications.Public) do
+			DataRemoteEvent:FireClient(p, publicCategory, publicData)
+		end
+		-- Return their private data
+		for _, replicationInfo in ipairs(ReplicatedData.Replications.Private) do
+			local category, data, playerTable = unpack(replicationInfo)
+			if table.find(playerTable, p) then
+				DataRemoteEvent:FireClient(p, category, data)
+			end
+		end
+	end)
+	
+	-- Main loop
+	task.spawn(function()
+		local publicComparisonCache = {} -- Category = cached_string
+		local privateComparisonCache = {} -- Player = {Categot = cached_string}
+		while task.wait(0.2) do
+			
+			-- Public data replicates to all
+			for category, publicData in pairs(ReplicatedData.Replications.Public) do
+				print("Public data:", category, publicData)
+				local newEncodedString = HttpService:JSONEncode(publicData)
+				if (not publicComparisonCache[category]) or newEncodedString ~= publicComparisonCache[category] then
+					-- Update the data
+					publicComparisonCache[category] = newEncodedString
+					ReplicatedData:UpdateData(category, publicData, nil)
+				end
+			end
+			
+			-- Private data replicates to specific players
+			for _, replicationInfo in pairs(ReplicatedData.Replications.Private) do
+				local category, data, playerTable = unpack(replicationInfo)
+				local newEncodedString = HttpService:JSONEncode(data)
+				
+				if not privateComparisonCache[playerTable] then
+					privateComparisonCache[playerTable] = {}
+				end
+				
+				local comparisonString = privateComparisonCache[playerTable][category]
+				
+				if (not comparisonString) or newEncodedString ~= comparisonString then
+					-- Update the data
+					privateComparisonCache[playerTable][category] = newEncodedString
+					ReplicatedData:UpdateData(category, data, playerTable)
+				end
+			end
+		end
+	end)
+else
+	-- Client code
+	DataRemoteEvent = Remotes:WaitForChild("GetData")
+	
+	local player = game.Players.LocalPlayer
+	
+	ReplicatedData.OnUpdate = Instance.new("BindableEvent")
+	
+	local dataContainer = {}
+	
+	function ReplicatedData:GetData(category, yield)
+		if dataContainer[category] then
+			return dataContainer[category]
+		end
+		
+		if yield then
+			local yieldStart = tick()
+			repeat task.wait(0.2)
+			until dataContainer[category] or (tick() - yieldStart) > 25
+		end
+		return dataContainer[category]
+	end
+	
+	-- Keep track of which categories have been printed to the console
+	local received_categories = {}
+	
+	DataRemoteEvent.OnClientEvent:Connect(function(category, data)
+		if (not received_categories[category]) then
+			task.delay(1.5, print, "Data recieved: Category =", category, " Data =", data)
+		elseif (table.find(DEBUG_CATEGORIES, category)) then
+			print("Data recieved: Category =", category, " Data =", data)
+		end
+		received_categories[category] = true
+		
+		ReplicatedData.OnUpdate:Fire(category, data)
+		dataContainer[category] = data
+	end)
+	
+	-- Get initial data
+	DataRemoteEvent:FireServer()
+end
+
+return ReplicatedData]]></ProtectedString>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+						<UniqueId name="UniqueId">1e89c5cace45089c08a4c88c000025c3</UniqueId>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="ModuleScript" referent="RBXec65424ec0db4a1f978a4ae60151b88a">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Config</string>
+					<string name="ScriptGuid">{7b32783e-ae27-46d5-a6cf-286ef01b34aa}</string>
+					<ProtectedString name="Source"><![CDATA[--!strict
+local Config = {}
+
+-- // Type Defs
+export type PlayerData = typeof(Config.PROFILE_TEMPLATE)
+export type PlayerInfo = typeof(Config.INFO_TEMPLATE)
+
+export type PlayerProfile = {
+	Data: PlayerData,
+	Info: PlayerInfo,
+	Reconcile: (self: PlayerProfile) -> (),
+	EndSession: (self: PlayerProfile) -> (),
+	AddUserId: (self: PlayerProfile, userId: number) -> (),
+	OnSessionEnd: RBXScriptSignal,
+}
+
+-- // CONFIGURATION // --
+Config = {
+	-- // Currency Data
+	CURRENCY = require('@self/Currency'),
+
+	-- // Player Profile Template
+	PROFILE_TEMPLATE = {
+		Stats = {
+			Cash = 0;
+		};
+		Analytics = {
+			TotalLogins = 0;
+			TotalPlaytime = 0;
+			LastLeaveTime = nil;
+		};
+	},
+	INFO_TEMPLATE = {
+		JoinTime = 0;
+		Multipliers = {};
+	},
+};
+
+return Config]]></ProtectedString>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<UniqueId name="UniqueId">7a5be8c3b493ddb808a513760000176c</UniqueId>
+				</Properties>
+				<Item class="ModuleScript" referent="RBXaed730aa2503487497424abca58e5e5f">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+						<bool name="DefinesCapabilities">false</bool>
+						<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">Currency</string>
+						<string name="ScriptGuid">{6f1f2108-5b98-468a-a5a8-dc5e6443e4ad}</string>
+						<ProtectedString name="Source"><![CDATA[--!strict
+local CurrencyConfig : { Types: { [string]: Currency } } = { Types = {} }
+
+-- // Type Defs
+export type Currency = {
+	Name : string,
+	Symbol : string,
+	RebirthMultiplier : number,
+	UseLeaderstats : boolean,
+	UseFriendBoost : boolean,
+	Collectables : {
+		{
+			Name : string,
+			Value : number,
+			Model : Model,
+			Sound : Sound,
+		}
+	},
+	Get : ({}) -> number,
+	Update : ({}, number) -> nil
+}
+
+-- // Assets
+local CurrencyModels = script:WaitForChild("Models")
+local CurrencySounds = script:WaitForChild("Sounds")
+
+-- // Configuration
+CurrencyConfig.Types = {
+	Coins = {
+        Name = "Coins",
+        Symbol = "₵",
+        UseFriendBoost = true,
+        RebirthMultiplier = 1.25,
+        UseLeaderstats = true,
+        Collectables = {
+            [1] = {
+                Name = "Coin",
+                Value = 1,
+                Model = CurrencyModels:WaitForChild("Coin"),
+                Sound = CurrencySounds:WaitForChild("CoinPickup"),
+            },
+        },
+        Get = function(profile, currencyID)
+            return profile.Data.Stats.Cash or 0
+        end,
+        Update = function(profile, amount)
+            profile.Data.Stats.Cash += amount
+        end,
+	},
+	Rebirths = {
+        Name = "Rebirths",
+        Symbol = "♻️",
+        UseFriendBoost = true,
+        RebirthMultiplier = 1.25,
+        UseLeaderstats = true,
+        Collectables = {
+            [1] = {
+                Name = "Rebirth",
+                Value = 1,
+                Model = CurrencyModels:WaitForChild("Coin"),
+                Sound = CurrencySounds:WaitForChild("CoinPickup"),
+            },
+        },
+        Get = function(profile, currencyID)
+            return profile.Data.Stats.Rebirths or 0
+        end,
+        Update = function(profile, amount)
+            profile.Data.Stats.Rebirths += amount
+        end,
+	},
+}
+
+-- // Public API
+function CurrencyConfig:GetCurrencyFromID(currencyID : string): Currency?
+    if not (currencyID and self.Types[currencyID]) then return nil end
+    return self.Types[currencyID]
+end
+
+function CurrencyConfig:GetCurrencyText(currencyID : string, amount : number): string
+    if not (currencyID and amount) then return "" end
+    
+    local text = tostring(amount)
+
+    -- Check if this stat has its own currency type
+    local currencyInfo = self:GetCurrencyFromID(currencyID)
+    if (currencyInfo) then
+        local symbol = currencyInfo.Symbol
+        local name = currencyInfo.Name
+
+        if (symbol) then
+            text = string.format("%s%s", symbol, text)
+        else
+            text = string.format("%s %s", text, name)
+        end
+    end
+
+    return text
+end
+
+return CurrencyConfig]]></ProtectedString>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+						<UniqueId name="UniqueId">7a5be8c3b493ddb808a5137600001779</UniqueId>
+					</Properties>
+					<Item class="Folder" referent="RBXd97aecee5e964eb3b10e25f6b2c9a89f">
+						<Properties>
+							<BinaryString name="AttributesSerialize"></BinaryString>
+							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+							<bool name="DefinesCapabilities">false</bool>
+							<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+							<string name="Name">Models</string>
+							<int64 name="SourceAssetId">-1</int64>
+							<BinaryString name="Tags"></BinaryString>
+							<UniqueId name="UniqueId">7a5be8c3b493ddb808a513760000177b</UniqueId>
+						</Properties>
+						<Item class="Model" referent="RBXd01573ba2aa7464e8a5af029b2a39955">
+							<Properties>
+								<BinaryString name="AttributesSerialize"></BinaryString>
+								<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+								<bool name="DefinesCapabilities">false</bool>
+								<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+								<token name="LevelOfDetail">0</token>
+								<CoordinateFrame name="ModelMeshCFrame">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+									<R00>1</R00>
+									<R01>0</R01>
+									<R02>0</R02>
+									<R10>0</R10>
+									<R11>1</R11>
+									<R12>0</R12>
+									<R20>0</R20>
+									<R21>0</R21>
+									<R22>1</R22>
+								</CoordinateFrame>
+								<SharedString name="ModelMeshData">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
+								<Vector3 name="ModelMeshSize">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+								</Vector3>
+								<token name="ModelStreamingMode">0</token>
+								<string name="Name">Coin</string>
+								<bool name="NeedsPivotMigration">false</bool>
+								<Ref name="PrimaryPart">RBXd8e18dbb2d424baa9caa02c5f53e0f20</Ref>
+								<float name="ScaleFactor">1</float>
+								<int64 name="SourceAssetId">-1</int64>
+								<BinaryString name="Tags"></BinaryString>
+								<UniqueId name="UniqueId">7a5be8c3b493ddb808a5137600001799</UniqueId>
+								<OptionalCoordinateFrame name="WorldPivotData">
+									<CFrame>
+										<X>-12.5</X>
+										<Y>0.5</Y>
+										<Z>-5.89996338</Z>
+										<R00>1</R00>
+										<R01>0</R01>
+										<R02>0</R02>
+										<R10>0</R10>
+										<R11>1</R11>
+										<R12>0</R12>
+										<R20>0</R20>
+										<R21>0</R21>
+										<R22>1</R22>
+									</CFrame>
+								</OptionalCoordinateFrame>
+							</Properties>
+							<Item class="Part" referent="RBXd8e18dbb2d424baa9caa02c5f53e0f20">
+								<Properties>
+									<bool name="Anchored">false</bool>
+									<BinaryString name="AttributesSerialize"></BinaryString>
+									<bool name="AudioCanCollide">true</bool>
+									<float name="BackParamA">-0.5</float>
+									<float name="BackParamB">0.5</float>
+									<token name="BackSurface">0</token>
+									<token name="BackSurfaceInput">0</token>
+									<float name="BottomParamA">-0.5</float>
+									<float name="BottomParamB">0.5</float>
+									<token name="BottomSurface">0</token>
+									<token name="BottomSurfaceInput">0</token>
+									<CoordinateFrame name="CFrame">
+										<X>-12.5</X>
+										<Y>0.5</Y>
+										<Z>-5.89996338</Z>
+										<R00>1</R00>
+										<R01>0</R01>
+										<R02>0</R02>
+										<R10>0</R10>
+										<R11>1</R11>
+										<R12>0</R12>
+										<R20>0</R20>
+										<R21>0</R21>
+										<R22>1</R22>
+									</CoordinateFrame>
+									<bool name="CanCollide">true</bool>
+									<bool name="CanQuery">true</bool>
+									<bool name="CanTouch">true</bool>
+									<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+									<bool name="CastShadow">true</bool>
+									<string name="CollisionGroup">Default</string>
+									<int name="CollisionGroupId">0</int>
+									<Color3uint8 name="Color3uint8">4280374457</Color3uint8>
+									<PhysicalProperties name="CustomPhysicalProperties">
+										<CustomPhysics>false</CustomPhysics>
+									</PhysicalProperties>
+									<bool name="DefinesCapabilities">false</bool>
+									<bool name="EnableFluidForces">true</bool>
+									<float name="FrontParamA">-0.5</float>
+									<float name="FrontParamB">0.5</float>
+									<token name="FrontSurface">0</token>
+									<token name="FrontSurfaceInput">0</token>
+									<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+									<float name="LeftParamA">-0.5</float>
+									<float name="LeftParamB">0.5</float>
+									<token name="LeftSurface">0</token>
+									<token name="LeftSurfaceInput">0</token>
+									<bool name="Locked">false</bool>
+									<bool name="Massless">false</bool>
+									<token name="Material">256</token>
+									<string name="MaterialVariantSerialized"></string>
+									<string name="Name">Part</string>
+									<CoordinateFrame name="PivotOffset">
+										<X>0</X>
+										<Y>0</Y>
+										<Z>0</Z>
+										<R00>1</R00>
+										<R01>0</R01>
+										<R02>0</R02>
+										<R10>0</R10>
+										<R11>1</R11>
+										<R12>0</R12>
+										<R20>0</R20>
+										<R21>0</R21>
+										<R22>1</R22>
+									</CoordinateFrame>
+									<float name="Reflectance">0</float>
+									<float name="RightParamA">-0.5</float>
+									<float name="RightParamB">0.5</float>
+									<token name="RightSurface">0</token>
+									<token name="RightSurfaceInput">0</token>
+									<int name="RootPriority">0</int>
+									<Vector3 name="RotVelocity">
+										<X>0</X>
+										<Y>0</Y>
+										<Z>0</Z>
+									</Vector3>
+									<int64 name="SourceAssetId">-1</int64>
+									<BinaryString name="Tags"></BinaryString>
+									<float name="TopParamA">-0.5</float>
+									<float name="TopParamB">0.5</float>
+									<token name="TopSurface">0</token>
+									<token name="TopSurfaceInput">0</token>
+									<float name="Transparency">1</float>
+									<UniqueId name="UniqueId">7a5be8c3b493ddb808a513760000179a</UniqueId>
+									<Vector3 name="Velocity">
+										<X>0</X>
+										<Y>0</Y>
+										<Z>0</Z>
+									</Vector3>
+									<token name="formFactorRaw">1</token>
+									<token name="shape">1</token>
+									<Vector3 name="size">
+										<X>1</X>
+										<Y>1</Y>
+										<Z>1</Z>
+									</Vector3>
+								</Properties>
+								<Item class="BillboardGui" referent="RBX3a0120b1bbc54d5e9f0c76ce851c7e0f">
+									<Properties>
+										<bool name="Active">true</bool>
+										<Ref name="Adornee">RBXd8e18dbb2d424baa9caa02c5f53e0f20</Ref>
+										<bool name="AlwaysOnTop">true</bool>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<bool name="AutoLocalize">true</bool>
+										<float name="Brightness">1</float>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="ClipsDescendants">true</bool>
+										<bool name="DefinesCapabilities">false</bool>
+										<float name="DistanceLowerLimit">0</float>
+										<float name="DistanceStep">0</float>
+										<float name="DistanceUpperLimit">-1</float>
+										<bool name="Enabled">true</bool>
+										<Vector3 name="ExtentsOffset">
+											<X>0</X>
+											<Y>0</Y>
+											<Z>0</Z>
+										</Vector3>
+										<Vector3 name="ExtentsOffsetWorldSpace">
+											<X>0</X>
+											<Y>0</Y>
+											<Z>0</Z>
+										</Vector3>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<float name="LightInfluence">0</float>
+										<float name="MaxDistance">INF</float>
+										<string name="Name">BillboardGui</string>
+										<Ref name="PlayerToHideFrom">null</Ref>
+										<bool name="ResetOnSpawn">true</bool>
+										<Ref name="RootLocalizationTable">null</Ref>
+										<token name="SelectionBehaviorDown">0</token>
+										<token name="SelectionBehaviorLeft">0</token>
+										<token name="SelectionBehaviorRight">0</token>
+										<token name="SelectionBehaviorUp">0</token>
+										<bool name="SelectionGroup">false</bool>
+										<UDim2 name="Size">
+											<XS>1.5</XS>
+											<XO>0</XO>
+											<YS>1.5</YS>
+											<YO>0</YO>
+										</UDim2>
+										<Vector2 name="SizeOffset">
+											<X>0</X>
+											<Y>0</Y>
+										</Vector2>
+										<int64 name="SourceAssetId">-1</int64>
+										<Vector3 name="StudsOffset">
+											<X>0</X>
+											<Y>0</Y>
+											<Z>0</Z>
+										</Vector3>
+										<Vector3 name="StudsOffsetWorldSpace">
+											<X>0</X>
+											<Y>0</Y>
+											<Z>0</Z>
+										</Vector3>
+										<BinaryString name="Tags"></BinaryString>
+										<UniqueId name="UniqueId">7a5be8c3b493ddb808a513760000179b</UniqueId>
+										<token name="ZIndexBehavior">1</token>
+									</Properties>
+									<Item class="ImageLabel" referent="RBXe5ea313974cc4b0c96037db96da25792">
+										<Properties>
+											<bool name="Active">false</bool>
+											<Vector2 name="AnchorPoint">
+												<X>0</X>
+												<Y>0</Y>
+											</Vector2>
+											<BinaryString name="AttributesSerialize"></BinaryString>
+											<bool name="AutoLocalize">true</bool>
+											<token name="AutomaticSize">0</token>
+											<Color3 name="BackgroundColor3">
+												<R>1</R>
+												<G>1</G>
+												<B>1</B>
+											</Color3>
+											<float name="BackgroundTransparency">1</float>
+											<Color3 name="BorderColor3">
+												<R>0</R>
+												<G>0</G>
+												<B>0</B>
+											</Color3>
+											<token name="BorderMode">0</token>
+											<int name="BorderSizePixel">0</int>
+											<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+											<bool name="ClipsDescendants">false</bool>
+											<bool name="DefinesCapabilities">false</bool>
+											<bool name="Draggable">false</bool>
+											<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+											<Content name="Image"><url>rbxassetid://109226830882785</url></Content>
+											<Color3 name="ImageColor3">
+												<R>1</R>
+												<G>1</G>
+												<B>1</B>
+											</Color3>
+											<Vector2 name="ImageRectOffset">
+												<X>0</X>
+												<Y>0</Y>
+											</Vector2>
+											<Vector2 name="ImageRectSize">
+												<X>0</X>
+												<Y>0</Y>
+											</Vector2>
+											<float name="ImageTransparency">0</float>
+											<bool name="Interactable">true</bool>
+											<int name="LayoutOrder">0</int>
+											<string name="Name">ImageLabel</string>
+											<Ref name="NextSelectionDown">null</Ref>
+											<Ref name="NextSelectionLeft">null</Ref>
+											<Ref name="NextSelectionRight">null</Ref>
+											<Ref name="NextSelectionUp">null</Ref>
+											<UDim2 name="Position">
+												<XS>0</XS>
+												<XO>0</XO>
+												<YS>0</YS>
+												<YO>0</YO>
+											</UDim2>
+											<token name="ResampleMode">0</token>
+											<Ref name="RootLocalizationTable">null</Ref>
+											<float name="Rotation">0</float>
+											<token name="ScaleType">3</token>
+											<bool name="Selectable">false</bool>
+											<token name="SelectionBehaviorDown">0</token>
+											<token name="SelectionBehaviorLeft">0</token>
+											<token name="SelectionBehaviorRight">0</token>
+											<token name="SelectionBehaviorUp">0</token>
+											<bool name="SelectionGroup">false</bool>
+											<Ref name="SelectionImageObject">null</Ref>
+											<int name="SelectionOrder">0</int>
+											<UDim2 name="Size">
+												<XS>1</XS>
+												<XO>0</XO>
+												<YS>1</YS>
+												<YO>0</YO>
+											</UDim2>
+											<token name="SizeConstraint">0</token>
+											<Rect2D name="SliceCenter">
+												<min>
+													<X>0</X>
+													<Y>0</Y>
+												</min>
+												<max>
+													<X>0</X>
+													<Y>0</Y>
+												</max>
+											</Rect2D>
+											<float name="SliceScale">1</float>
+											<int64 name="SourceAssetId">-1</int64>
+											<BinaryString name="Tags"></BinaryString>
+											<UDim2 name="TileSize">
+												<XS>1</XS>
+												<XO>0</XO>
+												<YS>1</YS>
+												<YO>0</YO>
+											</UDim2>
+											<UniqueId name="UniqueId">7a5be8c3b493ddb808a513760000179c</UniqueId>
+											<bool name="Visible">true</bool>
+											<int name="ZIndex">1</int>
+										</Properties>
+									</Item>
+								</Item>
+							</Item>
+						</Item>
+					</Item>
+					<Item class="Folder" referent="RBX985aaec9c5b24998a13fc7e86a585ada">
+						<Properties>
+							<BinaryString name="AttributesSerialize"></BinaryString>
+							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+							<bool name="DefinesCapabilities">false</bool>
+							<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+							<string name="Name">Sounds</string>
+							<int64 name="SourceAssetId">-1</int64>
+							<BinaryString name="Tags"></BinaryString>
+							<UniqueId name="UniqueId">7a5be8c3b493ddb808a513760000177c</UniqueId>
+						</Properties>
+						<Item class="Sound" referent="RBX26f92739f4d94daa80d7dd19c29943c8">
+							<Properties>
+								<BinaryString name="AttributesSerialize"></BinaryString>
+								<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+								<bool name="DefinesCapabilities">false</bool>
+								<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+								<bool name="IsMutedForCapture">false</bool>
+								<NumberRange name="LoopRegion">0 60000 </NumberRange>
+								<bool name="Looped">false</bool>
+								<string name="Name">CoinPickup</string>
+								<bool name="PlayOnRemove">false</bool>
+								<NumberRange name="PlaybackRegion">0 60000 </NumberRange>
+								<bool name="PlaybackRegionsEnabled">false</bool>
+								<float name="PlaybackSpeed">1</float>
+								<bool name="Playing">false</bool>
+								<float name="RollOffMaxDistance">10000</float>
+								<float name="RollOffMinDistance">10</float>
+								<token name="RollOffMode">0</token>
+								<Ref name="SoundGroup">null</Ref>
+								<Content name="SoundId"><url>rbxassetid://120672563582350</url></Content>
+								<int64 name="SourceAssetId">120672563582350</int64>
+								<BinaryString name="Tags"></BinaryString>
+								<double name="TimePosition">0</double>
+								<UniqueId name="UniqueId">7a5be8c3b493ddb808a513760000179d</UniqueId>
+								<float name="Volume">0.5</float>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
 			</Item>
 		</Item>
 	</Item>
@@ -10889,26 +11620,4937 @@ return Debounce]]></ProtectedString>
 			<BinaryString name="Tags"></BinaryString>
 			<UniqueId name="UniqueId">774a92fe3f3077d308a27d4200000376</UniqueId>
 		</Properties>
-		<Item class="Script" referent="5">
+		<Item class="Folder" referent="RBX7fd15d559b484e7eb95f3db467724760">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 				<bool name="DefinesCapabilities">false</bool>
-				<bool name="Disabled">false</bool>
 				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-				<Content name="LinkedSource"><null></null></Content>
 				<string name="Name">Server</string>
-				<token name="RunContext">0</token>
-				<string name="ScriptGuid">{561668c1-d0d0-462c-8783-9467271f072f}</string>
-				<ProtectedString name="Source"><![CDATA[local ReplicatedStorage = game:GetService("ReplicatedStorage")
+				<int64 name="SourceAssetId">-1</int64>
+				<BinaryString name="Tags"></BinaryString>
+				<UniqueId name="UniqueId">1e89c5cace45089c08a4c88c000025be</UniqueId>
+			</Properties>
+			<Item class="ModuleScript" referent="RBX5ff15e16e78f4018a268d43ad842d84c">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Packages</string>
+					<string name="ScriptGuid">{0a0db0fd-ba4f-40a4-849b-4466fb8e3d9f}</string>
+					<ProtectedString name="Source"><![CDATA[--!strict
+
+local Packages = {}
+
+-- // Paths
+Packages.DataManager = require(script.DataManager)
+Packages.TimedRewards = require(script.TimedRewards)
+
+return Packages]]></ProtectedString>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<UniqueId name="UniqueId">1e89c5cace45089c08a4c88c00002596</UniqueId>
+				</Properties>
+				<Item class="ModuleScript" referent="RBXb46bebbe2b154bbb851f1617e8924eb8">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+						<bool name="DefinesCapabilities">false</bool>
+						<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">TimedRewards</string>
+						<string name="ScriptGuid">{d8b25353-95fa-497c-9d34-5d785c6762a6}</string>
+						<ProtectedString name="Source"><![CDATA[--!strict
+local TimedRewards = {}
+
+-- // Paths
+-- TimedRewards.PlaytimeRewards = require(script.PlaytimeRewards)
+-- TimedRewards.DailyRewards = require(script.DailyRewards)
+
+return TimedRewards]]></ProtectedString>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+						<UniqueId name="UniqueId">1e89c5cace45089c08a4c88c0000259b</UniqueId>
+					</Properties>
+					<Item class="Folder" referent="RBXe7e717eb7a8a484e9d4ed086532282b8">
+						<Properties>
+							<BinaryString name="AttributesSerialize"></BinaryString>
+							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+							<bool name="DefinesCapabilities">false</bool>
+							<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+							<string name="Name">PlaytimeRewards</string>
+							<int64 name="SourceAssetId">-1</int64>
+							<BinaryString name="Tags"></BinaryString>
+							<UniqueId name="UniqueId">1e89c5cace45089c08a4c88c0000259c</UniqueId>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="ModuleScript" referent="RBXdeb49a0f18a34ecfbaa6b1257547e447">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+						<bool name="DefinesCapabilities">false</bool>
+						<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">DataManager</string>
+						<string name="ScriptGuid">{80622ef5-9fb3-4593-9de8-25fc9e421b35}</string>
+						<ProtectedString name="Source"><![CDATA[--!strict
+-- Uses ProfileStore and ReplicatedData to save data and enable server/client communication
+
+--// Services
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Players = game:GetService("Players")
+
+--// Packages
+local ProfileStore = require(script:WaitForChild("ProfileStore"))
+
+local SharedPackages = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Packages"))
+local ReplicatedData = SharedPackages.ReplicatedData
+
+local Config = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Config"))
+
+--// Templates
+local PROFILE_TEMPLATE = Config.PROFILE_TEMPLATE
+local INFO_TEMPLATE = Config.INFO_TEMPLATE
+
+--// ProfileStore Setup
+local PlayerStore = ProfileStore.New("PlayerStore", PROFILE_TEMPLATE)
+local Profiles: { [Player]: Config.PlayerProfile } = {}
+
+--// Module
+local DataManager = {}
+
+-- Deep clone utility
+local function deepClone(original)
+	local copy = {}
+	for k, v in pairs(original) do
+		if typeof(v) == "table" then
+			copy[k] = deepClone(v)
+		else
+			copy[k] = v
+		end
+	end
+	return copy
+end
+
+local function deepReconcile(target: {}, template: {})
+	for k, v in pairs(template) do
+		if typeof(v) == "table" and typeof(target[k]) == "table" then
+			deepReconcile(target[k], v)
+		elseif target[k] == nil then
+			target[k] = v
+		end
+	end
+end
+
+--// Private: Called when a profile is loaded
+local function onProfileLoad(player: Player, profile: Config.PlayerProfile)
+	-- Initialise Info
+	profile.Info = deepClone(INFO_TEMPLATE)
+
+	-- Extra temporary values
+	profile.Info.JoinTime = os.time()
+	profile.Info.ClaimedGifts = {}
+
+	-- Analytics
+	profile.Data.Analytics.TotalLogins += 1
+
+	-- Save join time locally for playtime calc
+	profile.Info.JoinTime = os.time()
+
+	-- Replicate to client
+	ReplicatedData:SetData("PlayerData", profile.Data, { player })
+	ReplicatedData:SetData("PlayerInfo", profile.Info, { player })
+	ReplicatedData:SetData("Stats", profile.Data.Stats, { player })
+end
+
+--// Public API
+
+function DataManager:GetPlayerProfile(player: Player, yield: boolean?): Config.PlayerProfile?
+	if Profiles[player] then return Profiles[player] end
+
+	if yield then
+		repeat task.wait(0.1)
+		until not player.Parent or Profiles[player]
+	end
+
+	return Profiles[player]
+end
+
+function DataManager:GetPlayerData(player: Player, yield: boolean?): {}?
+	local profile = self:GetPlayerProfile(player, yield)
+	return profile and profile.Data or nil
+end
+
+function DataManager:ResetData(player: Player): boolean
+	local profile = self:GetPlayerProfile(player)
+	if not profile then return false end
+
+	profile.Data = {}
+	profile:Reconcile()
+	onProfileLoad(player, profile)
+
+	profile.Data.Stats.Cash = 99999999 -- dev override
+	warn("Reset data for", player)
+	return true
+end
+
+--// Modular Support: Reconcile a new section into existing data
+function DataManager:ReconcileProfileSection(player: Player, sectionType: "Info" | "Data", sectionName: string, template: {}): boolean
+	local profile = self:GetPlayerProfile(player)
+	if not profile then return false end
+
+	if sectionType == "Info" then
+		profile.Info[sectionName] = profile.Info[sectionName] or {}
+		deepReconcile(profile.Info[sectionName], template)
+		ReplicatedData:SetData("PlayerInfo", profile.Info, { player })
+
+	elseif sectionType == "Data" then
+		profile.Data[sectionName] = profile.Data[sectionName] or {}
+		deepReconcile(profile.Data[sectionName], template)
+		ReplicatedData:SetData("PlayerData", profile.Data, { player })
+	end
+
+	return true
+end
+
+--// Events
+
+function DataManager:LoadPlayerProfile(player: Player): Config.PlayerProfile?
+	local profile = PlayerStore:StartSessionAsync(tostring(player.UserId), {
+		Cancel = function()
+			return not player:IsDescendantOf(Players)
+		end,
+	})
+
+	if not profile then
+		player:Kick("Profile load failed. Please rejoin.")
+		return nil
+	end
+
+	profile:AddUserId(player.UserId)
+	profile:Reconcile()
+
+	profile.OnSessionEnd:Connect(function()
+		Profiles[player] = nil
+		player:Kick("Profile session ended. Please rejoin.")
+	end)
+
+	if player:IsDescendantOf(Players) then
+		onProfileLoad(player, profile)
+		Profiles[player] = profile
+		return profile
+	else
+		profile:EndSession()
+	end
+
+	return nil
+end
+
+function DataManager:ReleasePlayerProfile(player: Player)
+	local profile = Profiles[player]
+	if profile then
+		profile.Data.Analytics.LastLeaveTime = os.time()
+		profile:EndSession()
+	end
+end
+
+return DataManager]]></ProtectedString>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+						<UniqueId name="UniqueId">1e89c5cace45089c08a4c88c000025b5</UniqueId>
+					</Properties>
+					<Item class="ModuleScript" referent="RBXbc263b56ecb743e9869549209a1ac18a">
+						<Properties>
+							<BinaryString name="AttributesSerialize"></BinaryString>
+							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+							<bool name="DefinesCapabilities">false</bool>
+							<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">ProfileStore</string>
+							<string name="ScriptGuid">{1125e390-6042-4992-b70d-05af03244add}</string>
+							<ProtectedString name="Source"><![CDATA[--[[
+MAD STUDIO (by loleris)
+
+-[ProfileStore]---------------------------------------
+
+	Periodic DataStore saving solution with session locking
+	
+	WARNINGS FOR "Profile.Data" VALUES:
+	 	! Do not create numeric tables with gaps - attempting to store such tables will result in an error.
+		! Do not create mixed tables (some values indexed by number and others by a string key)
+			- only numerically indexed  data will be stored.
+		! Do not index tables by anything other than numbers and strings.
+		! Do not reference Roblox Instances
+		! Do not reference userdata (Vector3, Color3, CFrame...) - Serialize userdata before referencing
+		! Do not reference functions
+		
+	Members:
+	
+		ProfileStore.IsClosing          [bool]
+			-- Set to true after a game:BindToClose() trigger
+			
+		ProfileStore.IsCriticalState    [bool]
+			-- Set to true when ProfileStore experiences too many consecutive errors
+		
+		ProfileStore.OnError            [Signal] (message, store_name, profile_key)
+			-- Most ProfileStore errors will be caught and passed to this signal
+			
+		ProfileStore.OnOverwrite        [Signal] (store_name, profile_key)
+			-- Triggered when a DataStore key was likely used to store data that wasn't
+			a ProfileStore profile or the ProfileStore structure was invalidly manually
+			altered for that DataStore key
+			
+		ProfileStore.OnCriticalToggle   [Signal] (is_critical)
+			-- Triggered when ProfileStore experiences too many consecutive errors
+		
+		ProfileStore.DataStoreState     [string] ("NotReady", "NoInternet", "NoAccess", "Access")
+			-- This value resembles ProfileStore's access to the DataStore; The value starts
+			as "NotReady" and will eventually change to one of the other 3 possible values.
+	
+	Functions:
+	
+		ProfileStore.New(store_name, template?) --> [ProfileStore]
+			store_name   [string] -- DataStore name
+			template     [table] or nil -- Profiles will default to given table (hard-copy) when no data was saved previously
+			
+		ProfileStore.SetConstant(name, value)
+			name    [string]
+			value   [number]
+				
+	Members [ProfileStore]:
+	
+		ProfileStore.Mock   [ProfileStore]
+			-- Reflection of ProfileStore methods, but the methods will now query a mock
+			DataStore with no relation to the real DataStore
+			
+		ProfileStore.Name   [string]
+		
+	Methods [ProfileStore]:
+	
+		ProfileStore:StartSessionAsync(profile_key, params?) --> [Profile] or nil
+			profile_key [string] -- DataStore key
+			params      nil or [table]: -- Custom params; E.g. {Steal = true}
+				{
+					Steal = true, -- Pass this to disregard an existing session lock
+					Cancel = fn() -> (boolean), -- Pass this to create a request cancel condition.
+						-- If the cancel function returns true, ProfileStore will stop trying to
+						-- start the session and return nil
+				}
+			
+		ProfileStore:MessageAsync(profile_key, message) --> is_success [bool]
+			profile_key [string] -- DataStore key
+			message     [table] -- Data to be messaged to the profile
+			
+		ProfileStore:GetAsync(profile_key, version?) --> [Profile] or nil
+			-- Reads a profile without starting a session - will not autosave
+			profile_key   [string] -- DataStore key
+			version       nil or [string] -- DataStore key version
+
+		ProfileStore:VersionQuery(profile_key, sort_direction?, min_date?, max_date?) --> [VersionQuery]
+			profile_key      [string]
+			sort_direction   nil or [Enum.SortDirection]
+			min_date         nil or [DateTime]
+			max_date         nil or [DateTime]
+			
+		ProfileStore:RemoveAsync(profile_key) --> is_success [bool]
+			-- Completely removes profile data from the DataStore / mock DataStore with no way to recover it.
+
+	Methods [VersionQuery]:
+
+		VersionQuery:NextAsync() --> [Profile] or nil -- (Yields)
+			-- Returned profile is similar to profiles returned by ProfileStore:GetAsync()
+		
+	Members [Profile]:
+	
+		Profile.Data               [table]
+			-- When the profile is active changes to this table are guaranteed to be saved
+		Profile.LastSavedData      [table] (Read-only)
+			-- Last snapshot of "Profile.Data" that has been successfully saved to the DataStore;
+			Useful for proper developer product purchase receipt handling
+		
+		Profile.FirstSessionTime   [number] (Read-only)
+			-- os.time() timestamp of the first profile session
+			
+		Profile.SessionLoadCount   [number] (Read-only) -- Amount of times a session was started for this profile
+			
+		Profile.Session            [table] (Read-only) {PlaceId = number, JobId = string} / nil
+			-- Set to a table if this profile is in use by a server; nil if released
+
+		Profile.RobloxMetaData     [table] -- Writable table that gets saved automatically and once the profile is released
+		Profile.UserIds            [table] -- (Read-only) -- {user_id [number], ...} -- User ids associated with this profile
+
+		Profile.KeyInfo            [DataStoreKeyInfo] -- Changes before OnAfterSave signal
+		
+		Profile.OnSave             [Signal] ()
+			-- Triggered right before changes to Profile.Data are saved to the DataStore
+			
+		Profile.OnLastSave         [Signal] (reason [string]: "Manual", "External", "Shutdown")
+			-- Triggered right before changes to Profile.Data are saved to the DataStore
+			for the last time; A reason is provided for the last save:
+				- "Manual"   - Profile:EndSession() was called
+				- "Shutdown" - The server that has ownership of this profile is shutting down
+				- "External" - Another server has started a session for this profile
+			Note that this event will not trigger for when a profile session is ended by
+			another server trying to take ownership of the session - this is impossible to
+			do without compromising on ProfileStore's speed.
+			
+		Profile.OnSessionEnd       [Signal] ()
+			-- Triggered when the profile session is terminated on this server
+		
+		Profile.OnAfterSave        [Signal] (last_saved_data)
+			-- Triggered after a successful save
+			last_saved_data [table] -- Profile.LastSavedData
+			
+		Profile.ProfileStore       [ProfileStore] -- ProfileStore object this profile belongs to
+		Profile.Key                [string] -- DataStore key
+		
+	Methods [Profile]:
+	
+		Profile:IsActive() --> [bool] -- If "true" is returned, changes to Profile.Data are guaranteed to save;
+			This guarantee is only valid until code yields (e.g. task.wait() is used).
+			
+		Profile:Reconcile() -- Fills in missing (nil) [string_key] = [value] pairs to the Profile.Data structure
+			from the "template" argument that was passed to "ProfileStore.New()"
+			
+		Profile:EndSession() -- Call after the server has finished working with this profile
+			e.g., after the player leaves (Profile object will become inactive)
+
+		Profile:AddUserId(user_id) -- Associates user_id with profile (GDPR compliance)
+			user_id   [number]
+
+		Profile:RemoveUserId(user_id) -- Unassociates user_id with profile (safe function)
+			user_id   [number]
+			
+		Profile:MessageHandler(fn) -- Sets a message handler for this profile
+			fn [function] (message [table], processed [function]())
+			-- The handler function receives a message table and a callback function;
+			The callback function is to be called when a message has been processed
+			- this will discard the message from the profile message cache; If the
+			callback function is not called, other message handlers will also be triggered
+			with unprocessed message data.
+			
+		Profile:Save() -- If the profile session is still active makes an UpdateAsync call
+			to the DataStore to immediately save profile data
+
+		Profile:SetAsync() -- Forcefully saves changes to the profile; Only for profiles
+			loaded with ProfileStore:GetAsync() or ProfileStore:VersionQuery()
+		
+--]]
+
+local AUTO_SAVE_PERIOD = 300 -- (Seconds) Time between when changes to a profile are saved to the DataStore
+local LOAD_REPEAT_PERIOD = 10 -- (Seconds) Time between successive profile reads when handling a session conflict
+local FIRST_LOAD_REPEAT = 5 -- (Seconds) Time between first and second profile read when handling a session conflict
+local SESSION_STEAL = 40 -- (Seconds) Time until a session conflict is resolved with the waiting server stealing the session
+local ASSUME_DEAD = 630 -- (Seconds) If a profile hasn't had updates for this long, quickly assume an active session belongs to a crashed server
+local START_SESSION_TIMEOUT = 120 -- (Seconds) If a session can't be started for a profile for this long, stop repeating calls to the DataStore
+
+local CRITICAL_STATE_ERROR_COUNT = 5 -- Assume critical state if this many issues happen in a short amount of time
+local CRITICAL_STATE_ERROR_EXPIRE = 120 -- (Seconds) Individual issue expiration
+local CRITICAL_STATE_EXPIRE = 120 -- (Seconds) Critical state expiration
+
+local MAX_MESSAGE_QUEUE = 1000 -- Max messages saved in a profile that were sent using "ProfileStore:MessageAsync()"
+
+----- Dependencies -----
+
+-- local Util = require(game.ReplicatedStorage.Shared.Util)
+-- local Signal = Util.Signal
+
+local Signal do
+
+	local FreeRunnerThread
+
+	--[[
+		Yield-safe coroutine reusing by stravant;
+		Sources:
+		https://devforum.roblox.com/t/lua-signal-class-comparison-optimal-goodsignal-class/1387063
+		https://gist.github.com/stravant/b75a322e0919d60dde8a0316d1f09d2f
+	--]]
+
+	local function AcquireRunnerThreadAndCallEventHandler(fn, ...)
+		local acquired_runner_thread = FreeRunnerThread
+		FreeRunnerThread = nil
+		fn(...)
+		-- The handler finished running, this runner thread is free again.
+		FreeRunnerThread = acquired_runner_thread
+	end
+
+	local function RunEventHandlerInFreeThread(...)
+		AcquireRunnerThreadAndCallEventHandler(...)
+		while true do
+			AcquireRunnerThreadAndCallEventHandler(coroutine.yield())
+		end
+	end
+
+	local Connection = {}
+	Connection.__index = Connection
+
+	local SignalClass = {}
+	SignalClass.__index = SignalClass
+
+	function Connection:Disconnect()
+
+		if self.is_connected == false then
+			return
+		end
+
+		local signal = self.signal
+		self.is_connected = false
+		signal.listener_count -= 1
+
+		if signal.head == self then
+			signal.head = self.next
+		else
+			local prev = signal.head
+			while prev ~= nil and prev.next ~= self do
+				prev = prev.next
+			end
+			if prev ~= nil then
+				prev.next = self.next
+			end
+		end
+
+	end
+
+	function SignalClass.New()
+
+		local self = {
+			head = nil,
+			listener_count = 0,
+		}
+		setmetatable(self, SignalClass)
+
+		return self
+
+	end
+
+	function SignalClass:Connect(listener: (...any) -> ())
+
+		if type(listener) ~= "function" then
+			error(`[{script.Name}]: \"listener\" must be a function; Received {typeof(listener)}`)
+		end
+
+		local connection = {
+			listener = listener,
+			signal = self,
+			next = self.head,
+			is_connected = true,
+		}
+		setmetatable(connection, Connection)
+
+		self.head = connection
+		self.listener_count += 1
+
+		return connection
+
+	end
+
+	function SignalClass:GetListenerCount(): number
+		return self.listener_count
+	end
+
+	function SignalClass:Fire(...)
+		local item = self.head
+		while item ~= nil do
+			if item.is_connected == true then
+				if not FreeRunnerThread then
+					FreeRunnerThread = coroutine.create(RunEventHandlerInFreeThread)
+				end
+				task.spawn(FreeRunnerThread, item.listener, ...)
+			end
+			item = item.next
+		end
+	end
+
+	function SignalClass:Wait()
+		local co = coroutine.running()
+		local connection
+		connection = self:Connect(function(...)
+			connection:Disconnect()
+			task.spawn(co, ...)
+		end)
+		return coroutine.yield()
+	end
+
+	Signal = table.freeze({
+		New = SignalClass.New,
+	})
+
+end
+
+----- Private -----
+
+local ActiveSessionCheck = {} -- {[session_token] = profile, ...}
+local AutoSaveList = {} -- {profile, ...} -- Loaded profile table which will be circularly auto-saved
+local IssueQueue = {} -- {issue_time, ...}
+
+local DataStoreService = game:GetService("DataStoreService")
+local MessagingService = game:GetService("MessagingService")
+local HttpService = game:GetService("HttpService")
+local RunService = game:GetService("RunService")
+
+local PlaceId = game.PlaceId
+local JobId = game.JobId
+
+local AutoSaveIndex = 1 -- Next profile to auto save
+local LastAutoSave = os.clock()
+
+local LoadIndex = 0
+
+local ActiveProfileLoadJobs = 0 -- Number of active threads that are loading in profiles
+local ActiveProfileSaveJobs = 0 -- Number of active threads that are saving profiles
+
+local CriticalStateStart = 0 -- os.clock()
+
+local IsStudio = RunService:IsStudio()
+local DataStoreState: "NotReady" | "NoInternet" | "NoAccess" | "Access" = "NotReady"
+
+local MockStore = {}
+local UserMockStore = {}
+local MockFlag = false
+
+local OnError = Signal.New() -- (message, store_name, profile_key)
+local OnOverwrite = Signal.New() -- (store_name, profile_key)
+
+local UpdateQueue = { -- For stability sake, we won't do UpdateAsync calls for the same key until all previous calls finish
+	--[[
+		[session_token] = {
+			coroutine, ...
+		},
+		...
+	--]]
+}
+
+local function WaitInUpdateQueue(session_token) --> next_in_queue()
+
+	local is_first = false
+
+	if UpdateQueue[session_token] == nil then
+		is_first = true
+		UpdateQueue[session_token] = {}
+	end
+
+	local queue = UpdateQueue[session_token]
+
+	if is_first == false then
+		table.insert(queue, coroutine.running())
+		coroutine.yield()
+	end
+
+	return function()
+		local next_co = table.remove(queue, 1)
+		if next_co ~= nil then
+			coroutine.resume(next_co)
+		else
+			UpdateQueue[session_token] = nil
+		end
+	end
+
+end
+
+local function SessionToken(store_name, profile_key, is_mock)
+
+	local session_token = "L_" -- Live
+
+	if is_mock == true then
+		session_token = "U_" -- User mock
+	elseif DataStoreState ~= "Access" then
+		session_token = "M_" -- Mock, cause no DataStore access
+	end
+
+	session_token ..= store_name .. "\0" .. profile_key
+
+	return session_token
+
+end
+
+local function DeepCopyTable(t)
+	local copy = {}
+	for key, value in pairs(t) do
+		if type(value) == "table" then
+			copy[key] = DeepCopyTable(value)
+		else
+			copy[key] = value
+		end
+	end
+	return copy
+end
+
+local function ReconcileTable(target, template)
+	for k, v in pairs(template) do
+		if type(k) == "string" then -- Only string keys will be reconciled
+			if target[k] == nil then
+				if type(v) == "table" then
+					target[k] = DeepCopyTable(v)
+				else
+					target[k] = v
+				end
+			elseif type(target[k]) == "table" and type(v) == "table" then
+				ReconcileTable(target[k], v)
+			end
+		end
+	end
+end
+
+local function RegisterError(error_message, store_name, profile_key) -- Called when a DataStore API call errors
+	warn(`[{script.Name}]: DataStore API error (STORE:{store_name}; KEY:{profile_key}) - {tostring(error_message)}`)
+	table.insert(IssueQueue, os.clock()) -- Adding issue time to queue
+	OnError:Fire(tostring(error_message), store_name, profile_key)
+end
+
+local function RegisterOverwrite(store_name, profile_key) -- Called when a corrupted profile is loaded
+	warn(`[{script.Name}]: Invalid profile was overwritten (STORE:{store_name}; KEY:{profile_key})`)
+	OnOverwrite:Fire(store_name, profile_key)
+end
+
+local function NewMockDataStoreKeyInfo(params)
+
+	local version_id_string = tostring(params.VersionId or 0)
+	local meta_data = params.MetaData or {}
+	local user_ids = params.UserIds or {}
+
+	return {
+		CreatedTime = params.CreatedTime,
+		UpdatedTime = params.UpdatedTime,
+		Version = string.rep("0", 16) .. "."
+			.. string.rep("0", 10 - string.len(version_id_string)) .. version_id_string
+			.. "." .. string.rep("0", 16) .. "." .. "01",
+
+		GetMetadata = function()
+			return DeepCopyTable(meta_data)
+		end,
+
+		GetUserIds = function()
+			return DeepCopyTable(user_ids)
+		end,
+	}
+
+end
+
+local function MockUpdateAsync(mock_data_store, profile_store_name, key, transform_function, is_get_call) --> loaded_data, key_info
+
+	local profile_store = mock_data_store[profile_store_name]
+
+	if profile_store == nil then
+		profile_store = {}
+		mock_data_store[profile_store_name] = profile_store
+	end
+
+	local epoch_time = math.floor(os.time() * 1000)
+	local mock_entry = profile_store[key]
+	local mock_entry_was_nil = false
+
+	if mock_entry == nil then
+		mock_entry_was_nil = true
+		if is_get_call ~= true then
+			mock_entry = {
+				Data = nil,
+				CreatedTime = epoch_time,
+				UpdatedTime = epoch_time,
+				VersionId = 0,
+				UserIds = {},
+				MetaData = {},
+			}
+			profile_store[key] = mock_entry
+		end
+	end
+
+	local mock_key_info = mock_entry_was_nil == false and NewMockDataStoreKeyInfo(mock_entry) or nil
+
+	local transform, user_ids, roblox_meta_data = transform_function(mock_entry and mock_entry.Data, mock_key_info)
+
+	if transform == nil then
+		return nil
+	else
+		if mock_entry ~= nil and is_get_call ~= true then
+			mock_entry.Data = DeepCopyTable(transform)
+			mock_entry.UserIds = DeepCopyTable(user_ids or {})
+			mock_entry.MetaData = DeepCopyTable(roblox_meta_data or {})
+			mock_entry.VersionId += 1
+			mock_entry.UpdatedTime = epoch_time
+		end
+
+		return DeepCopyTable(transform), mock_entry ~= nil and NewMockDataStoreKeyInfo(mock_entry) or nil
+	end
+
+end
+
+local function UpdateAsync(profile_store, profile_key, transform_params, is_user_mock, is_get_call, version) --> loaded_data, key_info
+	--transform_params = {
+	--	ExistingProfileHandle = function(latest_data),
+	--	MissingProfileHandle = function(latest_data),
+	--	EditProfile = function(lastest_data),
+	--}
+
+	local loaded_data, key_info
+
+	local next_in_queue = WaitInUpdateQueue(SessionToken(profile_store.Name, profile_key, is_user_mock))
+
+	local success = true
+
+	local success, error_message = pcall(function()
+		local transform_function = function(latest_data)
+
+			local missing_profile = false
+			local overwritten = false
+			local global_updates = {0, {}}
+
+			if latest_data == nil then
+
+				missing_profile = true
+
+			elseif type(latest_data) ~= "table" then
+
+				missing_profile = true
+				overwritten = true
+
+			else
+
+				if type(latest_data.Data) == "table" and type(latest_data.MetaData) == "table" and type(latest_data.GlobalUpdates) == "table" then
+
+					-- Regular profile structure detected:
+
+					latest_data.WasOverwritten = false -- Must be set to false if set previously
+					global_updates = latest_data.GlobalUpdates
+
+					if transform_params.ExistingProfileHandle ~= nil then
+						transform_params.ExistingProfileHandle(latest_data)
+					end
+
+				elseif latest_data.Data == nil and latest_data.MetaData == nil and type(latest_data.GlobalUpdates) == "table" then
+
+					-- Regular structure not detected, but GlobalUpdate data exists:
+
+					latest_data.WasOverwritten = false -- Must be set to false if set previously
+					global_updates = latest_data.GlobalUpdates or global_updates
+					missing_profile = true
+
+				else
+
+					missing_profile = true
+					overwritten = true
+
+				end
+
+			end
+
+			-- Profile was not created or corrupted and no GlobalUpdate data exists:
+			if missing_profile == true then
+				latest_data = {
+					-- Data = nil,
+					-- MetaData = nil,
+					GlobalUpdates = global_updates,
+				}
+				if transform_params.MissingProfileHandle ~= nil then
+					transform_params.MissingProfileHandle(latest_data)
+				end
+			end
+
+			-- Editing profile:
+			if transform_params.EditProfile ~= nil then
+				transform_params.EditProfile(latest_data)
+			end
+
+			-- Invalid data handling (Silently override with empty profile)
+			if overwritten == true then
+				latest_data.WasOverwritten = true -- Temporary tag that will be removed on first save
+			end
+
+			return latest_data, latest_data.UserIds, latest_data.RobloxMetaData
+		end
+
+		if is_user_mock == true then -- Used when the profile is accessed through ProfileStore.Mock
+
+			loaded_data, key_info = MockUpdateAsync(UserMockStore, profile_store.Name, profile_key, transform_function, is_get_call)
+			task.wait() -- Simulate API call yield
+
+		elseif DataStoreState ~= "Access" then -- Used when API access is disabled
+
+			loaded_data, key_info = MockUpdateAsync(MockStore, profile_store.Name, profile_key, transform_function, is_get_call)
+			task.wait() -- Simulate API call yield
+
+		else
+
+			if is_get_call == true then
+
+				if version ~= nil then
+
+					local success, error_message = pcall(function()
+						loaded_data, key_info = profile_store.data_store:GetVersionAsync(profile_key, version)
+					end)
+
+					if success == false and type(error_message) == "string" and string.find(error_message, "not valid") ~= nil then
+						warn(`[{script.Name}]: Passed version argument is not valid; Traceback:\n` .. debug.traceback())
+					end
+
+				else
+
+					loaded_data, key_info = profile_store.data_store:GetAsync(profile_key)
+
+				end
+
+				loaded_data = transform_function(loaded_data)
+
+			else
+
+				loaded_data, key_info = profile_store.data_store:UpdateAsync(profile_key, transform_function)
+
+			end
+
+		end
+
+	end)
+
+	next_in_queue()
+
+	if success == true and type(loaded_data) == "table" then
+		-- Invalid data handling:
+		if loaded_data.WasOverwritten == true and is_get_call ~= true then
+			RegisterOverwrite(
+				profile_store.Name,
+				profile_key
+			)
+		end
+		-- Return loaded_data:
+		return loaded_data, key_info
+	else
+		-- Error handling:
+		RegisterError(
+			error_message or "Undefined error",
+			profile_store.Name,
+			profile_key
+		)
+		-- Return nothing:
+		return nil
+	end
+
+end
+
+local function IsThisSession(session_tag)
+	return session_tag[1] == PlaceId and session_tag[2] == JobId
+end
+
+local function ReadMockFlag(): boolean
+	local is_mock = MockFlag
+	MockFlag = false
+	return is_mock
+end
+
+local function WaitForStoreReady(profile_store)
+	while profile_store.is_ready == false do
+		task.wait()
+	end
+end
+
+local function AddProfileToAutoSave(profile)
+
+	ActiveSessionCheck[profile.session_token] = profile
+
+	-- Add at AutoSaveIndex and move AutoSaveIndex right:
+
+	table.insert(AutoSaveList, AutoSaveIndex, profile)
+
+	if #AutoSaveList > 1 then
+		AutoSaveIndex = AutoSaveIndex + 1
+	elseif #AutoSaveList == 1 then
+		-- First profile created - make sure it doesn't get immediately auto saved:
+		LastAutoSave = os.clock()
+	end
+
+end
+
+local function RemoveProfileFromAutoSave(profile)
+
+	ActiveSessionCheck[profile.session_token] = nil
+
+	local auto_save_index = table.find(AutoSaveList, profile)
+
+	if auto_save_index ~= nil then
+		table.remove(AutoSaveList, auto_save_index)
+		if auto_save_index < AutoSaveIndex then
+			AutoSaveIndex = AutoSaveIndex - 1 -- Table contents were moved left before AutoSaveIndex so move AutoSaveIndex left as well
+		end
+		if AutoSaveList[AutoSaveIndex] == nil then -- AutoSaveIndex was at the end of the AutoSaveList - reset to 1
+			AutoSaveIndex = 1
+		end
+	end
+
+end
+
+local function SaveProfileAsync(profile, is_ending_session, is_overwriting, last_save_reason)
+
+	if type(profile.Data) ~= "table" then
+		error(`[{script.Name}]: Developer code likely set "Profile.Data" to a non-table value! (STORE:{profile.ProfileStore.Name}; KEY:{profile.Key})`)
+	end
+
+	profile.OnSave:Fire()
+	if is_ending_session == true then
+		profile.OnLastSave:Fire(last_save_reason or "Manual")
+	end
+
+	if is_ending_session == true and is_overwriting ~= true then
+		if profile.roblox_message_subscription ~= nil then
+			profile.roblox_message_subscription:Disconnect()
+		end
+		RemoveProfileFromAutoSave(profile)
+		profile.OnSessionEnd:Fire()
+	end
+
+	ActiveProfileSaveJobs = ActiveProfileSaveJobs + 1
+
+	-- Compare "SessionLoadCount" when writing to profile to prevent a rare case of repeat last save when the profile is loaded on the same server again
+
+	local repeat_save_flag = true -- Released Profile save calls have to repeat until they succeed
+	local exp_backoff = 1
+
+	while repeat_save_flag == true do
+
+		if is_ending_session ~= true then
+			repeat_save_flag = false
+		end
+
+		local loaded_data, key_info = UpdateAsync(
+			profile.ProfileStore,
+			profile.Key,
+			{
+				ExistingProfileHandle = nil,
+				MissingProfileHandle = nil,
+				EditProfile = function(latest_data)
+
+					-- Check if this session still owns the profile:
+
+					local session_owns_profile = false
+
+					if is_overwriting ~= true then
+
+						local active_session = latest_data.MetaData.ActiveSession
+						local session_load_count = latest_data.MetaData.SessionLoadCount
+
+						if type(active_session) == "table" then
+							session_owns_profile = IsThisSession(active_session) and session_load_count == profile.load_index
+						end
+
+					else
+						session_owns_profile = true
+					end
+
+					-- We may only edit the profile if this server has ownership of the profile:
+
+					if session_owns_profile == true then
+
+						-- Clear processed updates (messages):
+
+						local locked_updates = profile.locked_global_updates -- [index] = true, ...
+						local active_updates = latest_data.GlobalUpdates[2]
+						-- ProfileService module format: {{update_id, version_id, update_locked, update_data}, ...}
+						-- ProfileStore module format: {{update_id, update_data}, ...}
+
+						if next(locked_updates) ~= nil then
+							local i = 1
+							while i <= #active_updates do
+								local update = active_updates[i]
+								if locked_updates[update[1]] == true then
+									table.remove(active_updates, i)
+								else
+									i += 1
+								end
+							end
+						end
+
+						-- Save profile data:
+
+						latest_data.Data = profile.Data
+						latest_data.RobloxMetaData = profile.RobloxMetaData
+						latest_data.UserIds = profile.UserIds
+
+						if is_overwriting ~= true then
+
+							latest_data.MetaData.LastUpdate = os.time()
+
+							if is_ending_session == true then
+								latest_data.MetaData.ActiveSession = nil
+							end
+
+						else
+
+							latest_data.MetaData.ActiveSession = nil
+							latest_data.MetaData.ForceLoadSession = nil
+
+						end
+
+					end
+
+				end,
+			},
+			profile.is_mock
+		)
+
+		if loaded_data ~= nil and key_info ~= nil then
+
+			if is_overwriting == true then
+				break
+			end
+
+			repeat_save_flag = false
+
+			local active_session = loaded_data.MetaData.ActiveSession
+			local session_load_count = loaded_data.MetaData.SessionLoadCount
+			local session_owns_profile = false
+
+			if type(active_session) == "table" then
+				session_owns_profile = IsThisSession(active_session) and session_load_count == profile.load_index
+			end
+
+			local force_load_session = loaded_data.MetaData.ForceLoadSession
+			local force_load_pending = false
+			if type(force_load_session) == "table" then
+				force_load_pending = not IsThisSession(force_load_session)
+			end
+
+			local is_active = profile:IsActive()
+
+			-- If another server is trying to start a session for this profile - end the session:
+
+			if force_load_pending == true and session_owns_profile == true then
+				if is_active == true then
+					SaveProfileAsync(profile, true, false, "External")
+				end
+				break
+			end
+
+			-- Clearing processed update list / Detecting new updates:
+
+			local locked_updates = profile.locked_global_updates -- [index] = true, ...
+			local received_updates = profile.received_global_updates -- [index] = true, ...
+			local active_updates = loaded_data.GlobalUpdates[2]
+
+			local new_updates = {} -- {}, ...
+			local still_pending = {} -- [index] = true, ...
+
+			for _, update in ipairs(active_updates) do
+				if locked_updates[update[1]] == true then
+					still_pending[update[1]] = true
+				elseif received_updates[update[1]] ~= true then
+					received_updates[update[1]] = true
+					table.insert(new_updates, update)
+				end
+			end
+
+			for index in pairs(locked_updates) do
+				if still_pending[index] ~= true then
+					locked_updates[index] = nil
+				end
+			end
+
+			-- Updating profile values:
+
+			profile.KeyInfo = key_info
+			profile.LastSavedData = loaded_data.Data
+			profile.global_updates = loaded_data.GlobalUpdates and loaded_data.GlobalUpdates[2] or {}
+
+			if session_owns_profile == true then
+				if is_active == true and is_ending_session ~= true then
+
+					-- Processing new global updates (messages):
+
+					for _, update in ipairs(new_updates) do
+
+						local index = update[1]
+						local update_data = update[#update] -- Backwards compatibility with ProfileService
+
+						for _, handler in ipairs(profile.message_handlers) do
+
+							local is_processed = false
+							local processed_callback = function()
+								is_processed = true
+								locked_updates[index] = true
+							end
+
+							local send_update_data = DeepCopyTable(update_data)
+
+							task.spawn(handler, send_update_data, processed_callback)
+
+							if is_processed == true then
+								break
+							end
+
+						end
+
+					end
+
+				end
+			else
+
+				if profile.roblox_message_subscription ~= nil then
+					profile.roblox_message_subscription:Disconnect()
+				end
+
+				if is_active == true then
+					RemoveProfileFromAutoSave(profile)
+					profile.OnSessionEnd:Fire()
+				end
+
+			end
+
+			profile.OnAfterSave:Fire(profile.LastSavedData)
+
+		elseif repeat_save_flag == true then
+
+			-- DataStore call likely resulted in an error; Repeat the DataStore call shortly
+			task.wait(exp_backoff)
+			exp_backoff = math.min(if last_save_reason == "Shutdown" then 8 else 20, exp_backoff * 2)
+
+		end
+
+	end
+
+	ActiveProfileSaveJobs = ActiveProfileSaveJobs - 1
+
+end
+
+----- Public -----
+
+--[[
+	Saved profile structure:
+	
+	{
+		Data = {},
+		
+		MetaData = {
+			ProfileCreateTime = 0,
+			SessionLoadCount = 0,
+			ActiveSession = {place_id, game_job_id, unique_session_id} / nil,
+			ForceLoadSession = {place_id, game_job_id} / nil,
+			LastUpdate = 0, -- os.time()
+			MetaTags = {}, -- Backwards compatibility with ProfileService
+		},
+		
+		RobloxMetaData = {},
+		UserIds = {},
+		
+		GlobalUpdates = {
+			update_index,
+			{
+				{update_index, data}, ...
+			},
+		},
+	}
+
+--]]
+
+export type JSONAcceptable = { JSONAcceptable } | { [string]: JSONAcceptable } | number | string | boolean | buffer
+
+export type Profile<T> = {
+	Data: T & JSONAcceptable,
+	LastSavedData: T & JSONAcceptable,
+	FirstSessionTime: number,
+	SessionLoadCount: number,
+	Session: {PlaceId: number, JobId: string}?,
+	RobloxMetaData: JSONAcceptable,
+	UserIds: {number},
+	KeyInfo: DataStoreKeyInfo,
+	OnSave: {Connect: (self: any, listener: () -> ()) -> ({Disconnect: (self: any) -> ()})},
+	OnLastSave: {Connect: (self: any, listener: (reason: "Manual" | "External" | "Shutdown") -> ()) -> ({Disconnect: (self: any) -> ()})},
+	OnSessionEnd: {Connect: (self: any, listener: () -> ()) -> ({Disconnect: (self: any) -> ()})},
+	OnAfterSave: {Connect: (self: any, listener: (last_saved_data: T & JSONAcceptable) -> ()) -> ({Disconnect: (self: any) -> ()})},
+	ProfileStore: JSONAcceptable,
+	Key: string,
+
+	IsActive: (self: any) -> (boolean),
+	Reconcile: (self: any) -> (),
+	EndSession: (self: any) -> (),
+	AddUserId: (self: any, user_id: number) -> (),
+	RemoveUserId: (self: any, user_id: number) -> (),
+	MessageHandler: (self: any, fn: (message: JSONAcceptable, processed: () -> ()) -> ()) -> (),
+	Save: (self: any) -> (),
+	SetAsync: (self: any) -> (),
+}
+
+export type VersionQuery<T> = {
+	NextAsync: (self: any) -> (Profile<T>?),
+}
+
+type ProfileStoreStandard<T> = {
+	Name: string,
+	StartSessionAsync: (self: any, profile_key: string, params: {Steal: boolean?}) -> (Profile<T>?),
+	MessageAsync: (self: any, profile_key: string, message: JSONAcceptable) -> (boolean),
+	GetAsync: (self: any, profile_key: string, version: string?) -> (Profile<T>?),
+	VersionQuery: (self: any, profile_key: string, sort_direction: Enum.SortDirection?, min_date: DateTime | number | nil, max_date: DateTime | number | nil) -> (VersionQuery<T>),
+	RemoveAsync: (self: any, profile_key: string) -> (boolean),
+}
+
+export type ProfileStore<T> = {
+	Mock: ProfileStoreStandard<T>,
+} & ProfileStoreStandard<T>
+
+type ConstantName = "AUTO_SAVE_PERIOD" | "LOAD_REPEAT_PERIOD" | "FIRST_LOAD_REPEAT" | "SESSION_STEAL"
+| "ASSUME_DEAD" | "START_SESSION_TIMEOUT" | "CRITICAL_STATE_ERROR_COUNT" | "CRITICAL_STATE_ERROR_EXPIRE"
+| "CRITICAL_STATE_EXPIRE" | "MAX_MESSAGE_QUEUE"
+
+export type ProfileStoreModule = {
+	IsClosing: boolean,
+	IsCriticalState: boolean,
+	OnError: {Connect: (self: any, listener: (message: string, store_name: string, profile_key: string) -> ()) -> ({Disconnect: (self: any) -> ()})},
+	OnOverwrite: {Connect: (self: any, listener: (store_name: string, profile_key: string) -> ()) -> ({Disconnect: (self: any) -> ()})},
+	OnCriticalToggle: {Connect: (self: any, listener: (is_critical: boolean) -> ()) -> ({Disconnect: (self: any) -> ()})},
+	DataStoreState: "NotReady" | "NoInternet" | "NoAccess" | "Access",
+	New: <T>(store_name: string, template: (T & JSONAcceptable)?) -> (ProfileStore<T>),
+	SetConstant: (name: ConstantName, value: number) -> ()
+}
+
+local Profile = {}
+Profile.__index = Profile
+
+function Profile.New(raw_data, key_info, profile_store, key, is_mock, session_token)
+
+	local data = raw_data.Data or {}
+	local session = raw_data.MetaData and raw_data.MetaData.ActiveSession or nil
+
+	local global_updates = raw_data.GlobalUpdates and raw_data.GlobalUpdates[2] or {}
+	local received_global_updates = {}
+
+	for _, update in ipairs(global_updates) do
+		received_global_updates[update[1]] = true
+	end
+
+	local self = {
+
+		Data = data,
+		LastSavedData = DeepCopyTable(data),
+
+		FirstSessionTime = raw_data.MetaData and raw_data.MetaData.ProfileCreateTime or 0,
+		SessionLoadCount = raw_data.MetaData and raw_data.MetaData.SessionLoadCount or 0,
+		Session = session and {PlaceId = session[1], JobId = session[2]},
+
+		RobloxMetaData = raw_data.RobloxMetaData or {},
+		UserIds = raw_data.UserIds or {},
+		KeyInfo = key_info,
+
+		OnAfterSave = Signal.New(),
+		OnSave = Signal.New(),
+		OnLastSave = Signal.New(),
+		OnSessionEnd = Signal.New(),
+
+		ProfileStore = profile_store,
+		Key = key,
+
+		load_timestamp = os.clock(),
+		is_mock = is_mock,
+		session_token = session_token or "",
+		load_index = raw_data.MetaData and raw_data.MetaData.SessionLoadCount or 0,
+		locked_global_updates = {},
+		received_global_updates = received_global_updates,
+		message_handlers = {},
+		global_updates = global_updates,
+
+	}
+	setmetatable(self, Profile)
+
+	return self
+
+end
+
+function Profile:IsActive()
+	return ActiveSessionCheck[self.session_token] == self
+end
+
+function Profile:Reconcile()
+	ReconcileTable(self.Data, self.ProfileStore.template)
+end
+
+function Profile:EndSession()
+	if self:IsActive() == true then
+		task.spawn(SaveProfileAsync, self, true, nil, "Manual") -- Call save function in a new thread with release_from_session = true
+	end
+end
+
+function Profile:AddUserId(user_id) -- Associates user_id with profile (GDPR compliance)
+
+	if type(user_id) ~= "number" or user_id % 1 ~= 0 then
+		warn(`[{script.Name}]: Invalid UserId argument for :AddUserId() ({tostring(user_id)}); Traceback:\n` .. debug.traceback())
+		return
+	end
+
+	if user_id < 0 and self.is_mock ~= true and DataStoreState == "Access" then
+		return -- Avoid giving real Roblox APIs negative UserId's
+	end
+
+	if table.find(self.UserIds, user_id) == nil then
+		table.insert(self.UserIds, user_id)
+	end
+
+end
+
+function Profile:RemoveUserId(user_id) -- Unassociates user_id with profile (safe function)
+
+	if type(user_id) ~= "number" or user_id % 1 ~= 0 then
+		warn(`[{script.Name}]: Invalid UserId argument for :RemoveUserId() ({tostring(user_id)}); Traceback:\n` .. debug.traceback())
+		return
+	end
+
+	local index = table.find(self.UserIds, user_id)
+
+	if index ~= nil then
+		table.remove(self.UserIds, index)
+	end
+
+end
+
+function Profile:SetAsync() -- Saves the profile to the DataStore and removes the session lock
+
+	if self.view_mode ~= true then
+		error(`[{script.Name}]: :SetAsync() can only be used in view mode`)
+	end
+
+	SaveProfileAsync(self, nil, true)
+
+end
+
+function Profile:MessageHandler(fn)
+
+	if type(fn) ~= "function" then
+		error(`[{script.Name}]: fn argument is not a function`)
+	end
+
+	if self.view_mode ~= true and self:IsActive() ~= true then
+		return -- Don't process messages if the profile session was ended
+	end
+
+	local locked_updates = self.locked_global_updates
+	table.insert(self.message_handlers, fn)
+
+	for _, update in ipairs(self.global_updates) do
+
+		local index = update[1]
+		local update_data = update[#update] -- Backwards compatibility with ProfileService
+
+		if locked_updates[index] ~= true then
+
+			local processed_callback = function()
+				locked_updates[index] = true
+			end
+
+			local send_update_data = DeepCopyTable(update_data)
+
+			task.spawn(fn, send_update_data, processed_callback)
+
+		end
+
+	end
+
+end
+
+function Profile:Save()
+
+	if self.view_mode == true then
+		error(`[{script.Name}]: Can't save profile in view mode; Should you be calling :SetAsync() instead?`)
+	end
+
+	if self:IsActive() == false then
+		warn(`[{script.Name}]: Attempted saving an inactive profile (STORE:{self.ProfileStore.Name}; KEY:{self.Key});`
+			.. ` Traceback:\n` .. debug.traceback())
+		return
+	end
+
+	-- Move the profile right behind the auto save index to delay the next auto save for it:
+	RemoveProfileFromAutoSave(self)
+	AddProfileToAutoSave(self)
+
+	-- Perform save in new thread:
+	task.spawn(SaveProfileAsync, self)
+
+end
+
+local ProfileStore: ProfileStoreModule = {
+
+	IsClosing = false,
+	IsCriticalState = false,
+	OnError = OnError, -- (message, store_name, profile_key)
+	OnOverwrite = OnOverwrite, -- (store_name, profile_key)
+	OnCriticalToggle = Signal.New(), -- (is_critical)
+	DataStoreState = "NotReady", -- ("NotReady", "NoInternet", "NoAccess", "Access")
+
+}
+ProfileStore.__index = ProfileStore
+
+function ProfileStore.SetConstant(name, value)
+
+	if type(value) ~= "number" then
+		error(`[{script.Name}]: Invalid value type`)
+	end
+
+	if name == "AUTO_SAVE_PERIOD" then
+		AUTO_SAVE_PERIOD = value
+	elseif name == "LOAD_REPEAT_PERIOD" then
+		LOAD_REPEAT_PERIOD = value
+	elseif name == "FIRST_LOAD_REPEAT" then
+		FIRST_LOAD_REPEAT = value
+	elseif name == "SESSION_STEAL" then
+		SESSION_STEAL = value
+	elseif name == "ASSUME_DEAD" then
+		ASSUME_DEAD = value
+	elseif name == "START_SESSION_TIMEOUT" then
+		START_SESSION_TIMEOUT = value
+	elseif name == "CRITICAL_STATE_ERROR_COUNT" then
+		CRITICAL_STATE_ERROR_COUNT = value
+	elseif name == "CRITICAL_STATE_ERROR_EXPIRE" then
+		CRITICAL_STATE_ERROR_EXPIRE = value
+	elseif name == "CRITICAL_STATE_EXPIRE" then
+		CRITICAL_STATE_EXPIRE = value
+	elseif name == "MAX_MESSAGE_QUEUE" then
+		MAX_MESSAGE_QUEUE = value
+	else
+		error(`[{script.Name}]: Invalid constant name was provided`)
+	end
+
+end
+
+function ProfileStore.Test()
+	return {
+		ActiveSessionCheck = ActiveSessionCheck,
+		AutoSaveList = AutoSaveList,
+		ActiveProfileLoadJobs = ActiveProfileLoadJobs,
+		ActiveProfileSaveJobs = ActiveProfileSaveJobs,
+		MockStore = MockStore,
+		UserMockStore = UserMockStore,
+		UpdateQueue = UpdateQueue,
+	}
+end
+
+function ProfileStore.New(store_name, template)
+
+	template = template or {}
+
+	if type(store_name) ~= "string" then
+		error(`[{script.Name}]: Invalid or missing "store_name"`)
+	elseif string.len(store_name) == 0 then
+		error(`[{script.Name}]: store_name cannot be an empty string`)
+	elseif string.len(store_name) > 50 then
+		error(`[{script.Name}]: store_name is too long`)
+	end
+
+	if type(template) ~= "table" then
+		error(`[{script.Name}]: Invalid template argument`)
+	end
+
+	local self
+	self = {
+
+		Mock = {
+
+			Name = store_name,
+
+			StartSessionAsync = function(_, profile_key)
+				MockFlag = true
+				return self:StartSessionAsync(profile_key)
+			end,
+			MessageAsync = function(_, profile_key, message)
+				MockFlag = true
+				return self:MessageAsync(profile_key, message)
+			end,
+			GetAsync = function(_, profile_key, version)
+				MockFlag = true
+				return self:GetAsync(profile_key, version)
+			end,
+			VersionQuery = function(_, profile_key, sort_direction, min_date, max_date)
+				MockFlag = true
+				return self:VersionQuery(profile_key, sort_direction, min_date, max_date)
+			end,
+			RemoveAsync = function(_, profile_key)
+				MockFlag = true
+				return self:RemoveAsync(profile_key)
+			end
+		},
+
+		Name = store_name,
+
+		template = template,
+		data_store = nil,
+		load_jobs = {},
+		mock_load_jobs = {},
+		is_ready = true,
+
+	}
+	setmetatable(self, ProfileStore)
+
+	local options = Instance.new("DataStoreOptions")
+	options:SetExperimentalFeatures({v2 = true})
+
+	if DataStoreState == "NotReady" then
+
+		-- The module is not sure whether DataStores are accessible yet:
+
+		self.is_ready = false
+
+		task.spawn(function()
+
+			repeat task.wait() until DataStoreState ~= "NotReady"
+
+			if DataStoreState == "Access" then
+				self.data_store = DataStoreService:GetDataStore(store_name, nil, options)
+			end
+
+			self.is_ready = true
+
+		end)
+
+	elseif DataStoreState == "Access" then
+
+		self.data_store = DataStoreService:GetDataStore(store_name, nil, options)
+
+	end
+
+	return self
+
+end
+
+function ProfileStore:StartSessionAsync(profile_key, params)
+
+	local is_mock = ReadMockFlag()
+
+	if type(profile_key) ~= "string" then
+		error(`[{script.Name}]: profile_key must be a string`)
+	elseif string.len(profile_key) == 0 then
+		error(`[{script.Name}]: Invalid profile_key`)
+	elseif string.len(profile_key) > 50 then
+		error(`[{script.Name}]: profile_key is too long`)
+	end
+
+	if params ~= nil and type(params) ~= "table" then
+		error(`[{script.Name}]: Invalid params`)
+	end
+
+	params = params or {}
+
+	if ProfileStore.IsClosing == true then
+		return nil
+	end
+
+	WaitForStoreReady(self)
+
+	local session_token = SessionToken(self.Name, profile_key, is_mock)
+
+	if ActiveSessionCheck[session_token] ~= nil then
+		error(`[{script.Name}]: Profile (STORE:{self.Name}; KEY:{profile_key}) is already loaded in this session`)
+	end
+
+	ActiveProfileLoadJobs = ActiveProfileLoadJobs + 1
+
+	local is_user_cancel = false
+
+	local function cancel_condition()
+		if is_user_cancel == false then
+			if params.Cancel ~= nil then
+				is_user_cancel = params.Cancel() == true
+			end
+			return is_user_cancel
+		end
+		return true
+	end
+
+	local user_steal = params.Steal == true
+
+	local force_load_steps = 0 -- Session conflict handling values
+	local request_force_load = true
+	local steal_session = false
+
+	local start = os.clock()
+	local exp_backoff = 1
+
+	while ProfileStore.IsClosing == false and cancel_condition() == false do
+
+		-- Load profile:
+
+		-- SPECIAL CASE - If StartSessionAsync is called for the same key again before another StartSessionAsync finishes,
+		-- grab the DataStore return for the new call. The early call will return nil. This is supposed to retain
+		-- expected and efficient behaviour in cases where a player would quickly rejoin the same server.
+
+		LoadIndex += 1
+		local load_id = LoadIndex
+		local profile_load_jobs = is_mock == true and self.mock_load_jobs or self.load_jobs
+		local profile_load_job = profile_load_jobs[profile_key] -- {load_id, {loaded_data, key_info} or nil}
+
+		local loaded_data, key_info
+		local unique_session_id = HttpService:GenerateGUID(false)
+
+		if profile_load_job ~= nil then
+
+			profile_load_job[1] = load_id -- Steal load job
+			while profile_load_job[2] == nil do -- Wait for job to finish
+				task.wait()
+			end
+			if profile_load_job[1] == load_id then -- Load job hasn't been double-stolen
+				loaded_data, key_info = table.unpack(profile_load_job[2])
+				profile_load_jobs[profile_key] = nil
+			else
+				ActiveProfileLoadJobs = ActiveProfileLoadJobs - 1
+				return nil
+			end
+
+		else
+
+			profile_load_job = {load_id, nil}
+			profile_load_jobs[profile_key] = profile_load_job
+
+			profile_load_job[2] = table.pack(UpdateAsync(
+				self,
+				profile_key,
+				{
+					ExistingProfileHandle = function(latest_data)
+
+						if ProfileStore.IsClosing == true or cancel_condition() == true then
+							return
+						end
+
+						local active_session = latest_data.MetaData.ActiveSession
+						local force_load_session = latest_data.MetaData.ForceLoadSession
+
+						if active_session == nil then
+							latest_data.MetaData.ActiveSession = {PlaceId, JobId, unique_session_id}
+							latest_data.MetaData.ForceLoadSession = nil
+						elseif type(active_session) == "table" then
+							if IsThisSession(active_session) == false then
+								local last_update = latest_data.MetaData.LastUpdate
+								if last_update ~= nil then
+									if os.time() - last_update > ASSUME_DEAD then
+										latest_data.MetaData.ActiveSession = {PlaceId, JobId, unique_session_id}
+										latest_data.MetaData.ForceLoadSession = nil
+										return
+									end
+								end
+								if steal_session == true or user_steal == true then
+									local force_load_interrupted = if force_load_session ~= nil then not IsThisSession(force_load_session) else true
+									if force_load_interrupted == false or user_steal == true then
+										latest_data.MetaData.ActiveSession = {PlaceId, JobId, unique_session_id}
+										latest_data.MetaData.ForceLoadSession = nil
+									end
+								elseif request_force_load == true then
+									latest_data.MetaData.ForceLoadSession = {PlaceId, JobId}
+								end
+							else
+								latest_data.MetaData.ForceLoadSession = nil
+							end
+						end
+
+					end,
+					MissingProfileHandle = function(latest_data)
+
+						local is_cancel = ProfileStore.IsClosing == true or cancel_condition() == true
+
+						latest_data.Data = DeepCopyTable(self.template)
+						latest_data.MetaData = {
+							ProfileCreateTime = os.time(),
+							SessionLoadCount = 0,
+							ActiveSession = if is_cancel == false then {PlaceId, JobId, unique_session_id} else nil,
+							ForceLoadSession = nil,
+							MetaTags = {}, -- Backwards compatibility with ProfileService
+						}
+
+					end,
+					EditProfile = function(latest_data)
+
+						if ProfileStore.IsClosing == true or cancel_condition() == true then
+							return
+						end
+
+						local active_session = latest_data.MetaData.ActiveSession
+						if active_session ~= nil and IsThisSession(active_session) == true then
+							latest_data.MetaData.SessionLoadCount = latest_data.MetaData.SessionLoadCount + 1
+							latest_data.MetaData.LastUpdate = os.time()
+						end
+
+					end,
+				},
+				is_mock
+				))
+			if profile_load_job[1] == load_id then -- Load job hasn't been stolen
+				loaded_data, key_info = table.unpack(profile_load_job[2])
+				profile_load_jobs[profile_key] = nil
+			else
+				ActiveProfileLoadJobs = ActiveProfileLoadJobs - 1
+				return nil -- Load job stolen
+			end
+		end
+
+		-- Handle load_data:
+
+		if loaded_data ~= nil and key_info ~= nil then
+			local active_session = loaded_data.MetaData.ActiveSession
+			if type(active_session) == "table" then
+
+				if IsThisSession(active_session) == true then
+
+					-- Profile is now taken by this session:
+
+					local profile = Profile.New(loaded_data, key_info, self, profile_key, is_mock, session_token)
+					AddProfileToAutoSave(profile)
+
+					if is_mock ~= true and DataStoreState == "Access" then
+
+						-- Use MessagingService to quickly detect session conflicts and resolve them quickly:
+
+						local last_roblox_message = 0
+
+						profile.roblox_message_subscription = MessagingService:SubscribeAsync("PS_" .. unique_session_id, function(message)
+							if type(message.Data) == "table" and message.Data.LoadCount == profile.SessionLoadCount then
+								-- High reaction rate, based on numPlayers × 10 DataStore budget as of writing
+								if os.clock() - last_roblox_message > 6 then 
+									last_roblox_message = os.clock()
+									if profile:IsActive() == true then
+										if message.Data.EndSession == true then
+											SaveProfileAsync(profile, true, false, "External")
+										else
+											profile:Save()
+										end
+									end
+								end
+							end
+						end)
+
+					end
+
+					if ProfileStore.IsClosing == true or cancel_condition() == true then
+						-- The server has initiated a shutdown by the time this profile was loaded
+						SaveProfileAsync(profile, true) -- Release profile and yield until the DataStore call is finished
+						profile = nil -- Don't return the profile object
+					end
+
+					ActiveProfileLoadJobs = ActiveProfileLoadJobs - 1
+					return profile
+
+				else
+
+					if ProfileStore.IsClosing == true or cancel_condition() == true then
+						ActiveProfileLoadJobs = ActiveProfileLoadJobs - 1
+						return nil
+					end
+
+					-- Profile is taken by some other session:
+
+					local force_load_session = loaded_data.MetaData.ForceLoadSession
+					local force_load_interrupted = if force_load_session ~= nil then not IsThisSession(force_load_session) else true
+
+					if force_load_interrupted == false then
+
+						if request_force_load == false then
+							force_load_steps = force_load_steps + 1
+							if force_load_steps >= math.ceil(SESSION_STEAL / LOAD_REPEAT_PERIOD) then
+								steal_session = true
+							end
+						end
+
+						-- Request the remote server to end its session:
+						if type(active_session[3]) == "string" then
+							local session_load_count = loaded_data.MetaData.SessionLoadCount or 0
+							MessagingService:PublishAsync("PS_" .. active_session[3], {LoadCount = session_load_count, EndSession = true})
+						end
+
+						-- Attempt to load the profile again after a delay
+						local wait_until = os.clock() + if request_force_load == true then FIRST_LOAD_REPEAT else LOAD_REPEAT_PERIOD
+						repeat task.wait() until os.clock() >= wait_until or ProfileStore.IsClosing == true
+
+					else
+						-- Another session tried to load this profile:
+						ActiveProfileLoadJobs = ActiveProfileLoadJobs - 1
+						return nil
+					end
+
+					request_force_load = false -- Only request a force load once
+
+				end
+
+			else
+				ActiveProfileLoadJobs = ActiveProfileLoadJobs - 1
+				return nil -- In this scenario it is likely that this server started shutting down
+			end
+		else
+
+			-- A DataStore call has likely ended in an error:
+
+			local default_timeout = false
+
+			if params.Cancel == nil then
+				default_timeout = os.clock() - start >= START_SESSION_TIMEOUT
+			end
+
+			if default_timeout == true or ProfileStore.IsClosing == true or cancel_condition() == true then
+				ActiveProfileLoadJobs = ActiveProfileLoadJobs - 1
+				return nil
+			end
+
+			task.wait(exp_backoff)  -- Repeat the call shortly
+			exp_backoff = math.min(20, exp_backoff * 2)
+
+		end
+
+	end
+
+	ActiveProfileLoadJobs = ActiveProfileLoadJobs - 1
+	return nil -- Game started shutting down or the request was cancelled - don't return the profile
+
+end
+
+function ProfileStore:MessageAsync(profile_key, message)
+
+	local is_mock = ReadMockFlag()
+
+	if type(profile_key) ~= "string" then
+		error(`[{script.Name}]: profile_key must be a string`)
+	elseif string.len(profile_key) == 0 then
+		error(`[{script.Name}]: Invalid profile_key`)
+	elseif string.len(profile_key) > 50 then
+		error(`[{script.Name}]: profile_key is too long`)
+	end
+
+	if type(message) ~= "table" then
+		error(`[{script.Name}]: message must be a table`)
+	end
+
+	if ProfileStore.IsClosing == true then
+		return false
+	end
+
+	WaitForStoreReady(self)
+
+	local exp_backoff = 1
+
+	while ProfileStore.IsClosing == false do
+
+		-- Updating profile:
+
+		local loaded_data = UpdateAsync(
+			self,
+			profile_key,
+			{
+				ExistingProfileHandle = nil,
+				MissingProfileHandle = nil,
+				EditProfile = function(latest_data)
+
+					local global_updates = latest_data.GlobalUpdates
+					local update_list = global_updates[2]
+					--{
+					--	update_index,
+					--	{
+					--		{update_index, data}, ...
+					--	},
+					--},
+
+					global_updates[1] += 1
+					table.insert(update_list, {global_updates[1], message})
+
+					-- Clearing queue if above limit:
+
+					while #update_list > MAX_MESSAGE_QUEUE do
+						table.remove(update_list, 1)
+					end
+
+				end,
+			},
+			is_mock
+		)
+
+		if loaded_data ~= nil then
+
+			local session_token = SessionToken(self.Name, profile_key, is_mock)
+
+			local profile = ActiveSessionCheck[session_token]
+
+			if profile ~= nil then
+
+				-- The message was sent to a profile that is active in this server:
+				profile:Save()
+
+			else
+
+				local meta_data = loaded_data.MetaData or {}
+				local active_session = meta_data.ActiveSession
+				local session_load_count = meta_data.SessionLoadCount or 0
+
+				if type(active_session) == "table" and type(active_session[3]) == "string" then
+					-- Request the remote server to auto-save sooner and receive the message:
+					MessagingService:PublishAsync("PS_" .. active_session[3], {LoadCount = session_load_count})
+				end
+
+			end
+
+			return true
+
+		else
+
+			task.wait(exp_backoff) -- A DataStore call has likely ended in an error - repeat the call shortly
+			exp_backoff = math.min(20, exp_backoff * 2)
+
+		end
+
+	end
+
+	return false
+
+end
+
+function ProfileStore:GetAsync(profile_key, version)
+
+	local is_mock = ReadMockFlag()
+
+	if type(profile_key) ~= "string" then
+		error(`[{script.Name}]: profile_key must be a string`)
+	elseif string.len(profile_key) == 0 then
+		error(`[{script.Name}]: Invalid profile_key`)
+	elseif string.len(profile_key) > 50 then
+		error(`[{script.Name}]: profile_key is too long`)
+	end
+
+	if ProfileStore.IsClosing == true then
+		return nil
+	end
+
+	WaitForStoreReady(self)
+
+	if version ~= nil and (is_mock or DataStoreState ~= "Access") then
+		return nil -- No version support in mock mode
+	end
+
+	local exp_backoff = 1
+
+	while ProfileStore.IsClosing == false do
+
+		-- Load profile:
+
+		local loaded_data, key_info = UpdateAsync(
+			self,
+			profile_key,
+			{
+				ExistingProfileHandle = nil,
+				MissingProfileHandle = function(latest_data)
+
+					latest_data.Data = DeepCopyTable(self.template)
+					latest_data.MetaData = {
+						ProfileCreateTime = os.time(),
+						SessionLoadCount = 0,
+						ActiveSession = nil,
+						ForceLoadSession = nil,
+						MetaTags = {}, -- Backwards compatibility with ProfileService
+					}
+
+				end,
+				EditProfile = nil,
+			},
+			is_mock,
+			true, -- Use :GetAsync()
+			version -- DataStore key version
+		)
+
+		-- Handle load_data:
+
+		if loaded_data ~= nil then
+
+			if key_info == nil then
+				return nil -- Load was successful, but the key was empty - return no profile object
+			end
+
+			local profile = Profile.New(loaded_data, key_info, self, profile_key, is_mock)
+			profile.view_mode = true
+
+			return profile
+
+		else
+
+			task.wait(exp_backoff) -- A DataStore call has likely ended in an error - repeat the call shortly
+			exp_backoff = math.min(20, exp_backoff * 2)
+
+		end
+
+	end
+
+	return nil -- Game started shutting down - don't return the profile
+
+end
+
+function ProfileStore:RemoveAsync(profile_key)
+
+	local is_mock = ReadMockFlag()
+
+	if type(profile_key) ~= "string" or string.len(profile_key) == 0 then
+		error(`[{script.Name}]: Invalid profile_key`)
+	end
+
+	if ProfileStore.IsClosing == true then
+		return false
+	end
+
+	WaitForStoreReady(self)
+
+	local wipe_status = false
+
+	local next_in_queue = WaitInUpdateQueue(SessionToken(self.Name, profile_key, is_mock))
+
+	if is_mock == true then -- Used when the profile is accessed through ProfileStore.Mock
+
+		local mock_data_store = UserMockStore[self.Name]
+
+		if mock_data_store ~= nil then
+			mock_data_store[profile_key] = nil
+			if next(mock_data_store) == nil then
+				UserMockStore[self.Name] = nil
+			end
+		end
+
+		wipe_status = true
+		task.wait() -- Simulate API call yield
+
+	elseif DataStoreState ~= "Access" then -- Used when API access is disabled
+
+		local mock_data_store = MockStore[self.Name]
+
+		if mock_data_store ~= nil then
+			mock_data_store[profile_key] = nil
+			if next(mock_data_store) == nil then
+				MockStore[self.Name] = nil
+			end
+		end
+
+		wipe_status = true
+		task.wait() -- Simulate API call yield
+
+	else -- Live DataStore
+
+		wipe_status = pcall(function()
+			self.data_store:RemoveAsync(profile_key)
+		end)
+
+	end
+
+	next_in_queue()
+
+	return wipe_status
+
+end
+
+local ProfileVersionQuery = {}
+ProfileVersionQuery.__index = ProfileVersionQuery
+
+function ProfileVersionQuery.New(profile_store, profile_key, sort_direction, min_date, max_date, is_mock)
+
+	local self = {
+		profile_store = profile_store,
+		profile_key = profile_key,
+		sort_direction = sort_direction,
+		min_date = min_date,
+		max_date = max_date,
+
+		query_pages = nil,
+		query_index = 0,
+		query_failure = false,
+
+		is_query_yielded = false,
+		query_queue = {},
+
+		is_mock = is_mock,
+	}
+	setmetatable(self, ProfileVersionQuery)
+
+	return self
+
+end
+
+function MoveVersionQueryQueue(self) -- Hidden ProfileVersionQuery method
+	while #self.query_queue > 0 do
+
+		local queue_entry = table.remove(self.query_queue, 1)
+
+		task.spawn(queue_entry)
+
+		if self.is_query_yielded == true then
+			break
+		end
+
+	end
+end
+
+local VersionQueryNextAsyncStackingFlag = false
+local WarnAboutVersionQueryOnce = false
+
+function ProfileVersionQuery:NextAsync()
+
+	local is_stacking = VersionQueryNextAsyncStackingFlag == true
+	VersionQueryNextAsyncStackingFlag = false
+
+	WaitForStoreReady(self.profile_store)
+
+	if ProfileStore.IsClosing == true then
+		return nil -- Silently fail :NextAsync() requests
+	end
+
+	if self.is_mock == true or DataStoreState ~= "Access" then
+		if IsStudio == true and WarnAboutVersionQueryOnce == false then
+			WarnAboutVersionQueryOnce = true
+			warn(`[{script.Name}]: :VersionQuery() is not supported in mock mode!`)
+		end
+		return nil -- Silently fail :NextAsync() requests
+	end
+
+	local profile
+	local is_finished = false
+
+	local function query_job()
+
+		if self.query_failure == true then
+			is_finished = true
+			return
+		end
+
+		-- First "next" call loads version pages:
+
+		if self.query_pages == nil then
+
+			self.is_query_yielded = true
+
+			task.spawn(function()
+				VersionQueryNextAsyncStackingFlag = true
+				profile = self:NextAsync()
+				is_finished = true
+			end)
+
+			local list_success, error_message = pcall(function()
+				self.query_pages = self.profile_store.data_store:ListVersionsAsync(
+					self.profile_key,
+					self.sort_direction,
+					self.min_date,
+					self.max_date
+				)
+				self.query_index = 0
+			end)
+
+			if list_success == false or self.query_pages == nil then
+				warn(`[{script.Name}]: Version query fail - {tostring(error_message)}`)
+				self.query_failure = true
+			end
+
+			self.is_query_yielded = false
+
+			MoveVersionQueryQueue(self)
+
+			return
+
+		end
+
+		local current_page = self.query_pages:GetCurrentPage()
+		local next_item = current_page[self.query_index + 1]
+
+		-- No more entries:
+
+		if self.query_pages.IsFinished == true and next_item == nil then
+			is_finished = true
+			return
+		end
+
+		-- Load next page when this page is over:
+
+		if next_item == nil then
+
+			self.is_query_yielded = true
+			task.spawn(function()
+				VersionQueryNextAsyncStackingFlag = true
+				profile = self:NextAsync()
+				is_finished = true
+			end)
+
+			local success, error_message = pcall(function()
+				self.query_pages:AdvanceToNextPageAsync()
+				self.query_index = 0
+			end)
+
+			if success == false or #self.query_pages:GetCurrentPage() == 0 then
+				self.query_failure = true
+			end
+
+			self.is_query_yielded = false
+			MoveVersionQueryQueue(self)
+
+			return
+
+		end
+
+		-- Next page item:
+
+		self.query_index += 1
+		profile = self.profile_store:GetAsync(self.profile_key, next_item.Version)
+		is_finished = true
+
+	end
+
+	if self.is_query_yielded == false then
+		query_job()
+	else
+		if is_stacking == true then
+			table.insert(self.query_queue, 1, query_job)
+		else
+			table.insert(self.query_queue, query_job)
+		end
+	end
+
+	while is_finished == false do
+		task.wait()
+	end
+
+	return profile
+
+end
+
+function ProfileStore:VersionQuery(profile_key, sort_direction, min_date, max_date)
+
+	local is_mock = ReadMockFlag()
+
+	if type(profile_key) ~= "string" or string.len(profile_key) == 0 then
+		error(`[{script.Name}]: Invalid profile_key`)
+	end
+
+	-- Type check:
+
+	if sort_direction ~= nil and (typeof(sort_direction) ~= "EnumItem"
+		or sort_direction.EnumType ~= Enum.SortDirection) then
+		error(`[{script.Name}]: Invalid sort_direction ({tostring(sort_direction)})`)
+	end
+
+	if min_date ~= nil and typeof(min_date) ~= "DateTime" and typeof(min_date) ~= "number" then
+		error(`[{script.Name}]: Invalid min_date ({tostring(min_date)})`)
+	end
+
+	if max_date ~= nil and typeof(max_date) ~= "DateTime" and typeof(max_date) ~= "number" then
+		error(`[{script.Name}]: Invalid max_date ({tostring(max_date)})`)
+	end
+
+	min_date = typeof(min_date) == "DateTime" and min_date.UnixTimestampMillis or min_date
+	max_date = typeof(max_date) == "DateTime" and max_date.UnixTimestampMillis or max_date
+
+	return ProfileVersionQuery.New(self, profile_key, sort_direction, min_date, max_date, is_mock)
+
+end
+
+-- DataStore API access check:
+
+if IsStudio == true then
+
+	task.spawn(function()
+
+		local new_state = "NoAccess"
+
+		local status, message = pcall(function()
+			-- This will error if current instance has no Studio API access:
+			DataStoreService:GetDataStore("____PS"):SetAsync("____PS", os.time())
+		end)
+
+		local no_internet_access = status == false and string.find(message, "ConnectFail", 1, true) ~= nil
+
+		if no_internet_access == true then
+			warn(`[{script.Name}]: No internet access - check your network connection`)
+		end
+
+		if status == false and
+			(string.find(message, "403", 1, true) ~= nil or -- Cannot write to DataStore from studio if API access is not enabled
+				string.find(message, "must publish", 1, true) ~= nil or -- Game must be published to access live keys
+				no_internet_access == true) then -- No internet access
+
+			new_state = if no_internet_access == true then "NoInternet" else "NoAccess"
+			print(`[{script.Name}]: Roblox API services unavailable - data will not be saved`)
+		else
+			new_state = "Access"
+			print(`[{script.Name}]: Roblox API services available - data will be saved`)
+		end
+
+		DataStoreState = new_state
+		ProfileStore.DataStoreState = new_state
+
+	end)
+
+else
+
+	DataStoreState = "Access"
+	ProfileStore.DataStoreState = "Access"
+
+end
+
+-- Update loop:
+
+RunService.Heartbeat:Connect(function()
+
+	-- Auto saving:
+
+	local auto_save_list_length = #AutoSaveList
+	if auto_save_list_length > 0 then
+		local auto_save_index_speed = AUTO_SAVE_PERIOD / auto_save_list_length
+		local os_clock = os.clock()
+		while os_clock - LastAutoSave > auto_save_index_speed do
+			LastAutoSave = LastAutoSave + auto_save_index_speed
+			local profile = AutoSaveList[AutoSaveIndex]
+			if os_clock - profile.load_timestamp < AUTO_SAVE_PERIOD / 2 then
+				-- This profile is freshly loaded - auto saving immediately is not necessary:
+				profile = nil
+				for _ = 1, auto_save_list_length - 1 do
+					-- Move auto save index to the right:
+					AutoSaveIndex = AutoSaveIndex + 1
+					if AutoSaveIndex > auto_save_list_length then
+						AutoSaveIndex = 1
+					end
+					profile = AutoSaveList[AutoSaveIndex]
+					if os_clock - profile.load_timestamp >= AUTO_SAVE_PERIOD / 2 then
+						break
+					else
+						profile = nil
+					end
+				end
+			end
+			-- Move auto save index to the right:
+			AutoSaveIndex = AutoSaveIndex + 1
+			if AutoSaveIndex > auto_save_list_length then
+				AutoSaveIndex = 1
+			end
+			-- Perform save call:
+			if profile ~= nil then
+				task.spawn(SaveProfileAsync, profile) -- Auto save profile in new thread
+			end
+		end
+	end
+
+	-- Critical state handling:
+
+	if ProfileStore.IsCriticalState == false then
+		if #IssueQueue >= CRITICAL_STATE_ERROR_COUNT then
+			ProfileStore.IsCriticalState = true
+			ProfileStore.OnCriticalToggle:Fire(true)
+			CriticalStateStart = os.clock()
+			warn(`[{script.Name}]: Entered critical state`)
+		end
+	else
+		if #IssueQueue >= CRITICAL_STATE_ERROR_COUNT then
+			CriticalStateStart = os.clock()
+		elseif os.clock() - CriticalStateStart > CRITICAL_STATE_EXPIRE then
+			ProfileStore.IsCriticalState = false
+			ProfileStore.OnCriticalToggle:Fire(false)
+			warn(`[{script.Name}]: Critical state ended`)
+		end
+	end
+
+	-- Issue queue:
+
+	while true do
+		local issue_time = IssueQueue[1]
+		if issue_time == nil then
+			break
+		elseif os.clock() - issue_time > CRITICAL_STATE_ERROR_EXPIRE then
+			table.remove(IssueQueue, 1)
+		else
+			break
+		end
+	end
+
+end)
+
+-- Release all loaded profiles when the server is shutting down:
+
+task.spawn(function()
+
+	while DataStoreState == "NotReady" do
+		task.wait()
+	end
+
+	if DataStoreState ~= "Access" then
+
+		game:BindToClose(function()
+			ProfileStore.IsClosing = true
+			task.wait() -- Mock shutdown delay
+		end)
+
+		return -- Don't wait for profiles to properly save in mock mode so studio could end the simulation faster
+
+	end
+
+	game:BindToClose(function()
+
+		ProfileStore.IsClosing = true
+
+		-- Release all active profiles:
+		-- (Clone AutoSaveList to a new table because AutoSaveList changes when profiles are released)
+
+		local on_close_save_job_count = 0
+		local active_profiles = {}
+		for index, profile in ipairs(AutoSaveList) do
+			active_profiles[index] = profile
+		end
+
+		-- Release the profiles; Releasing profiles can trigger listeners that release other profiles, so check active state:
+		for _, profile in ipairs(active_profiles) do
+			if profile:IsActive() == true then
+				on_close_save_job_count = on_close_save_job_count + 1
+				task.spawn(function() -- Save profile on new thread
+					SaveProfileAsync(profile, true, nil, "Shutdown")
+					on_close_save_job_count = on_close_save_job_count - 1
+				end)
+			end
+		end
+
+		-- Yield until all active profile jobs are finished:
+		while on_close_save_job_count > 0 or ActiveProfileLoadJobs > 0 or ActiveProfileSaveJobs > 0 do
+			task.wait()
+		end
+
+		return -- We're done!
+
+	end)
+
+end)
+
+return ProfileStore]]></ProtectedString>
+							<int64 name="SourceAssetId">-1</int64>
+							<BinaryString name="Tags"></BinaryString>
+							<UniqueId name="UniqueId">1e89c5cace45089c08a4c88c000025b7</UniqueId>
+						</Properties>
+					</Item>
+				</Item>
+			</Item>
+			<Item class="Script" referent="RBX62eca86fb18846758e6fa0265c0603bb">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
+					<bool name="Disabled">false</bool>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Bootstrap</string>
+					<token name="RunContext">0</token>
+					<string name="ScriptGuid">{19012327-c611-409e-8a77-3a91a608784e}</string>
+					<ProtectedString name="Source"><![CDATA[local ReplicatedStorage = game:GetService("ReplicatedStorage")
 print("Hello world, from server!")
 
 -- Require Packages
-local Packages = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Packages"))]]></ProtectedString>
-				<int64 name="SourceAssetId">-1</int64>
-				<BinaryString name="Tags"></BinaryString>
-				<UniqueId name="UniqueId">774a92fe3f3077d308a27d4200000394</UniqueId>
-			</Properties>
+local Packages = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Packages"))
+
+-- Require Core
+local PlayerHandler = require('./Core/PlayerHandler')
+PlayerHandler:Init()
+
+-- Require Services
+local DataInterface = require('./Services/DataInterface')
+local CurrencyService = require('./Services/Currency')]]></ProtectedString>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<UniqueId name="UniqueId">1e89c5cace45089c08a4c88c000025bc</UniqueId>
+				</Properties>
+			</Item>
+			<Item class="Folder" referent="RBXb994d59539544b869b42da41c9e5ae0e">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<string name="Name">Core</string>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<UniqueId name="UniqueId">1e89c5cace45089c08a4c88c000025c7</UniqueId>
+				</Properties>
+				<Item class="ModuleScript" referent="RBX237679dd1db84a028c02f9a4cbbbf24b">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+						<bool name="DefinesCapabilities">false</bool>
+						<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">PlayerHandler</string>
+						<string name="ScriptGuid">{be01759f-e3cf-4c9d-a82e-2eed6f62b177}</string>
+						<ProtectedString name="Source"><![CDATA[--!strict
+local Players = game:GetService("Players")
+
+-- // Services
+local DataInterface = require('../Services/DataInterface')
+
+local PlayerHandler = {}
+
+-- // Private Functions
+local function onPlayerAdded(p: Player)
+    -- Logic to handle when a player joins the game
+    print(p.Name .. " has joined the game.")
+    
+    -- Initialise player data or any other setup
+    local profile = DataInterface:LoadPlayerProfile(p)
+    if not (profile) then
+        warn("Failed to load profile for player: " .. p.Name)
+        return
+    end
+end
+
+local function onPlayerRemove(p: Player)
+    print(p.Name .. " has left the game.")
+
+    -- Cleanup player data
+    DataInterface:ReleasePlayerProfile(p)
+end
+
+
+function PlayerHandler:Init()
+    -- Initialization logic for player handler
+    print("PlayerHandler initialized")
+
+    for _, p in Players:GetPlayers() do
+        onPlayerAdded(p)
+    end
+    Players.PlayerAdded:Connect(onPlayerAdded)
+    Players.PlayerRemoving:Connect(onPlayerRemove)
+end
+
+
+return PlayerHandler]]></ProtectedString>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+						<UniqueId name="UniqueId">1e89c5cace45089c08a4c88c000025cd</UniqueId>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Folder" referent="RBX4503ab115d924caa8b56d8745c65641d">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<string name="Name">Services</string>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<UniqueId name="UniqueId">1e89c5cace45089c08a4c88c000025ca</UniqueId>
+				</Properties>
+				<Item class="ModuleScript" referent="RBX3128980450d6471694d0635ff51d4a5f">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+						<bool name="DefinesCapabilities">false</bool>
+						<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">DataInterface</string>
+						<string name="ScriptGuid">{d98551d2-53c0-4cb2-b10c-0b08b1cafd70}</string>
+						<ProtectedString name="Source"><![CDATA[--!strict
+-- // Services
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local ServerScriptService = game:GetService("ServerScriptService")
+
+-- // Packages
+local Packages = require('../Packages')
+local DataManager = Packages.DataManager
+
+local Config = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Config"))
+
+local DataInterface = {}
+
+-- // Public API
+function DataInterface:GetPlayerProfile(p: Player, yield: boolean?): Config.PlayerProfile?
+    -- Check if profile exists
+    local profile = DataManager:GetPlayerProfile(p, yield)
+    if not profile then
+        return nil
+    end
+
+    return DataManager.DeepClone(profile)
+end
+
+function DataInterface:LoadPlayerProfile(p: Player): Config.PlayerProfile?
+    -- Load the player profile
+    local profile = DataManager:LoadPlayerProfile(p)
+    if not profile then
+        warn("Failed to load profile for player: " .. p.Name)
+        return nil
+    end
+
+    return profile
+end
+
+function DataInterface:ReleasePlayerProfile(p: Player): boolean
+    -- Release the profile to free up resources
+    return DataManager:ReleasePlayerProfile(p)
+end
+
+function DataInterface:ReconcileProfileSection(p: Player, sectionType: "Info" | "Data", sectionName: string, template: {})
+    -- Reconcile a new section into existing data
+    return DataManager:ReconcileProfileSection(p, sectionType, sectionName, template)
+end
+
+return DataInterface
+]]></ProtectedString>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+						<UniqueId name="UniqueId">1e89c5cace45089c08a4c88c000025cb</UniqueId>
+					</Properties>
+				</Item>
+				<Item class="ModuleScript" referent="RBXa86217055e8b4b95be20b645cf56efc6">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+						<bool name="DefinesCapabilities">false</bool>
+						<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">Currency</string>
+						<string name="ScriptGuid">{bc835799-438b-4a65-9a3a-336225c785e5}</string>
+						<ProtectedString name="Source"><![CDATA[--!strict
+-- // Services
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Players = game:GetService("Players")
+local DataInterface = require('./DataInterface')
+
+-- // Config
+local Config = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Config"))
+
+-- // Packages
+local SharedPackages = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Packages"))
+local Remotes = SharedPackages.Remotes
+
+-- // Remotes
+local PromoteProductRemote = Remotes:GetRemote("RemoteEvent", "PromoteProduct")
+
+-- // Monetisation
+local ProductDefinitions = require('../Monetisation/ProductDefinitions')
+
+-- // Components
+local CollectableCurrency = require('@self/CollectableCurrency')
+
+local CurrencyService = {}
+
+-- // Public API
+function CurrencyService:CanAfford(p : Player, currencyID : string, amount : number, promptPurchase : boolean?)
+	-- Get player data
+	local profile = DataInterface:GetPlayerProfile(p)
+	if not (profile) then
+		warn("Currency Error: Couldn't load profile for", p)
+		return
+	end
+
+	-- Check that the currency ID is valid
+	local currencyInfo = Config.CURRENCY:GetCurrencyFromID(currencyID)
+	if not (currencyInfo) then return end
+	
+	local balance = currencyInfo.Get(profile, currencyID)
+	if not (balance and typeof(balance) == "number") then
+		warn("Currency Error: Couldn't get data for currency", currencyID)
+		return false
+	end
+	
+	if (balance < amount) then
+		-- Prompt purchase
+		local amountRequired = amount - balance
+		local stringID = ProductDefinitions:GetSmallestRequiredCurrencyPack(currencyID, amountRequired)
+		if (stringID) then
+			PromoteProductRemote:FireClient(p, "DevProduct", stringID)
+		end
+		return false
+	end
+	return true
+end
+
+function CurrencyService:GiveCurrency(p : Player, currencyID : string, amount : number, useMultipliers : boolean, showDrops : boolean)
+	-- Get player data
+	local profile = DataInterface:GetPlayerProfile(p)
+	if not (profile) then
+		warn("Currency Error: Couldn't load profile for", p)
+		return
+	end
+	
+	-- Check that the currency ID is valid
+	local currencyInfo = Config.CURRENCY:GetCurrencyFromID(currencyID)
+	if not (currencyInfo) then return end
+	
+	-- Make sure amount is positive
+	amount = math.clamp(amount, 0, math.huge)
+	
+	-- Apply multipliers if necessary
+	if (useMultipliers) then
+		local multiplier = CurrencyService:GetCurrencyMultiplier(p, currencyID) or 1.0
+		amount *= multiplier
+	end
+	
+	currencyInfo.Update(profile, math.ceil(amount))
+	
+	-- Replicate to leaderstats
+	if (currencyInfo.UseLeaderstats) then
+		local leaderstats = p:FindFirstChild("leaderstats")
+		if (leaderstats) then
+			local val = leaderstats:FindFirstChild(currencyID)
+			if (val) then
+				val.Value = currencyInfo.Get(profile, currencyID)
+			else
+				warn("Currency Error: Couldn't find leaderstats value for", currencyID)
+			end
+		end
+	end
+	
+	-- If should drop currency, drop it
+	if (showDrops) then
+		task.spawn(function()
+			CollectableCurrency:DropCurrency(p, currencyID, math.ceil(amount))
+		end)
+	end
+	
+	-- print("Gave", p, amount, currencyID)
+	return true -- Success
+end
+
+function CurrencyService:SpendCurrency(p : Player, currencyID : string, amount : number)
+	-- Get player data
+	local profile = DataInterface:GetPlayerProfile(p)
+	if not (profile) then
+		warn("Currency Error: Couldn't load profile for", p)
+		return
+	end
+
+	-- Check that the currency ID is valid
+	local currencyInfo = Config.CURRENCY:GetCurrencyFromID(currencyID)
+	if not (currencyInfo) then return end
+	
+	-- Check that they can afford this amount
+	local canAfford = CurrencyService:CanAfford(p, currencyID, amount)
+	if not (canAfford) then
+		warn("Currency Error:", p, "can't afford to spend", amount, currencyID)
+		return false
+	end
+	
+	-- Make sure amount is positive
+	amount = math.clamp(amount, 0, math.huge)
+
+	currencyInfo.Update(profile, -amount)
+	
+	-- Replicate to leaderstats
+	if (currencyInfo.UseLeaderstats) then
+		local leaderstats = p:FindFirstChild("leaderstats")
+		if (leaderstats) then
+			local val = leaderstats:FindFirstChild(currencyID)
+			if (val) then
+				val.Value = currencyInfo.Get(profile, currencyID)
+			else
+				warn("Currency Error: Couldn't find leaderstats value for", currencyID)
+			end
+		end
+	end
+	
+	print("Took", amount, currencyID, "from", p)
+	return true -- Success
+end
+
+-- // Multipliers
+function CurrencyService:GetCurrencyMultiplier(p : Player, currencyID : string): number
+	-- Get player data and info
+	local profile = DataInterface:GetPlayerProfile(p, true)
+	if not (profile) then
+		return 1.0
+	end
+
+	local currencyInfo = Config.CURRENCY:GetCurrencyFromID(currencyID)
+	if not currencyInfo then
+		warn("No currency info found for ID:", currencyID)
+		return 1.0
+	end
+
+	-- Start at base x1 multiplier
+	local totalBonus : number = 0.0
+
+	-- Friend Boost (e.g. +0.05 per friend)
+	if currencyInfo.UseFriendBoost then
+		for _, otherPlayer in Players:GetPlayers() do
+			if p ~= otherPlayer and p:IsFriendsWith(otherPlayer.UserId) then
+				totalBonus += Config.FRIEND_BOOST
+			end
+		end
+	end
+
+	-- Gamepasses and temporary boosts (playtime, dev products, etc.)
+	if profile.Info.Multipliers then
+		for _, multiplierInfo in profile.Info.Multipliers do
+			if multiplierInfo.CurrencyID == currencyID then
+				totalBonus += (multiplierInfo.Value - 1)
+			end
+		end
+	end
+
+	-- Rebirths
+	if profile.Data.Stats.Rebirths and profile.Data.Stats.Rebirths > 1 then
+		local rebirthMult = currencyInfo.RebirthMultiplier or 1.25
+		totalBonus += (profile.Data.Stats.Rebirths - 1) * rebirthMult
+	end
+
+	-- Final multiplier is always at least 1.0
+	return math.max(1.0, 1.0 + totalBonus)
+end
+
+function CurrencyService:SetMultiplier(p: Player, multiplierID: string, currencyID: string, multiplier: number, duration: number?)
+	-- Get player data
+	local profile = DataInterface:GetPlayerProfile(p)
+	if not profile then
+		warn("Currency Error: Couldn't load profile for", p)
+		return false
+	end
+
+	-- Check that the currency ID is valid
+	local currencyInfo = Config.CURRENCY:GetCurrencyFromID(currencyID)
+	if not currencyInfo then
+		warn("Currency Error: Invalid currency ID", currencyID)
+		return false
+	end
+
+	-- Ensure the multipliers table exists
+	profile.Info.Multipliers = profile.Info.Multipliers or {}
+
+	local currentTime = os.time()
+	local endTime = (duration and (currentTime + duration)) or nil
+
+	-- Apply or overwrite multiplier
+	profile.Info.Multipliers[multiplierID] = {
+		EndTime = endTime;
+		Value = multiplier;
+		IsPermanent = (duration == nil);
+		LastUpdate = currentTime;
+		CurrencyID = currencyID;
+	}
+
+	print(`[SERVER | Currency] Set multiplier '{multiplierID}' for {p.Name} x{multiplier} for {duration or "∞"} seconds`)
+
+	-- If temporary, remove after duration
+	if duration then
+		task.delay(duration, function()
+			local info = profile.Info.Multipliers[multiplierID]
+			if info and info.LastUpdate == currentTime then
+				profile.Info.Multipliers[multiplierID] = nil
+				print(`[SERVER | Currency] Removed multiplier '{multiplierID}' from {p.Name} after {duration} seconds`)
+			end
+		end)
+	end
+
+	return true
+end
+
+local function onPlayerAdded(p : Player)
+	-- Give them leaderstats
+	local leaderstats = p:FindFirstChild("leaderstats")
+	if not (leaderstats) then
+		leaderstats = Instance.new("Folder", p)
+		leaderstats.Name = "leaderstats"
+	end
+	
+	local profile = DataInterface:GetPlayerProfile(p, true)
+    if not (profile) then
+        warn("Currency Error: Couldn't load profile for", p)
+        return
+    end
+
+    local statsTemplate = {}
+	for currencyID, currencyInfo in Config.CURRENCY_TYPES do
+        statsTemplate[currencyID] = 0
+		if not (profile and profile.Data.Stats[currencyID]) then
+			profile.Data.Stats[currencyID] = 0
+		end
+		if (currencyInfo.UseLeaderstats) then
+			local val = Instance.new("NumberValue")
+			val.Name = currencyInfo.Name
+			val.Value = currencyInfo.Get(profile, currencyID) or 0
+			val.Parent = leaderstats
+		end
+	end
+
+    -- Replicate multipliers and stats to the client
+    DataInterface:ReconcileProfileSection(p, "Info", "Multipliers", {})
+    DataInterface:ReconcileProfileSection(p, "Data", "Stats", statsTemplate)
+end
+
+local function initialise()
+	for _, p in Players:GetPlayers() do
+		onPlayerAdded(p)
+	end
+	Players.PlayerAdded:Connect(onPlayerAdded)
+end
+
+-- Initialisation
+initialise()
+
+return CurrencyService]]></ProtectedString>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+						<UniqueId name="UniqueId">7a5be8c3b493ddb808a5137600001707</UniqueId>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Script" referent="RBXc605d1cbdfdc49c59731401a91ef93db">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
+					<bool name="Disabled">false</bool>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Monetisation</string>
+					<token name="RunContext">0</token>
+					<string name="ScriptGuid">{dba6cce0-19ed-451c-8297-1934294fba6a}</string>
+					<ProtectedString name="Source"><![CDATA[--!strict
+-- // Services
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local MarketPlaceService = game:GetService("MarketplaceService")
+local ServerStorage = game:GetService("ServerStorage")
+local DataStoreService = game:GetService("DataStoreService")
+local Players = game:GetService("Players")
+
+-- // Data
+local ProductDefinitions = require('./ProductDefinitions')
+local ProductHandlers = require('./ProductHandlers')
+
+-- // Packages
+local SharedPackages = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Packages"))
+local Remotes = SharedPackages.Remotes
+
+-- // Remotes
+local GetMonetisationData = Remotes:GetRemote("RemoteFunction", "GetMonetisationData")
+
+-- // Datastores
+local PurchaseHistoryStore = DataStoreService:GetDataStore("PreviousPurchases")
+
+-- // Gamepasses
+local function handleGamepass(p: Player, stringID: string): boolean
+	local gamepassInfo = ProductDefinitions.Gamepasses[stringID]
+	if not gamepassInfo then
+		warn("No Gamepass found with name:", stringID)
+		return false
+	end
+
+	if gamepassInfo.HandledByTycoon then
+		return true
+	end
+
+	local handler = ProductHandlers.GetHandler("Gamepasses", gamepassInfo.ID)
+	if not handler then
+		warn("No handler defined for Gamepass:", stringID)
+		return false
+	end
+
+	local success, err = pcall(function()
+		handler(p)
+	end)
+
+	if not success then
+		warn("Gamepass Handler Error:", err, "Gamepass Name:", stringID, "Player:", p)
+		return false
+	end
+
+	print("Handled", stringID, "gamepass for", p)
+	return true
+end
+
+MarketPlaceService.PromptGamePassPurchaseFinished:Connect(function(p, gamepassId, wasPurchased)
+	if (wasPurchased) then
+		-- Get the gamepass info
+		local stringID, gamepassInfo = ProductDefinitions:GetGamepassFromNumericID(gamepassId)
+		if not (gamepassInfo) then return end
+
+		if (wasPurchased) then
+			handleGamepass(p, stringID)
+		end
+	end
+end)
+
+-- // Dev products
+local function processReceipt(receiptInfo)
+	local playerkey = receiptInfo.PlayerId .. "_" .. receiptInfo.PurchaseId
+	local purchased = false
+
+	-- Check if already purchased
+	local success, errorMessage = pcall(function()
+		purchased = PurchaseHistoryStore:GetAsync(playerkey)
+	end)
+
+	if (success and purchased) then
+		return Enum.ProductPurchaseDecision.PurchaseGranted
+	elseif not success then
+		warn("Datastore error:", errorMessage)
+		return Enum.ProductPurchaseDecision.NotProcessedYet
+	end
+
+	-- Process purchase logic (outside of UpdateAsync!)
+	local player = Players:GetPlayerByUserId(receiptInfo.PlayerId)
+	if not player then
+		return Enum.ProductPurchaseDecision.NotProcessedYet -- will retry next session
+	end
+
+	local stringID, productInfo = ProductDefinitions:GetProductFromNumericID(receiptInfo.ProductId)
+	local handler = ProductHandlers.GetHandler("DevProducts", receiptInfo.ProductId)
+
+	if not handler then
+		warn(receiptInfo.ProductId, "/", stringID, "has no handler function in ProductHandlers!")
+		return Enum.ProductPurchaseDecision.NotProcessedYet
+	end
+
+	local handlerSuccess, handlerError = pcall(function()
+		handler(player)
+	end)
+
+	if not handlerSuccess then
+		warn("Failed to process product purchase:", handlerError)
+		return Enum.ProductPurchaseDecision.NotProcessedYet
+	end
+
+	-- Safely record the purchase
+	local recordSuccess, recordError = pcall(function()
+		PurchaseHistoryStore:UpdateAsync(playerkey, function()
+			return true -- only returning static value (no yields here!)
+		end)
+	end)
+
+	if not recordSuccess then
+		warn("Failed to record purchase:", recordError)
+		return Enum.ProductPurchaseDecision.NotProcessedYet
+	end
+
+	return Enum.ProductPurchaseDecision.PurchaseGranted
+end
+
+local function onCharacterAdded(p : Player, c : Model)
+	-- Handle gamepasses
+	for stringID, info in ProductDefinitions.Gamepasses do
+		if (MarketPlaceService:UserOwnsGamePassAsync(p.UserId, info.ID)) then
+			handleGamepass(p, stringID)
+		end
+	end
+end
+
+local function onPlayerAdded(p : Player)
+	local char = p.Character or p.CharacterAdded:Wait()
+	onCharacterAdded(p, char)
+	
+	p.CharacterAdded:Connect(function(c : Model)
+		onCharacterAdded(p, c)
+	end)
+end
+
+local function initialise()
+	GetMonetisationData.OnServerInvoke = function(p : Player)
+		return ProductDefinitions
+	end
+	
+	for _, p in Players:GetPlayers() do
+		onPlayerAdded(p)
+	end
+	Players.PlayerAdded:Connect(onPlayerAdded)
+end
+
+-- Initialisation
+initialise()
+
+MarketPlaceService.ProcessReceipt = processReceipt]]></ProtectedString>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<UniqueId name="UniqueId">7a5be8c3b493ddb808a513760000187e</UniqueId>
+				</Properties>
+				<Item class="ModuleScript" referent="RBX0a43568893224d688db7de75d72e5ddc">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+						<bool name="DefinesCapabilities">false</bool>
+						<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">ProductDefinitions</string>
+						<string name="ScriptGuid">{9a3864c0-35b9-4d56-9fb6-384d182a6f7f}</string>
+						<ProtectedString name="Source"><![CDATA[--!strict
+-- // Services
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local MarketPlaceService = game:GetService("MarketplaceService")
+local RunService = game:GetService("RunService")
+
+-- // Remotes
+local Remotes = ReplicatedStorage:WaitForChild("Remotes")
+local PromptSaleRemote : RemoteEvent
+
+-- // Type Defs
+type DevProduct = {
+    Category: string,
+    ID: number,
+    DisplayName: string,
+    CurrencyID: string?,
+    Amount: number?,
+    Image: string?,
+    Description: string?,
+    PriceInRobux: number?,
+}
+
+type Gamepass = {
+    ID: number,
+    DisplayName: string,
+    Image: string?,
+}
+
+local ProductDefinitions = {}
+
+ProductDefinitions = {
+	DevProducts = {
+		CurrencyPack1 = {
+			Category = "Currency",
+			ID = 3336725329,
+			DisplayName = "Tiny Currency Pack",
+			CurrencyID = "Cash",
+			Amount = 10000,
+		},
+		CurrencyPack2 = {
+			Category = "Currency",
+			ID = 3336725326,
+			DisplayName = "Small Currency Pack",
+			CurrencyID = "Cash",
+			Amount = 45000,
+		},
+		CurrencyPack3 = {
+			Category = "Currency",
+			ID = 3336725324,
+			DisplayName = "Medium Currency Pack",
+			CurrencyID = "Cash",
+			Amount = 80000,
+		},
+		CurrencyPack4 = {
+			Category = "Currency",
+			ID = 3336725327,
+			DisplayName = "Big Currency Pack",
+			CurrencyID = "Cash",
+			Amount = 250000,
+		},
+		CurrencyPack5 = {
+			Category = "Currency",
+			ID = 3336725330,
+			DisplayName = "Huge Currency Pack",
+			CurrencyID = "Cash",
+			Amount = 600000,
+		},
+		CurrencyPack6 = {
+			Category = "Currency",
+			ID = 3336725328,
+			DisplayName = "Massive Currency Pack",
+			CurrencyID = "Cash",
+			Amount = 1200000,
+		},
+	} :: { [string]: DevProduct };
+	Gamepasses = {
+		AutoCollect = {
+			ID = 1323024326,
+			DisplayName = "🔥Auto Collect🔥",
+			Image = nil,
+			HandledByTycoon = true,
+		},
+		DoubleCash = {
+			ID = 1321344434,
+			DisplayName = "💰2X Cash💰",
+			Image = nil,
+		};
+		GravityCoil = {
+			ID = 1320712608,
+			DisplayName = "🚀Gravity Coil🚀",
+			Image = nil,
+		};
+		SpeedCoil = {
+			ID = 1320622677,
+			DisplayName = "💨Speed Coil💨",
+			Image = nil,
+		};
+		BeFrontman = {
+			ID = 1330208463,
+			DisplayName = "🦑Be Frontman🦑",
+			Image = nil,
+			HandledByTycoon = true,
+		};
+	} :: { [string]: Gamepass };
+}
+
+-- // Private Functions
+local function showOverlay(p : Player)
+	local playerGui = p:FindFirstChild("PlayerGui")
+	if (playerGui) then
+		local old = playerGui:FindFirstChild("MonetisationOverlay")
+		if (old) then return end
+		
+		local overlayGui = script.MonetisationOverlay:Clone()
+		overlayGui.Parent = playerGui
+	end
+end
+
+local function hideOverlay(p : Player)
+	local playerGui = p:FindFirstChild("PlayerGui")
+	local overlayGui = playerGui and playerGui:FindFirstChild("MonetisationOverlay")
+	if (overlayGui) then
+		task.spawn(function()
+			for _, v in overlayGui:GetChildren() do
+				if (v:IsA("CanvasGroup")) then
+					for i = 0, 1, 0.05 do
+						v.GroupTransparency = i
+						task.wait()
+					end
+				end
+			end
+			overlayGui:Destroy()
+		end)
+	end
+end
+
+local function getAmountFromCurrencyProduct(stringID : string): number
+	local productInfo = ProductDefinitions.DevProducts[stringID]
+	local baseAmount = productInfo and productInfo.Amount
+	if not (baseAmount) then
+		warn("PRODUCT DEFINITION ERROR: No product exists named", stringID, "or it doesn't contain a property named Amount")
+		return
+	end
+	
+	local amount = baseAmount
+	-- Apply scaling here
+	
+	return amount
+end
+
+-- // Public API
+function ProductDefinitions:PromptSale(productType : "Gamepass" | "DevProduct", productID : number, p : Player?)
+	if not (p) then
+		if (RunService:IsServer()) then
+			warn("Product Sale Error: Prompting sale from server without player")
+			return
+		end
+		p = game.Players.LocalPlayer
+	end
+	
+	-- Show overlay
+	showOverlay(p)
+	
+	if (productType == "Gamepass") then
+		MarketPlaceService:PromptGamePassPurchase(p, productID)
+		local con
+		con = MarketPlaceService.PromptGamePassPurchaseFinished:Connect(function()
+			hideOverlay(p)
+			con:Disconnect()
+		end)
+	else
+		MarketPlaceService:PromptProductPurchase(p, productID)
+		local con
+		con = MarketPlaceService.PromptProductPurchaseFinished:Connect(function()
+			hideOverlay(p)
+			con:Disconnect()
+		end)
+	end
+end
+
+function ProductDefinitions:GetSmallestRequiredCurrencyPack(currencyID : string, amountRequired : number): string?
+	-- Get an array of applicable products
+	-- Also track the biggest currency pack for this currency
+	local productArray = {}
+	local biggestCurrencyPack = nil
+	for stringID, info in ProductDefinitions.DevProducts do
+		if (info.Category == "Currency" and info.CurrencyID == currencyID) then
+			-- Get the amount of currency this gives
+			local amount = getAmountFromCurrencyProduct(stringID)
+			if not (amount) then continue end
+			
+			if (not biggestCurrencyPack) or (biggestCurrencyPack.Amount < amount) then
+				biggestCurrencyPack = {Amount = amount, StringID = stringID}
+			end
+			
+			if (amount < amountRequired) then continue end
+			
+			table.insert(productArray, {StringID = stringID, Info = info, Amount = amount})
+		end
+	end
+	
+	-- Get the smallest pack that fits this requirement
+	-- If all packs are too small, recommend the biggest pack
+	table.sort(productArray, function(a, b)
+		return a.Amount < b.Amount
+	end)
+	
+	local stringID = (#productArray > 0 and productArray[1].StringID or biggestCurrencyPack.StringID)
+	return stringID
+end
+
+function ProductDefinitions:GetGamepassFromNumericID(gamepassID : number): (string, any)
+	for stringID, info in pairs(ProductDefinitions.Gamepasses) do
+		if info.ID == gamepassID then
+			return stringID, info
+		end
+	end
+	warn("No gamepass with gamepass ID:", gamepassID)
+	return nil
+end
+
+function ProductDefinitions:GetProductFromNumericID(productID : number): (string, any)
+	for stringID, info in pairs(ProductDefinitions.DevProducts) do
+		if info.ID == productID then
+			return stringID, info
+		end
+	end
+	warn("No product with product ID:", productID)
+	return nil
+end
+
+local function initialise()
+	-- Load product images
+	for stringID, info in ProductDefinitions.Gamepasses do
+		local success, result = pcall(function()
+			return MarketPlaceService:GetProductInfo(info.ID, Enum.InfoType.GamePass)
+		end)
+		if (success and result) then
+			info.PriceInRobux = result.PriceInRobux
+			info.Image = "rbxassetid://" .. result.IconImageAssetId
+		else
+			info.Image = ""
+		end
+	end
+	
+	for stringID, info in ProductDefinitions.DevProducts do
+		local success, result = pcall(function()
+			return MarketPlaceService:GetProductInfo(info.ID, Enum.InfoType.Product)
+		end)
+		if (success and result) then
+			info.PriceInRobux = result.PriceInRobux
+			info.Image = "rbxassetid://" .. result.IconImageAssetId
+			info.Description = result.Description
+		else
+			info.Image = ""
+		end
+	end
+	
+	if (RunService:IsClient()) then
+		MarketPlaceService.PromptGamePassPurchaseFinished:Connect(function()
+			hideOverlay()
+		end)
+		MarketPlaceService.PromptProductPurchaseFinished:Connect(function()
+			hideOverlay()
+		end)
+	else
+		PromptSaleRemote = Instance.new("RemoteEvent", Remotes)
+		PromptSaleRemote.Name = "PromptSale"
+		PromptSaleRemote.OnServerEvent:Connect(function(p : Player, productType : string, productID : number)
+			ProductDefinitions:PromptSale(productType, productID, p)
+		end)
+	end
+end
+
+-- Initialisation
+initialise()
+
+return ProductDefinitions]]></ProtectedString>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+						<UniqueId name="UniqueId">7a5be8c3b493ddb808a513760000187a</UniqueId>
+					</Properties>
+					<Item class="ScreenGui" referent="RBX71e08b3434434b2fa9204c9fb1c669a8">
+						<Properties>
+							<BinaryString name="AttributesSerialize"></BinaryString>
+							<bool name="AutoLocalize">true</bool>
+							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+							<bool name="ClipToDeviceSafeArea">true</bool>
+							<bool name="DefinesCapabilities">false</bool>
+							<int name="DisplayOrder">5</int>
+							<bool name="Enabled">true</bool>
+							<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+							<string name="Name">MonetisationOverlay</string>
+							<bool name="ResetOnSpawn">true</bool>
+							<Ref name="RootLocalizationTable">null</Ref>
+							<token name="SafeAreaCompatibility">0</token>
+							<token name="ScreenInsets">0</token>
+							<token name="SelectionBehaviorDown">0</token>
+							<token name="SelectionBehaviorLeft">0</token>
+							<token name="SelectionBehaviorRight">0</token>
+							<token name="SelectionBehaviorUp">0</token>
+							<bool name="SelectionGroup">false</bool>
+							<int64 name="SourceAssetId">-1</int64>
+							<BinaryString name="Tags"></BinaryString>
+							<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000018ac</UniqueId>
+							<token name="ZIndexBehavior">1</token>
+						</Properties>
+						<Item class="LocalScript" referent="RBXb275b166146f4fbdab814103d9a01aff">
+							<Properties>
+								<BinaryString name="AttributesSerialize"></BinaryString>
+								<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+								<bool name="DefinesCapabilities">false</bool>
+								<bool name="Disabled">false</bool>
+								<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+								<Content name="LinkedSource"><null></null></Content>
+								<string name="Name">Spinner</string>
+								<token name="RunContext">0</token>
+								<string name="ScriptGuid">{947b37da-8663-4edd-9bdf-da73ac76f290}</string>
+								<ProtectedString name="Source"><![CDATA[
+-- // Services
+local RunService = game:GetService("RunService")
+
+local Gui = script.Parent
+Gui.Enabled = false
+
+local CanvasGroup = script.Parent:WaitForChild("Main")
+local Spinner = CanvasGroup:WaitForChild("Wheel"):WaitForChild("Spinner")
+local Glow = CanvasGroup:WaitForChild("Wheel"):WaitForChild("Glow")
+
+CanvasGroup.GroupTransparency = 1
+Gui.Enabled = true
+
+local function initialise()
+	RunService.RenderStepped:Connect(function()
+		Spinner.Rotation += 5
+		Glow.ImageTransparency = (math.sin(tick() * 2) / 4) + 0.25 + 0.6
+	end)
+	
+	-- Fade in
+	for i = 1, 0, -0.05 do
+		CanvasGroup.GroupTransparency = i
+		task.wait()
+	end
+end
+
+-- Initialisation
+initialise()]]></ProtectedString>
+								<int64 name="SourceAssetId">-1</int64>
+								<BinaryString name="Tags"></BinaryString>
+								<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000018ad</UniqueId>
+							</Properties>
+						</Item>
+						<Item class="CanvasGroup" referent="RBX4cffc2b5ff3f4cfcb81e6207d83489f7">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Vector2 name="AnchorPoint">
+									<X>0</X>
+									<Y>0</Y>
+								</Vector2>
+								<BinaryString name="AttributesSerialize"></BinaryString>
+								<bool name="AutoLocalize">true</bool>
+								<token name="AutomaticSize">0</token>
+								<Color3 name="BackgroundColor3">
+									<R>0</R>
+									<G>0</G>
+									<B>0</B>
+								</Color3>
+								<float name="BackgroundTransparency">0.349999994</float>
+								<Color3 name="BorderColor3">
+									<R>0</R>
+									<G>0</G>
+									<B>0</B>
+								</Color3>
+								<token name="BorderMode">0</token>
+								<int name="BorderSizePixel">0</int>
+								<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+								<bool name="ClipsDescendants">true</bool>
+								<bool name="DefinesCapabilities">false</bool>
+								<bool name="Draggable">false</bool>
+								<Color3 name="GroupColor3">
+									<R>1</R>
+									<G>1</G>
+									<B>1</B>
+								</Color3>
+								<float name="GroupTransparency">0</float>
+								<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+								<bool name="Interactable">true</bool>
+								<int name="LayoutOrder">0</int>
+								<string name="Name">Main</string>
+								<Ref name="NextSelectionDown">null</Ref>
+								<Ref name="NextSelectionLeft">null</Ref>
+								<Ref name="NextSelectionRight">null</Ref>
+								<Ref name="NextSelectionUp">null</Ref>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<Ref name="RootLocalizationTable">null</Ref>
+								<float name="Rotation">0</float>
+								<bool name="Selectable">false</bool>
+								<token name="SelectionBehaviorDown">0</token>
+								<token name="SelectionBehaviorLeft">0</token>
+								<token name="SelectionBehaviorRight">0</token>
+								<token name="SelectionBehaviorUp">0</token>
+								<bool name="SelectionGroup">false</bool>
+								<Ref name="SelectionImageObject">null</Ref>
+								<int name="SelectionOrder">0</int>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<int64 name="SourceAssetId">-1</int64>
+								<BinaryString name="Tags"></BinaryString>
+								<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000018ae</UniqueId>
+								<bool name="Visible">true</bool>
+								<int name="ZIndex">1</int>
+							</Properties>
+							<Item class="Frame" referent="RBX5e086bb821b04c1786ed54cc63c91c86">
+								<Properties>
+									<bool name="Active">false</bool>
+									<Vector2 name="AnchorPoint">
+										<X>0.5</X>
+										<Y>0.5</Y>
+									</Vector2>
+									<BinaryString name="AttributesSerialize"></BinaryString>
+									<bool name="AutoLocalize">true</bool>
+									<token name="AutomaticSize">0</token>
+									<Color3 name="BackgroundColor3">
+										<R>1</R>
+										<G>1</G>
+										<B>1</B>
+									</Color3>
+									<float name="BackgroundTransparency">1</float>
+									<Color3 name="BorderColor3">
+										<R>0</R>
+										<G>0</G>
+										<B>0</B>
+									</Color3>
+									<token name="BorderMode">0</token>
+									<int name="BorderSizePixel">0</int>
+									<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+									<bool name="ClipsDescendants">false</bool>
+									<bool name="DefinesCapabilities">false</bool>
+									<bool name="Draggable">false</bool>
+									<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+									<bool name="Interactable">true</bool>
+									<int name="LayoutOrder">0</int>
+									<string name="Name">Wheel</string>
+									<Ref name="NextSelectionDown">null</Ref>
+									<Ref name="NextSelectionLeft">null</Ref>
+									<Ref name="NextSelectionRight">null</Ref>
+									<Ref name="NextSelectionUp">null</Ref>
+									<UDim2 name="Position">
+										<XS>0.5</XS>
+										<XO>0</XO>
+										<YS>0.5</YS>
+										<YO>0</YO>
+									</UDim2>
+									<Ref name="RootLocalizationTable">null</Ref>
+									<float name="Rotation">0</float>
+									<bool name="Selectable">false</bool>
+									<token name="SelectionBehaviorDown">0</token>
+									<token name="SelectionBehaviorLeft">0</token>
+									<token name="SelectionBehaviorRight">0</token>
+									<token name="SelectionBehaviorUp">0</token>
+									<bool name="SelectionGroup">false</bool>
+									<Ref name="SelectionImageObject">null</Ref>
+									<int name="SelectionOrder">0</int>
+									<UDim2 name="Size">
+										<XS>0.296000004</XS>
+										<XO>0</XO>
+										<YS>0.400000006</YS>
+										<YO>0</YO>
+									</UDim2>
+									<token name="SizeConstraint">0</token>
+									<int64 name="SourceAssetId">-1</int64>
+									<token name="Style">0</token>
+									<BinaryString name="Tags"></BinaryString>
+									<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000018af</UniqueId>
+									<bool name="Visible">true</bool>
+									<int name="ZIndex">1</int>
+								</Properties>
+								<Item class="UIAspectRatioConstraint" referent="RBX5df81d8f51d84494a75d69f561da2a2a">
+									<Properties>
+										<float name="AspectRatio">1</float>
+										<token name="AspectType">0</token>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<token name="DominantAxis">0</token>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<string name="Name">UIAspectRatioConstraint</string>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000018b0</UniqueId>
+									</Properties>
+								</Item>
+								<Item class="ImageLabel" referent="RBX4243a30f7371402298cd9a8352193020">
+									<Properties>
+										<bool name="Active">false</bool>
+										<Vector2 name="AnchorPoint">
+											<X>0.5</X>
+											<Y>0.5</Y>
+										</Vector2>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<bool name="AutoLocalize">true</bool>
+										<token name="AutomaticSize">0</token>
+										<Color3 name="BackgroundColor3">
+											<R>1</R>
+											<G>1</G>
+											<B>1</B>
+										</Color3>
+										<float name="BackgroundTransparency">1</float>
+										<Color3 name="BorderColor3">
+											<R>0</R>
+											<G>0</G>
+											<B>0</B>
+										</Color3>
+										<token name="BorderMode">0</token>
+										<int name="BorderSizePixel">0</int>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="ClipsDescendants">false</bool>
+										<bool name="DefinesCapabilities">false</bool>
+										<bool name="Draggable">false</bool>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<Content name="Image"><url>rbxassetid://4463059046</url></Content>
+										<Color3 name="ImageColor3">
+											<R>1</R>
+											<G>1</G>
+											<B>1</B>
+										</Color3>
+										<Vector2 name="ImageRectOffset">
+											<X>0</X>
+											<Y>0</Y>
+										</Vector2>
+										<Vector2 name="ImageRectSize">
+											<X>0</X>
+											<Y>0</Y>
+										</Vector2>
+										<float name="ImageTransparency">0</float>
+										<bool name="Interactable">true</bool>
+										<int name="LayoutOrder">0</int>
+										<string name="Name">Spinner</string>
+										<Ref name="NextSelectionDown">null</Ref>
+										<Ref name="NextSelectionLeft">null</Ref>
+										<Ref name="NextSelectionRight">null</Ref>
+										<Ref name="NextSelectionUp">null</Ref>
+										<UDim2 name="Position">
+											<XS>0.5</XS>
+											<XO>0</XO>
+											<YS>0.5</YS>
+											<YO>0</YO>
+										</UDim2>
+										<token name="ResampleMode">0</token>
+										<Ref name="RootLocalizationTable">null</Ref>
+										<float name="Rotation">0</float>
+										<token name="ScaleType">3</token>
+										<bool name="Selectable">false</bool>
+										<token name="SelectionBehaviorDown">0</token>
+										<token name="SelectionBehaviorLeft">0</token>
+										<token name="SelectionBehaviorRight">0</token>
+										<token name="SelectionBehaviorUp">0</token>
+										<bool name="SelectionGroup">false</bool>
+										<Ref name="SelectionImageObject">null</Ref>
+										<int name="SelectionOrder">0</int>
+										<UDim2 name="Size">
+											<XS>0.800000012</XS>
+											<XO>0</XO>
+											<YS>0.800000012</YS>
+											<YO>0</YO>
+										</UDim2>
+										<token name="SizeConstraint">0</token>
+										<Rect2D name="SliceCenter">
+											<min>
+												<X>0</X>
+												<Y>0</Y>
+											</min>
+											<max>
+												<X>0</X>
+												<Y>0</Y>
+											</max>
+										</Rect2D>
+										<float name="SliceScale">1</float>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UDim2 name="TileSize">
+											<XS>1</XS>
+											<XO>0</XO>
+											<YS>1</YS>
+											<YO>0</YO>
+										</UDim2>
+										<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000018b1</UniqueId>
+										<bool name="Visible">true</bool>
+										<int name="ZIndex">1</int>
+									</Properties>
+								</Item>
+								<Item class="ImageLabel" referent="RBX46b0935dd209416ba97081a9812b348f">
+									<Properties>
+										<bool name="Active">false</bool>
+										<Vector2 name="AnchorPoint">
+											<X>0.5</X>
+											<Y>0.5</Y>
+										</Vector2>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<bool name="AutoLocalize">true</bool>
+										<token name="AutomaticSize">0</token>
+										<Color3 name="BackgroundColor3">
+											<R>1</R>
+											<G>1</G>
+											<B>1</B>
+										</Color3>
+										<float name="BackgroundTransparency">1</float>
+										<Color3 name="BorderColor3">
+											<R>0</R>
+											<G>0</G>
+											<B>0</B>
+										</Color3>
+										<token name="BorderMode">0</token>
+										<int name="BorderSizePixel">0</int>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="ClipsDescendants">false</bool>
+										<bool name="DefinesCapabilities">false</bool>
+										<bool name="Draggable">false</bool>
+										<UniqueId name="HistoryId">44d5b5ec589dd7c8088511290000ec08</UniqueId>
+										<Content name="Image"><url>rbxassetid://10928806245</url></Content>
+										<Color3 name="ImageColor3">
+											<R>1</R>
+											<G>1</G>
+											<B>1</B>
+										</Color3>
+										<Vector2 name="ImageRectOffset">
+											<X>0</X>
+											<Y>0</Y>
+										</Vector2>
+										<Vector2 name="ImageRectSize">
+											<X>0</X>
+											<Y>0</Y>
+										</Vector2>
+										<float name="ImageTransparency">0.800000012</float>
+										<bool name="Interactable">true</bool>
+										<int name="LayoutOrder">0</int>
+										<string name="Name">Background</string>
+										<Ref name="NextSelectionDown">null</Ref>
+										<Ref name="NextSelectionLeft">null</Ref>
+										<Ref name="NextSelectionRight">null</Ref>
+										<Ref name="NextSelectionUp">null</Ref>
+										<UDim2 name="Position">
+											<XS>0.5</XS>
+											<XO>0</XO>
+											<YS>0.5</YS>
+											<YO>0</YO>
+										</UDim2>
+										<token name="ResampleMode">0</token>
+										<Ref name="RootLocalizationTable">null</Ref>
+										<float name="Rotation">0</float>
+										<token name="ScaleType">3</token>
+										<bool name="Selectable">false</bool>
+										<token name="SelectionBehaviorDown">0</token>
+										<token name="SelectionBehaviorLeft">0</token>
+										<token name="SelectionBehaviorRight">0</token>
+										<token name="SelectionBehaviorUp">0</token>
+										<bool name="SelectionGroup">false</bool>
+										<Ref name="SelectionImageObject">null</Ref>
+										<int name="SelectionOrder">0</int>
+										<UDim2 name="Size">
+											<XS>0.939999998</XS>
+											<XO>0</XO>
+											<YS>0.930000007</YS>
+											<YO>0</YO>
+										</UDim2>
+										<token name="SizeConstraint">0</token>
+										<Rect2D name="SliceCenter">
+											<min>
+												<X>0</X>
+												<Y>0</Y>
+											</min>
+											<max>
+												<X>0</X>
+												<Y>0</Y>
+											</max>
+										</Rect2D>
+										<float name="SliceScale">1</float>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UDim2 name="TileSize">
+											<XS>1</XS>
+											<XO>0</XO>
+											<YS>1</YS>
+											<YO>0</YO>
+										</UDim2>
+										<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000018b2</UniqueId>
+										<bool name="Visible">true</bool>
+										<int name="ZIndex">1</int>
+									</Properties>
+								</Item>
+								<Item class="ImageLabel" referent="RBX2491c02dc669448198921dac86d7a764">
+									<Properties>
+										<bool name="Active">false</bool>
+										<Vector2 name="AnchorPoint">
+											<X>0.5</X>
+											<Y>0.5</Y>
+										</Vector2>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<bool name="AutoLocalize">true</bool>
+										<token name="AutomaticSize">0</token>
+										<Color3 name="BackgroundColor3">
+											<R>1</R>
+											<G>1</G>
+											<B>1</B>
+										</Color3>
+										<float name="BackgroundTransparency">1</float>
+										<Color3 name="BorderColor3">
+											<R>0</R>
+											<G>0</G>
+											<B>0</B>
+										</Color3>
+										<token name="BorderMode">0</token>
+										<int name="BorderSizePixel">0</int>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="ClipsDescendants">false</bool>
+										<bool name="DefinesCapabilities">false</bool>
+										<bool name="Draggable">false</bool>
+										<UniqueId name="HistoryId">44d5b5ec589dd7c8088511290000ec08</UniqueId>
+										<Content name="Image"><url>rbxassetid://8119252523</url></Content>
+										<Color3 name="ImageColor3">
+											<R>0</R>
+											<G>1</G>
+											<B>0.0941176564</B>
+										</Color3>
+										<Vector2 name="ImageRectOffset">
+											<X>0</X>
+											<Y>0</Y>
+										</Vector2>
+										<Vector2 name="ImageRectSize">
+											<X>0</X>
+											<Y>0</Y>
+										</Vector2>
+										<float name="ImageTransparency">0</float>
+										<bool name="Interactable">true</bool>
+										<int name="LayoutOrder">0</int>
+										<string name="Name">Glow</string>
+										<Ref name="NextSelectionDown">null</Ref>
+										<Ref name="NextSelectionLeft">null</Ref>
+										<Ref name="NextSelectionRight">null</Ref>
+										<Ref name="NextSelectionUp">null</Ref>
+										<UDim2 name="Position">
+											<XS>0.5</XS>
+											<XO>0</XO>
+											<YS>0.5</YS>
+											<YO>0</YO>
+										</UDim2>
+										<token name="ResampleMode">0</token>
+										<Ref name="RootLocalizationTable">null</Ref>
+										<float name="Rotation">0</float>
+										<token name="ScaleType">3</token>
+										<bool name="Selectable">false</bool>
+										<token name="SelectionBehaviorDown">0</token>
+										<token name="SelectionBehaviorLeft">0</token>
+										<token name="SelectionBehaviorRight">0</token>
+										<token name="SelectionBehaviorUp">0</token>
+										<bool name="SelectionGroup">false</bool>
+										<Ref name="SelectionImageObject">null</Ref>
+										<int name="SelectionOrder">0</int>
+										<UDim2 name="Size">
+											<XS>1.5</XS>
+											<XO>0</XO>
+											<YS>1.5</YS>
+											<YO>0</YO>
+										</UDim2>
+										<token name="SizeConstraint">0</token>
+										<Rect2D name="SliceCenter">
+											<min>
+												<X>0</X>
+												<Y>0</Y>
+											</min>
+											<max>
+												<X>0</X>
+												<Y>0</Y>
+											</max>
+										</Rect2D>
+										<float name="SliceScale">1</float>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UDim2 name="TileSize">
+											<XS>1</XS>
+											<XO>0</XO>
+											<YS>1</YS>
+											<YO>0</YO>
+										</UDim2>
+										<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000018b3</UniqueId>
+										<bool name="Visible">true</bool>
+										<int name="ZIndex">0</int>
+									</Properties>
+								</Item>
+							</Item>
+							<Item class="Frame" referent="RBX13b83927a7264ab7a0092cebed2a3c8d">
+								<Properties>
+									<bool name="Active">false</bool>
+									<Vector2 name="AnchorPoint">
+										<X>0</X>
+										<Y>0</Y>
+									</Vector2>
+									<BinaryString name="AttributesSerialize"></BinaryString>
+									<bool name="AutoLocalize">true</bool>
+									<token name="AutomaticSize">0</token>
+									<Color3 name="BackgroundColor3">
+										<R>0.309803933</R>
+										<G>0.964705884</G>
+										<B>0.192156866</B>
+									</Color3>
+									<float name="BackgroundTransparency">0.5</float>
+									<Color3 name="BorderColor3">
+										<R>0</R>
+										<G>0</G>
+										<B>0</B>
+									</Color3>
+									<token name="BorderMode">0</token>
+									<int name="BorderSizePixel">0</int>
+									<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+									<bool name="ClipsDescendants">false</bool>
+									<bool name="DefinesCapabilities">false</bool>
+									<bool name="Draggable">false</bool>
+									<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+									<bool name="Interactable">true</bool>
+									<int name="LayoutOrder">0</int>
+									<string name="Name">Gradient</string>
+									<Ref name="NextSelectionDown">null</Ref>
+									<Ref name="NextSelectionLeft">null</Ref>
+									<Ref name="NextSelectionRight">null</Ref>
+									<Ref name="NextSelectionUp">null</Ref>
+									<UDim2 name="Position">
+										<XS>0</XS>
+										<XO>0</XO>
+										<YS>0</YS>
+										<YO>0</YO>
+									</UDim2>
+									<Ref name="RootLocalizationTable">null</Ref>
+									<float name="Rotation">0</float>
+									<bool name="Selectable">false</bool>
+									<token name="SelectionBehaviorDown">0</token>
+									<token name="SelectionBehaviorLeft">0</token>
+									<token name="SelectionBehaviorRight">0</token>
+									<token name="SelectionBehaviorUp">0</token>
+									<bool name="SelectionGroup">false</bool>
+									<Ref name="SelectionImageObject">null</Ref>
+									<int name="SelectionOrder">0</int>
+									<UDim2 name="Size">
+										<XS>1</XS>
+										<XO>0</XO>
+										<YS>1</YS>
+										<YO>0</YO>
+									</UDim2>
+									<token name="SizeConstraint">0</token>
+									<int64 name="SourceAssetId">-1</int64>
+									<token name="Style">0</token>
+									<BinaryString name="Tags"></BinaryString>
+									<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000018b4</UniqueId>
+									<bool name="Visible">true</bool>
+									<int name="ZIndex">0</int>
+								</Properties>
+								<Item class="UIGradient" referent="RBXfce685acfa314f11a143f7f8f2d99a4f">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<ColorSequence name="Color">0 1 1 1 0 1 1 1 1 0 </ColorSequence>
+										<bool name="DefinesCapabilities">false</bool>
+										<bool name="Enabled">true</bool>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<string name="Name">UIGradient</string>
+										<Vector2 name="Offset">
+											<X>0</X>
+											<Y>0</Y>
+										</Vector2>
+										<float name="Rotation">-90</float>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<NumberSequence name="Transparency">0 0 0 0.499286 0.84375 0 1 1 0 </NumberSequence>
+										<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000018b5</UniqueId>
+									</Properties>
+								</Item>
+							</Item>
+						</Item>
+					</Item>
+				</Item>
+				<Item class="ModuleScript" referent="RBX900aaa8df7cb42b8865773205a5b8c13">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+						<bool name="DefinesCapabilities">false</bool>
+						<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">ProductHandlers</string>
+						<string name="ScriptGuid">{f7b45f0b-784e-4584-bf74-1924447b5996}</string>
+						<ProtectedString name="Source"><![CDATA[--!strict
+
+-- // NOTE: Define product handlers for monetisation products at the bottom of this file!
+
+--// Services
+local CurrencyService = require("../Services/Currency")
+local DataInterface = require("../Services/DataInterface")
+
+--// Assets
+local Assets = script:WaitForChild("Assets")
+
+--// Data
+local ProductDefinitions = require("./ProductDefinitions")
+local DevProducts = ProductDefinitions.DevProducts
+local Gamepasses = ProductDefinitions.Gamepasses
+
+--// Types
+type ProductHandler = (Player) -> (boolean, string?)
+
+--// Handler Tables
+local DevProductHandlers: { [number]: ProductHandler } = {}
+local GamepassHandlers: { [number]: ProductHandler } = {}
+
+--// Main Handlers Table
+local Handlers = {
+	DevProducts = DevProductHandlers,
+	Gamepasses = GamepassHandlers,
+} :: {
+	DevProducts: { [number]: ProductHandler },
+	Gamepasses: { [number]: ProductHandler },
+	GetHandler: ((productType: "DevProducts" | "Gamepasses", id: number) -> ProductHandler?)?
+}
+
+--// Helper Functions
+
+local function isPlayerValid(p: Player?): boolean
+	return p ~= nil and p:IsDescendantOf(game)
+end
+
+local function processCurrencyProduct(p: Player, currencyID: string, amount: number): (boolean, string?)
+	if not isPlayerValid(p) then
+		return false, "Invalid player"
+	end
+
+	local success, err = CurrencyService:GiveCurrency(p, currencyID, amount, false, true)
+	return success, err
+end
+
+local function processToolGamepass(p: Player, toolName: string): (boolean, string?)
+	if not isPlayerValid(p) then
+		return false, "Invalid player"
+	end
+
+	local toolID = string.format("_%s_", toolName)
+	local backpack = p:FindFirstChild("Backpack")
+	if backpack and backpack:FindFirstChild(toolID) then
+		return true, nil
+	end
+
+	local char = p.Character
+	if char and char:FindFirstChild(toolID) then
+		return true, nil
+	end
+
+	local template = Assets:FindFirstChild(toolName)
+	if not template then
+		return false, `Missing tool asset: {toolName}`
+	end
+
+	local clone = template:Clone()
+	clone.Name = toolID
+	clone.CanBeDropped = false
+	clone.Parent = backpack or p:WaitForChild("Backpack")
+
+	return true, nil
+end
+
+local function defineGamepassHandler(gamepassName: string, handler: ProductHandler)
+	local gamepassInfo = Gamepasses[gamepassName]
+	if gamepassInfo then
+		GamepassHandlers[gamepassInfo.ID] = handler
+	else
+		warn(`[ProductHandlers] No gamepass definition for '{gamepassName}'`)
+	end
+end
+
+--// Define Gamepass Handlers Below
+
+-- Add/edit gamepass handlers here using defineGamepassHandler("GamepassName", function(player)...end)
+
+defineGamepassHandler("GravityCoil", function(p)
+	return processToolGamepass(p, "GravityCoil")
+end)
+
+defineGamepassHandler("SpeedCoil", function(p)
+	return processToolGamepass(p, "SpeedCoil")
+end)
+
+defineGamepassHandler("DoubleCash", function(p)
+	if not isPlayerValid(p) then
+		return false, "Invalid player"
+	end
+
+	local gamepassID = Gamepasses["DoubleCash"].ID
+	local currencyID = "Cash"
+	local multiplier = 2.0
+
+	local success = CurrencyService:SetMultiplier(p, gamepassID, currencyID, multiplier, nil)
+	return success, success and nil or "Failed to set multiplier"
+end)
+
+--// Define Dev Product Handlers Automatically
+for stringID, info in DevProducts do
+	if info.Category == "Currency" then
+		DevProductHandlers[info.ID] = function(p: Player)
+			return processCurrencyProduct(p, info.CurrencyID, info.Amount)
+		end
+	end
+end
+
+--// Handler Lookup Function
+function Handlers.GetHandler(productType: "DevProducts" | "Gamepasses", id: number): ProductHandler?
+	return Handlers[productType][id]
+end
+
+return Handlers
+]]></ProtectedString>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+						<UniqueId name="UniqueId">7a5be8c3b493ddb808a5137600001882</UniqueId>
+					</Properties>
+					<Item class="Folder" referent="RBX75101d8761664eaea36f8594b9379b6e">
+						<Properties>
+							<BinaryString name="AttributesSerialize"></BinaryString>
+							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+							<bool name="DefinesCapabilities">false</bool>
+							<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+							<string name="Name">Assets</string>
+							<int64 name="SourceAssetId">-1</int64>
+							<BinaryString name="Tags"></BinaryString>
+							<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000018a0</UniqueId>
+						</Properties>
+						<Item class="Tool" referent="RBX40443ba7d66d4dd69dc35a0aa2e3b466">
+							<Properties>
+								<BinaryString name="AttributesSerialize"></BinaryString>
+								<bool name="CanBeDropped">true</bool>
+								<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+								<bool name="DefinesCapabilities">false</bool>
+								<bool name="Enabled">true</bool>
+								<CoordinateFrame name="Grip">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>1</Z>
+									<R00>-1</R00>
+									<R01>0</R01>
+									<R02>0</R02>
+									<R10>0</R10>
+									<R11>1</R11>
+									<R12>0</R12>
+									<R20>0</R20>
+									<R21>0</R21>
+									<R22>-1</R22>
+								</CoordinateFrame>
+								<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+								<token name="LevelOfDetail">0</token>
+								<bool name="ManualActivationOnly">false</bool>
+								<CoordinateFrame name="ModelMeshCFrame">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+									<R00>1</R00>
+									<R01>0</R01>
+									<R02>0</R02>
+									<R10>0</R10>
+									<R11>1</R11>
+									<R12>0</R12>
+									<R20>0</R20>
+									<R21>0</R21>
+									<R22>1</R22>
+								</CoordinateFrame>
+								<SharedString name="ModelMeshData">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
+								<Vector3 name="ModelMeshSize">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+								</Vector3>
+								<token name="ModelStreamingMode">0</token>
+								<string name="Name">GravityCoil</string>
+								<bool name="NeedsPivotMigration">false</bool>
+								<Ref name="PrimaryPart">null</Ref>
+								<bool name="RequiresHandle">true</bool>
+								<float name="ScaleFactor">1</float>
+								<int64 name="SourceAssetId">191028585</int64>
+								<BinaryString name="Tags"></BinaryString>
+								<Content name="TextureId"><url>rbxassetid://16619617</url></Content>
+								<string name="ToolTip"></string>
+								<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000018a1</UniqueId>
+								<OptionalCoordinateFrame name="WorldPivotData">
+									<CFrame>
+										<X>592.120178</X>
+										<Y>-23.2999954</Y>
+										<Z>-86.4000015</Z>
+										<R00>-1</R00>
+										<R01>0</R01>
+										<R02>0</R02>
+										<R10>0</R10>
+										<R11>1</R11>
+										<R12>0</R12>
+										<R20>0</R20>
+										<R21>0</R21>
+										<R22>-1</R22>
+									</CFrame>
+								</OptionalCoordinateFrame>
+							</Properties>
+							<Item class="Script" referent="RBX45d1f9bee52c4bbebf481e46d5b5df34">
+								<Properties>
+									<BinaryString name="AttributesSerialize"></BinaryString>
+									<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+									<bool name="DefinesCapabilities">false</bool>
+									<bool name="Disabled">false</bool>
+									<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+									<Content name="LinkedSource"><null></null></Content>
+									<string name="Name">GravityCoilScript</string>
+									<token name="RunContext">0</token>
+									<string name="ScriptGuid">{89b176ac-77c2-4836-8423-0333f84eb379}</string>
+									<ProtectedString name="Source"><![CDATA[local Players                     = game:GetService("Players")
+local Tool                        = script.Parent
+
+local GravityAccelerationConstant = 9.81 * 20 -- For every 20 studs is one meter on ROBLOX. 9.81 is the common accepted acceleration of gravity per a kg on earth, and is used on ROBLOX
+local PercentGravity              = 0.25      -- Percentage of countered acceleration due to gravity by the coil. 
+
+-- @author Quenty
+-- A rewritten gravity coil script designed for understanding and reliability
+
+local function WaitForChild(Parent, Name, TimeLimit)
+	-- Waits for a child to appear. Not efficient, but it shoudln't have to be. It helps with debugging. 
+	-- Useful when ROBLOX lags out, and doesn't replicate quickly.
+	-- @param TimeLimit If TimeLimit is given, then it will return after the timelimit, even if it hasn't found the child.
+
+	assert(Parent ~= nil, "Parent is nil")
+	assert(type(Name) == "string", "Name is not a string.")
+
+	local Child     = Parent:FindFirstChild(Name)
+	local StartTime = tick()
+	local Warned    = false
+
+	while not Child and Parent do
+		wait(0)
+		Child = Parent:FindFirstChild(Name)
+		if not Warned and StartTime + (TimeLimit or 5) <= tick() then
+			Warned = true
+			warn("Infinite yield possible for WaitForChild(" .. Parent:GetFullName() .. ", " .. Name .. ")")
+			if TimeLimit then
+				return Parent:FindFirstChild(Name)
+			end
+		end
+	end
+
+	if not Parent then
+		warn("Parent became nil.")
+	end
+
+	return Child
+end
+
+
+local function CallOnChildren(Instance, FunctionToCall)
+	-- Calls a function on each of the children of a certain object, using recursion.  
+
+	FunctionToCall(Instance)
+
+	for _, Child in next, Instance:GetChildren() do
+		CallOnChildren(Child, FunctionToCall)
+	end
+end
+
+local function GetBricks(StartInstance)
+	-- Returns a list of bricks (will include StartInstance)
+
+	local List = {}
+
+	CallOnChildren(StartInstance, function(Item)
+		if Item:IsA("BasePart") then
+			List[#List+1] = Item;
+		end
+	end)
+
+	return List
+end
+
+--[[Maid
+Manages the cleaning of events and other things.
+ 
+API:
+	HireMaid()                        Returns a new Maid object.
+ 
+	Maid[key] = (function)            Adds a task to perform when cleaning up.
+	Maid[key] = (event connection)    Manages an event connection. Anything that isn't a function is assumed to be this.
+	Maid[key] = nil                   Removes a named task. If the task is an event, it is disconnected.
+ 
+	Maid:GiveTask(task)               Same as above, but uses an incremented number as a key.
+	Maid:DoCleaning()                 Disconnects all managed events and performs all clean-up tasks.
+]]
+local MakeMaid do
+	local index = {
+		GiveTask = function(self, task)
+			local n = #self.Tasks+1
+			self.Tasks[n] = task
+			return n
+		end;
+		DoCleaning = function(self)
+			local tasks = self.Tasks
+			for name,task in pairs(tasks) do
+				if type(task) == 'function' then
+					task()
+				else
+					task:disconnect()
+				end
+				tasks[name] = nil
+			end
+			-- self.Tasks = {}
+		end;
+	};
+
+	local mt = {
+		__index = function(self, k)
+			if index[k] then
+				return index[k]
+			else
+				return self.Tasks[k]
+			end
+		end;
+		__newindex = function(self, k, v)
+			local tasks = self.Tasks
+			if v == nil then
+				-- disconnect if the task is an event
+				if type(tasks[k]) ~= 'function' and tasks[k] then
+					tasks[k]:disconnect()
+				end
+			elseif tasks[k] then
+				-- clear previous task
+				self[k] = nil
+			end
+			tasks[k] = v
+		end;
+	}
+
+	function MakeMaid()
+		return setmetatable({Tasks={},Instances={}},mt)
+	end
+end
+
+local function GetCharacter(Descendant)
+	-- Returns the Player and Charater that a descendent is part of, if it is part of one.
+	-- @param Descendant A child of the potential character. 
+
+	local Charater = Descendant
+	local Player   = Players:GetPlayerFromCharacter(Charater)
+
+	while not Player do
+		if Charater.Parent then
+			Charater = Charater.Parent
+			Player   = Players:GetPlayerFromCharacter(Charater)
+		else
+			return nil
+		end
+	end
+
+	-- Found the player, character must be true.
+	return Charater, Player
+end
+
+--- Load and create constants
+local AntiGravityForce      = Instance.new("BodyForce")
+AntiGravityForce.Name       = "GravityCoilEffect"
+AntiGravityForce.Archivable = false
+
+local Handle           = WaitForChild(Tool, "Handle")
+local CoilSound        = WaitForChild(Handle, "CoilSound")
+local GravityMaid      = MakeMaid() -- Will contain and maintain events
+
+local function UpdateGravityEffect(Character)
+	-- Updates the AntiGravityForce to match the force of gravity on the character
+
+	local Bricks
+	if Character:IsDescendantOf(game) and Character:FindFirstChild("HumanoidRootPart") and Character.HumanoidRootPart:IsA("BasePart") then
+		local BasePart = Character.HumanoidRootPart
+		Bricks         = BasePart:GetConnectedParts(true) -- Recursive
+	else
+		warn("[UpdateGravityEffect] - Character failed to have a HumanoidRootPart or something")
+		Bricks = GetBricks(Character)
+	end
+
+	local TotalMass = 0
+
+	-- Calculate total mass of player
+	for _, Part in pairs(Bricks) do
+		TotalMass = TotalMass + Part:GetMass()
+	end
+
+	-- Force = Mass * Acceleration
+	local ForceOnCharacter         = GravityAccelerationConstant * TotalMass
+	local CounteringForceMagnitude = (1 - 0.25) * ForceOnCharacter
+
+	-- Set the actual value...
+	AntiGravityForce.force = Vector3.new(0, CounteringForceMagnitude, 0)
+end
+
+
+-- Connect events for player interaction
+Tool.Equipped:connect(function()
+	local Character, Player = GetCharacter(Tool)
+
+	if Character then
+		-- Connect events to recalculate gravity when hats are added or removed. Of course, this is not a perfect solution,
+		-- as connected parts are not necessarily part of the character, but ROBLOX has no API to handle the changing of joints, and
+		-- scanning the whole game for potential joints is really not worth the efficiency cost. 
+		GravityMaid.DescendantAddedConnection = Character.DescendantAdded:connect(function()
+			UpdateGravityEffect(Character)
+		end)
+
+		GravityMaid.DecendantRemovingConnection = Character.DescendantRemoving:connect(function()
+			UpdateGravityEffect(Character)
+		end)
+
+		UpdateGravityEffect(Character)
+		-- Add in the force
+		AntiGravityForce.Parent = Handle
+	else
+		warn("[GravityCoil] - Somehow inexplicity failed to retrieve character")
+	end
+end)
+
+Tool.Unequipped:connect(function()
+	-- Remove force and clean up events
+	AntiGravityForce.Parent = nil
+	GravityMaid:DoCleaning()
+end)]]></ProtectedString>
+									<int64 name="SourceAssetId">-1</int64>
+									<BinaryString name="Tags"></BinaryString>
+									<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000018a2</UniqueId>
+								</Properties>
+							</Item>
+							<Item class="Part" referent="RBXf4c1dda8a03044d7a7ef6e4cb06b005a">
+								<Properties>
+									<bool name="Anchored">false</bool>
+									<BinaryString name="AttributesSerialize"></BinaryString>
+									<bool name="AudioCanCollide">true</bool>
+									<float name="BackParamA">-0.5</float>
+									<float name="BackParamB">0.5</float>
+									<token name="BackSurface">0</token>
+									<token name="BackSurfaceInput">0</token>
+									<float name="BottomParamA">-0.5</float>
+									<float name="BottomParamB">0.5</float>
+									<token name="BottomSurface">0</token>
+									<token name="BottomSurfaceInput">0</token>
+									<CoordinateFrame name="CFrame">
+										<X>92.6100769</X>
+										<Y>4.60000229</Y>
+										<Z>-28.5</Z>
+										<R00>-1</R00>
+										<R01>0</R01>
+										<R02>0</R02>
+										<R10>0</R10>
+										<R11>1</R11>
+										<R12>0</R12>
+										<R20>0</R20>
+										<R21>0</R21>
+										<R22>-1</R22>
+									</CoordinateFrame>
+									<bool name="CanCollide">true</bool>
+									<bool name="CanQuery">true</bool>
+									<bool name="CanTouch">true</bool>
+									<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+									<bool name="CastShadow">true</bool>
+									<string name="CollisionGroup">Default</string>
+									<int name="CollisionGroupId">0</int>
+									<Color3uint8 name="Color3uint8">4291677645</Color3uint8>
+									<PhysicalProperties name="CustomPhysicalProperties">
+										<CustomPhysics>false</CustomPhysics>
+									</PhysicalProperties>
+									<bool name="DefinesCapabilities">false</bool>
+									<bool name="EnableFluidForces">true</bool>
+									<float name="FrontParamA">-0.5</float>
+									<float name="FrontParamB">0.5</float>
+									<token name="FrontSurface">0</token>
+									<token name="FrontSurfaceInput">0</token>
+									<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+									<float name="LeftParamA">-0.5</float>
+									<float name="LeftParamB">0.5</float>
+									<token name="LeftSurface">0</token>
+									<token name="LeftSurfaceInput">0</token>
+									<bool name="Locked">true</bool>
+									<bool name="Massless">false</bool>
+									<token name="Material">256</token>
+									<string name="MaterialVariantSerialized"></string>
+									<string name="Name">Handle</string>
+									<CoordinateFrame name="PivotOffset">
+										<X>0</X>
+										<Y>0</Y>
+										<Z>0</Z>
+										<R00>1</R00>
+										<R01>0</R01>
+										<R02>0</R02>
+										<R10>0</R10>
+										<R11>1</R11>
+										<R12>0</R12>
+										<R20>0</R20>
+										<R21>0</R21>
+										<R22>1</R22>
+									</CoordinateFrame>
+									<float name="Reflectance">0</float>
+									<float name="RightParamA">-0.5</float>
+									<float name="RightParamB">0.5</float>
+									<token name="RightSurface">0</token>
+									<token name="RightSurfaceInput">0</token>
+									<int name="RootPriority">0</int>
+									<Vector3 name="RotVelocity">
+										<X>0</X>
+										<Y>0</Y>
+										<Z>0</Z>
+									</Vector3>
+									<int64 name="SourceAssetId">-1</int64>
+									<BinaryString name="Tags"></BinaryString>
+									<float name="TopParamA">-0.5</float>
+									<float name="TopParamB">0.5</float>
+									<token name="TopSurface">0</token>
+									<token name="TopSurfaceInput">0</token>
+									<float name="Transparency">0</float>
+									<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000018a3</UniqueId>
+									<Vector3 name="Velocity">
+										<X>0</X>
+										<Y>0</Y>
+										<Z>0</Z>
+									</Vector3>
+									<token name="formFactorRaw">2</token>
+									<token name="shape">1</token>
+									<Vector3 name="size">
+										<X>1</X>
+										<Y>1.20000005</Y>
+										<Z>2</Z>
+									</Vector3>
+								</Properties>
+								<Item class="Sound" referent="RBXde53537479c744e8a7e718157b0deeda">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<bool name="IsMutedForCapture">false</bool>
+										<NumberRange name="LoopRegion">0 60000 </NumberRange>
+										<bool name="Looped">false</bool>
+										<string name="Name">CoilSound</string>
+										<bool name="PlayOnRemove">false</bool>
+										<NumberRange name="PlaybackRegion">0 60000 </NumberRange>
+										<bool name="PlaybackRegionsEnabled">false</bool>
+										<float name="PlaybackSpeed">1.5</float>
+										<bool name="Playing">false</bool>
+										<float name="RollOffMaxDistance">10000</float>
+										<float name="RollOffMinDistance">10</float>
+										<token name="RollOffMode">0</token>
+										<Ref name="SoundGroup">null</Ref>
+										<Content name="SoundId"><url>http://www.roblox.com/asset/?id=177979632</url></Content>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<double name="TimePosition">0</double>
+										<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000018a4</UniqueId>
+										<float name="Volume">1</float>
+									</Properties>
+								</Item>
+								<Item class="SpecialMesh" referent="RBX630bc4e55b524ac2bb3a4657dd5068f3">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<Content name="MeshId"><url>http://www.roblox.com/asset/?id=16606212</url></Content>
+										<token name="MeshType">5</token>
+										<string name="Name">Mesh</string>
+										<Vector3 name="Offset">
+											<X>0</X>
+											<Y>0</Y>
+											<Z>0</Z>
+										</Vector3>
+										<Vector3 name="Scale">
+											<X>0.699999988</X>
+											<Y>0.699999988</Y>
+											<Z>0.699999988</Z>
+										</Vector3>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<Content name="TextureId"><url>http://www.roblox.com/asset/?id=16606141</url></Content>
+										<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000018a5</UniqueId>
+										<Vector3 name="VertexColor">
+											<X>1</X>
+											<Y>1</Y>
+											<Z>1</Z>
+										</Vector3>
+									</Properties>
+								</Item>
+							</Item>
+						</Item>
+						<Item class="Tool" referent="RBX43d64936f90b4059a898d909df91b03a">
+							<Properties>
+								<BinaryString name="AttributesSerialize"></BinaryString>
+								<bool name="CanBeDropped">false</bool>
+								<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+								<bool name="DefinesCapabilities">false</bool>
+								<bool name="Enabled">true</bool>
+								<CoordinateFrame name="Grip">
+									<X>-3.39994735e-08</X>
+									<Y>3.39994877e-08</Y>
+									<Z>-0.99999994</Z>
+									<R00>-0.707134247</R00>
+									<R01>-0.707079291</R01>
+									<R02>0</R02>
+									<R10>0.707079291</R10>
+									<R11>-0.707134247</R11>
+									<R12>0</R12>
+									<R20>0</R20>
+									<R21>0</R21>
+									<R22>1</R22>
+								</CoordinateFrame>
+								<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+								<token name="LevelOfDetail">0</token>
+								<bool name="ManualActivationOnly">false</bool>
+								<CoordinateFrame name="ModelMeshCFrame">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+									<R00>1</R00>
+									<R01>0</R01>
+									<R02>0</R02>
+									<R10>0</R10>
+									<R11>1</R11>
+									<R12>0</R12>
+									<R20>0</R20>
+									<R21>0</R21>
+									<R22>1</R22>
+								</CoordinateFrame>
+								<SharedString name="ModelMeshData">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
+								<Vector3 name="ModelMeshSize">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+								</Vector3>
+								<token name="ModelStreamingMode">0</token>
+								<string name="Name">SpeedCoil</string>
+								<bool name="NeedsPivotMigration">false</bool>
+								<Ref name="PrimaryPart">null</Ref>
+								<bool name="RequiresHandle">true</bool>
+								<float name="ScaleFactor">1</float>
+								<int64 name="SourceAssetId">12403904845</int64>
+								<BinaryString name="Tags"></BinaryString>
+								<Content name="TextureId"><url>http://www.roblox.com/asset/?id=99170415</url></Content>
+								<string name="ToolTip">Speed Up!</string>
+								<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000018a6</UniqueId>
+								<OptionalCoordinateFrame name="WorldPivotData">
+									<CFrame>
+										<X>491.731598</X>
+										<Y>32.7157211</Y>
+										<Z>-121.704147</Z>
+										<R00>-0.0431647897</R00>
+										<R01>0.00606953911</R01>
+										<R02>0.999049544</R02>
+										<R10>-0.696037471</R10>
+										<R11>-0.717544854</R11>
+										<R12>-0.025713563</R12>
+										<R20>0.716706753</R20>
+										<R21>-0.696485877</R21>
+										<R22>0.035197299</R22>
+									</CFrame>
+								</OptionalCoordinateFrame>
+							</Properties>
+							<Item class="Script" referent="RBXc7ba2dbcc7844e7fac6445400de48de1">
+								<Properties>
+									<BinaryString name="AttributesSerialize"></BinaryString>
+									<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+									<bool name="DefinesCapabilities">false</bool>
+									<bool name="Disabled">false</bool>
+									<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+									<Content name="LinkedSource"><null></null></Content>
+									<string name="Name">SpeedUp</string>
+									<token name="RunContext">0</token>
+									<string name="ScriptGuid">{75B79D38-571D-48F4-B543-CF057B8346C6}</string>
+									<ProtectedString name="Source"><![CDATA[--!strict
+-- simplified speed coil by s_snaker
+
+local BOOST = 16
+
+local tool = script.Parent
+local sound = tool.Handle.CoilSound
+local oldSpeed -- speed before equipping is saved in functions
+local humanoid -- has to be a global so it can be used in onUnequip()
+
+function onEquip()
+	humanoid = tool.Parent:FindFirstChild("Humanoid")
+	if (humanoid ~= nil) then
+		oldSpeed = humanoid.WalkSpeed
+		humanoid.WalkSpeed = oldSpeed + BOOST
+		sound:play()
+	end
+end
+
+function onUnequip()
+	humanoid.WalkSpeed = oldSpeed
+end
+
+tool.Equipped:Connect(onEquip)
+tool.Unequipped:Connect(onUnequip)]]></ProtectedString>
+									<int64 name="SourceAssetId">-1</int64>
+									<BinaryString name="Tags"></BinaryString>
+									<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000018a7</UniqueId>
+								</Properties>
+							</Item>
+							<Item class="Part" referent="RBX8417e41f7afc4ed4aac5b73effa7f3ad">
+								<Properties>
+									<bool name="Anchored">false</bool>
+									<BinaryString name="AttributesSerialize"></BinaryString>
+									<bool name="AudioCanCollide">true</bool>
+									<float name="BackParamA">-0.5</float>
+									<float name="BackParamB">0.5</float>
+									<token name="BackSurface">0</token>
+									<token name="BackSurfaceInput">0</token>
+									<float name="BottomParamA">-0.5</float>
+									<float name="BottomParamB">0.5</float>
+									<token name="BottomSurface">0</token>
+									<token name="BottomSurfaceInput">0</token>
+									<CoordinateFrame name="CFrame">
+										<X>227.764496</X>
+										<Y>17.9686718</Y>
+										<Z>-82.375</Z>
+										<R00>-0.0431647897</R00>
+										<R01>0.00606953911</R01>
+										<R02>0.999049544</R02>
+										<R10>-0.696037471</R10>
+										<R11>-0.717544854</R11>
+										<R12>-0.025713563</R12>
+										<R20>0.716706753</R20>
+										<R21>-0.696485877</R21>
+										<R22>0.035197299</R22>
+									</CoordinateFrame>
+									<bool name="CanCollide">false</bool>
+									<bool name="CanQuery">true</bool>
+									<bool name="CanTouch">false</bool>
+									<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+									<bool name="CastShadow">true</bool>
+									<string name="CollisionGroup">Default</string>
+									<int name="CollisionGroupId">0</int>
+									<Color3uint8 name="Color3uint8">4291045404</Color3uint8>
+									<PhysicalProperties name="CustomPhysicalProperties">
+										<CustomPhysics>false</CustomPhysics>
+									</PhysicalProperties>
+									<bool name="DefinesCapabilities">false</bool>
+									<bool name="EnableFluidForces">true</bool>
+									<float name="FrontParamA">-0.5</float>
+									<float name="FrontParamB">0.5</float>
+									<token name="FrontSurface">0</token>
+									<token name="FrontSurfaceInput">0</token>
+									<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+									<float name="LeftParamA">-0.5</float>
+									<float name="LeftParamB">0.5</float>
+									<token name="LeftSurface">0</token>
+									<token name="LeftSurfaceInput">0</token>
+									<bool name="Locked">false</bool>
+									<bool name="Massless">true</bool>
+									<token name="Material">256</token>
+									<string name="MaterialVariantSerialized"></string>
+									<string name="Name">Handle</string>
+									<CoordinateFrame name="PivotOffset">
+										<X>0</X>
+										<Y>0</Y>
+										<Z>0</Z>
+										<R00>1</R00>
+										<R01>0</R01>
+										<R02>0</R02>
+										<R10>0</R10>
+										<R11>1</R11>
+										<R12>0</R12>
+										<R20>0</R20>
+										<R21>0</R21>
+										<R22>1</R22>
+									</CoordinateFrame>
+									<float name="Reflectance">0</float>
+									<float name="RightParamA">-0.5</float>
+									<float name="RightParamB">0.5</float>
+									<token name="RightSurface">0</token>
+									<token name="RightSurfaceInput">0</token>
+									<int name="RootPriority">0</int>
+									<Vector3 name="RotVelocity">
+										<X>0</X>
+										<Y>0</Y>
+										<Z>0</Z>
+									</Vector3>
+									<int64 name="SourceAssetId">-1</int64>
+									<BinaryString name="Tags"></BinaryString>
+									<float name="TopParamA">-0.5</float>
+									<float name="TopParamB">0.5</float>
+									<token name="TopSurface">0</token>
+									<token name="TopSurfaceInput">0</token>
+									<float name="Transparency">0</float>
+									<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000018a8</UniqueId>
+									<Vector3 name="Velocity">
+										<X>0</X>
+										<Y>0</Y>
+										<Z>0</Z>
+									</Vector3>
+									<token name="formFactorRaw">3</token>
+									<token name="shape">1</token>
+									<Vector3 name="size">
+										<X>1.29999995</X>
+										<Y>1.29999995</Y>
+										<Z>2.4000001</Z>
+									</Vector3>
+								</Properties>
+								<Item class="Sound" referent="RBX22ed3aab00a64da4904d02a6e03051cf">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<bool name="IsMutedForCapture">false</bool>
+										<NumberRange name="LoopRegion">0 60000 </NumberRange>
+										<bool name="Looped">false</bool>
+										<string name="Name">CoilSound</string>
+										<bool name="PlayOnRemove">false</bool>
+										<NumberRange name="PlaybackRegion">0 60000 </NumberRange>
+										<bool name="PlaybackRegionsEnabled">false</bool>
+										<float name="PlaybackSpeed">1</float>
+										<bool name="Playing">false</bool>
+										<float name="RollOffMaxDistance">2000</float>
+										<float name="RollOffMinDistance">10</float>
+										<token name="RollOffMode">0</token>
+										<Ref name="SoundGroup">null</Ref>
+										<Content name="SoundId"><url>http://www.roblox.com/asset/?id=99173388</url></Content>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<double name="TimePosition">0</double>
+										<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000018a9</UniqueId>
+										<float name="Volume">1</float>
+									</Properties>
+								</Item>
+								<Item class="SpecialMesh" referent="RBX04f4390455c3499183d188e71fe807db">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<Content name="MeshId"><url>http://www.roblox.com/asset/?id=16606212</url></Content>
+										<token name="MeshType">5</token>
+										<string name="Name">Mesh</string>
+										<Vector3 name="Offset">
+											<X>0</X>
+											<Y>0</Y>
+											<Z>0</Z>
+										</Vector3>
+										<Vector3 name="Scale">
+											<X>0.699999988</X>
+											<Y>0.699999988</Y>
+											<Z>0.699999988</Z>
+										</Vector3>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<Content name="TextureId"><url>http://www.roblox.com/asset/?id=99170547</url></Content>
+										<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000018aa</UniqueId>
+										<Vector3 name="VertexColor">
+											<X>1</X>
+											<Y>1</Y>
+											<Z>1</Z>
+										</Vector3>
+									</Properties>
+								</Item>
+								<Item class="Attachment" referent="RBX06c645c7e02d40f0913bc32c5e810378">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<CoordinateFrame name="CFrame">
+											<X>0</X>
+											<Y>0</Y>
+											<Z>-0.99999994</Z>
+											<R00>-0.707134247</R00>
+											<R01>-0.707079291</R01>
+											<R02>0</R02>
+											<R10>0.707079291</R10>
+											<R11>-0.707134247</R11>
+											<R12>0</R12>
+											<R20>0</R20>
+											<R21>0</R21>
+											<R22>1</R22>
+										</CoordinateFrame>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<string name="Name">RightGripAttachment</string>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UniqueId name="UniqueId">7a5be8c3b493ddb808a51376000018ab</UniqueId>
+										<bool name="Visible">false</bool>
+									</Properties>
+								</Item>
+							</Item>
+						</Item>
+					</Item>
+				</Item>
+			</Item>
 		</Item>
 	</Item>
 	<Item class="ServerStorage" referent="RBX674cd244afcf4aee83e3807207ed5a6d">

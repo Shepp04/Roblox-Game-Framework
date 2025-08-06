@@ -38,4 +38,9 @@ function DataInterface:ReleasePlayerProfile(p: Player): boolean
     return DataManager:ReleasePlayerProfile(p)
 end
 
+function DataInterface:ReconcileProfileSection(p: Player, sectionType: "Info" | "Data", sectionName: string, template: {}): boolean
+    -- Reconcile a new section into existing data
+    return DataManager:ReconcileProfileSection(p, sectionType, sectionName, template)
+end
+
 return DataInterface
