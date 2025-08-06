@@ -1,0 +1,141 @@
+--!strict
+-- Uses ProfileStore and ReplicatedData to save data and enable server/client communication
+
+--// Services
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Players = game:GetService("Players")
+
+--// Modules
+local ProfileStore = require(script:WaitForChild("ProfileStore"))
+local ReplicatedData = require(ReplicatedStorage:WaitForChild("Packages")).ReplicatedData
+local Config = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Config"))
+
+--// Templates
+local PROFILE_TEMPLATE = Config.PROFILE_TEMPLATE
+local INFO_TEMPLATE = Config.INFO_TEMPLATE
+
+--// ProfileStore Setup
+local PlayerStore = ProfileStore.New("PlayerStore", PROFILE_TEMPLATE)
+local Profiles: { [Player]: ProfileStore.Profile } = {}
+
+--// Module
+local DataManager = {}
+
+-- Deep clone utility
+local function deepClone(original)
+	local copy = {}
+	for k, v in pairs(original) do
+		if typeof(v) == "table" then
+			copy[k] = deepClone(v)
+		else
+			copy[k] = v
+		end
+	end
+	return copy
+end
+
+--// Private: Called when a profile is loaded
+local function onProfileLoad(player: Player, profile: ProfileStore.Profile)
+	-- Initialise Info
+	profile.Info = deepClone(INFO_TEMPLATE)
+
+	-- Extra temporary values
+	profile.Info.JoinTime = os.time()
+	profile.Info.ClaimedGifts = {}
+
+	-- Analytics
+	profile.Data.Analytics.TotalLogins += 1
+
+	-- Save join time locally for playtime calc
+	profile.Info.JoinTime = os.time()
+
+	-- Replicate to client
+	ReplicatedData:SetData("PlayerData", profile.Data, { player })
+	ReplicatedData:SetData("PlayerInfo", profile.Info, { player })
+	ReplicatedData:SetData("Stats", profile.Data.Stats, { player })
+end
+
+--// Public API
+
+function DataManager:GetPlayerProfile(player: Player, yield: boolean?): ProfileStore.Profile?
+	if Profiles[player] then return Profiles[player] end
+
+	if yield then
+		repeat task.wait(0.1)
+		until not player.Parent or Profiles[player]
+	end
+
+	return Profiles[player]
+end
+
+function DataManager:GetPlayerData(player: Player, yield: boolean?): {}?
+	local profile = self:GetPlayerProfile(player, yield)
+	return profile and profile.Data or nil
+end
+
+function DataManager:ResetData(player: Player): boolean
+	local profile = self:GetPlayerProfile(player)
+	if not profile then return false end
+
+	profile.Data = {}
+	profile:Reconcile()
+	onProfileLoad(player, profile)
+
+	profile.Data.Stats.Cash = 99999999 -- dev override
+	warn("Reset data for", player)
+	return true
+end
+
+--// Modular Support: Reconcile a new section into existing data
+function DataManager:ReconcileProfileSection(player: Player, sectionName: string, template: {})
+	local profile = self:GetPlayerProfile(player)
+	if not profile then return false end
+
+	profile.Data[sectionName] = profile.Data[sectionName] or table.clone(template)
+	ReplicatedData:SetData(sectionName, profile.Data[sectionName], { player })
+
+	return true
+end
+
+--// Events
+
+function DataManager:OnPlayerAdded(player: Player)
+	local profile = PlayerStore:StartSessionAsync(tostring(player.UserId), {
+		Cancel = function()
+			return not player:IsDescendantOf(Players)
+		end,
+	})
+
+	if not profile then
+		player:Kick("Profile load failed. Please rejoin.")
+		return false
+	end
+
+	profile:AddUserId(player.UserId)
+	profile:Reconcile()
+
+	profile.OnSessionEnd:Connect(function()
+		Profiles[player] = nil
+		player:Kick("Profile session ended. Please rejoin.")
+	end)
+
+	if player:IsDescendantOf(Players) then
+		onProfileLoad(player, profile)
+		Profiles[player] = profile
+		return profile
+	else
+		profile:EndSession()
+	end
+
+	return false
+end
+
+function DataManager:OnPlayerRemove(player: Player)
+	local profile = Profiles[player]
+	if profile then
+		profile.Data.Analytics.LastLeaveTime = os.time()
+		profile:EndSession()
+	end
+end
+
+return DataManager
