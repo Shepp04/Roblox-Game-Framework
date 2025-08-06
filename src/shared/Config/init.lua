@@ -14,11 +14,22 @@ export type PlayerProfile = {
 	OnSessionEnd: RBXScriptSignal,
 }
 
+type ConfigDict = {
+	DEV_MODE: boolean,
+	NAMETAGS: { [string]: any },
+	CURRENCY: { [string]: any },
+	PROFILE_TEMPLATE: PlayerData,
+	INFO_TEMPLATE: PlayerInfo,
+}
+
 -- // CONFIGURATION // --
 Config = {
 	-- // DEVELOPMENT MODE
 	DEV_MODE = true,
-	
+
+	-- // Player Settings
+	NAMETAGS = require('@self/Nametags'),
+
 	-- // Currency Data
 	CURRENCY = require('@self/Currency'),
 
@@ -36,6 +47,6 @@ Config = {
 	INFO_TEMPLATE = {
 		JoinTime = 0;
 	},
-};
+} :: ConfigDict
 
 return Config
