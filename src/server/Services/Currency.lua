@@ -18,7 +18,7 @@ local PromoteProductRemote = Remotes:GetRemote("RemoteEvent", "PromoteProduct")
 local ProductDefinitions = require('../Monetisation/ProductDefinitions')
 
 -- // Components
-local CollectableCurrency = require('@self/CollectableCurrency')
+local CollectableCurrency = require('@self/Collectables')
 
 local CurrencyService = {}
 
