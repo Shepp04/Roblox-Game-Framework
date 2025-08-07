@@ -1,14 +1,16 @@
 --!strict
--- Services
+-- // Services
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
 local Players = game:GetService("Players")
 local Debris = game:GetService("Debris")
 local TweenService = game:GetService("TweenService")
 
+-- // Config
+local Config = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Config"))
+local SoundConfig = Config.SOUNDS
+
 -- Constants
-local SOUNDS_FOLDER : Folder? = ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Assets"):WaitForChild("Sounds")
-local DEFAULT_SOUNDS_FOLDER : Folder = script:WaitForChild("DefaultSounds")
 local IS_SERVER = RunService:IsServer()
 local LOCAL_PLAYER = not IS_SERVER and Players.LocalPlayer or nil
 
@@ -17,7 +19,7 @@ local ReplicatedTemp = ReplicatedStorage:FindFirstChild("ReplicatedTemp") or Ins
 ReplicatedTemp.Name = "ReplicatedTemp"
 ReplicatedTemp.Parent = ReplicatedStorage
 
--- Remote creation
+-- RemoteEvent
 local function getOrCreateRemote()
 	local existing = script:FindFirstChild("PlaySound")
 	if existing and existing:IsA("RemoteEvent") then return existing end
@@ -28,70 +30,89 @@ local function getOrCreateRemote()
 	return newRemote
 end
 
--- Module
+-- // Module
 local SoundModule = {
-	DefaultSounds = {},
 	LoopingSoundCache = {},
 	PlaySoundRemote = getOrCreateRemote(),
 }
 
--- Helper: Clone sound from ID or object
-local function cloneSound(sound)
+-- // Helpers
+
+--- Creates a Sound instance from SoundInfo
+local function createSoundFromInfo(info: Config.SoundInfo): Sound
+	local sound = Instance.new("Sound")
+	sound.SoundId = info.ID
+	sound.Name = "AutoSound"
+	sound.Volume = 1
+
+	if info.PlaybackSpeed then
+		sound.PlaybackSpeed = info.PlaybackSpeed
+	end
+	if info.RolloffMaxDistance then
+		sound.RollOffMaxDistance = info.RolloffMaxDistance
+	end
+
+	return sound
+end
+
+--- Creates a Sound from name or clones an instance
+local function cloneSound(sound: Sound | string): Sound?
 	if typeof(sound) == "string" then
-		local s = SoundModule.DefaultSounds[sound]
-		if not s then
-			warn("No sound found with ID:", sound)
+		local soundInfo = SoundConfig.Sounds[sound]
+		if not soundInfo then
+			warn("No sound found with name:", sound)
 			return nil
 		end
-		return s:Clone()
+		return createSoundFromInfo(soundInfo)
 	elseif typeof(sound) == "Instance" and sound:IsA("Sound") then
 		return sound:Clone()
 	end
 	return nil
 end
 
--- Helper: Play 3D sound at CFrame or parent it to part
-local function play3DSound(sound, position)
-	local part = typeof(position) == "CFrame" and Instance.new("Part") or position
-	if typeof(position) == "CFrame" then
-		part.CFrame = position
+--- Anchors and plays a sound at a given 3D position or BasePart
+local function play3DSound(sound: Sound, target: Vector3 | BasePart)
+	local part = typeof(target) == "Vector3" and Instance.new("Part") or target
+	if typeof(target) == "Vector3" then
+		part.Position = target
 	end
 
 	part.Anchored = true
 	part.CanCollide = false
-	part.CanTouch = false
 	part.Transparency = 1
 	part.Name = "_SoundAnchor"
 	part.Parent = workspace
 
-	sound.RollOffMaxDistance = 150
+	sound.RollOffMaxDistance = sound.RollOffMaxDistance or 150
 	sound.PlayOnRemove = true
 	sound.Parent = part
 	part:Destroy()
 end
 
--- Public: Play sound (one-shot)
-function SoundModule:PlaySound(sound, position, playerList)
+-- // Public API
+
+--- Plays a one-shot sound
+function SoundModule:PlaySound(sound: Sound | string, target: Vector3 | BasePart?, playerList: { Player }?)
 	if not sound then return end
 
 	if IS_SERVER then
 		local targetPlayers = playerList or Players:GetPlayers()
-
 		local payload = typeof(sound) == "Instance" and sound:Clone() or sound
+
 		if typeof(payload) == "Instance" then
 			payload.Parent = ReplicatedTemp
 			Debris:AddItem(payload, payload.TimeLength + 3)
 		end
 
 		for _, player in targetPlayers do
-			self.PlaySoundRemote:FireClient(player, payload, position)
+			self.PlaySoundRemote:FireClient(player, payload, target)
 		end
 	else
 		local s = cloneSound(sound)
 		if not s then return end
 
-		if position then
-			play3DSound(s, position)
+		if target then
+			play3DSound(s, target)
 		else
 			s.PlayOnRemove = true
 			s.Parent = workspace
@@ -100,22 +121,22 @@ function SoundModule:PlaySound(sound, position, playerList)
 	end
 end
 
--- Public: Play looping sound (client only)
-function SoundModule:PlayLoopingSound(sound, part, override, fade)
+--- Plays a looping sound (client-side only)
+function SoundModule:PlayLoopingSound(sound: Sound | string, part: BasePart?, override: boolean?, fade: boolean?)
 	if self.LoopingSoundCache[sound] and not override then return end
 
-	local s = cloneSound(sound)
+	local s = cloneSound(sound) :: Sound
 	if not s then return end
 
 	s.Looped = true
-	s.RollOffMaxDistance = 150
+	s.RollOffMaxDistance = s.RollOffMaxDistance or 150
 	s.Parent = part or ReplicatedTemp
 
 	if fade then
-		local vol = s.Volume
+		local initialVol = s.Volume
 		s.Volume = 0
 		s:Play()
-		TweenService:Create(s, TweenInfo.new(1), { Volume = vol }):Play()
+		TweenService:Create(s, TweenInfo.new(1), { Volume = initialVol }):Play()
 	else
 		s:Play()
 	end
@@ -127,8 +148,8 @@ function SoundModule:PlayLoopingSound(sound, part, override, fade)
 	self.LoopingSoundCache[sound] = s
 end
 
--- Public: Stop looping sound
-function SoundModule:StopLoopingSound(sound, fade)
+--- Stops a looping sound
+function SoundModule:StopLoopingSound(sound: Sound | string, fade: boolean?)
 	local s = self.LoopingSoundCache[sound]
 	if not s then return end
 
@@ -143,13 +164,14 @@ function SoundModule:StopLoopingSound(sound, fade)
 	s:Destroy()
 end
 
--- Public: Toggle footstep audio on local player
-function SoundModule:ToggleFootsteps(state)
+--- Toggles footstep audio on the local player
+function SoundModule:ToggleFootsteps(state: boolean?)
 	if IS_SERVER then return end
 
 	local char = LOCAL_PLAYER.Character
 	local root = char and char:FindFirstChild("HumanoidRootPart")
 	local running = root and root:FindFirstChild("Running")
+
 	if not running then return end
 
 	if state == nil then
@@ -159,35 +181,11 @@ function SoundModule:ToggleFootsteps(state)
 	running.Volume = state and 0.5 or 0
 end
 
--- Optional: Register a folder of default sounds
-function SoundModule:RegisterSounds(folder)
-	for _, sound in folder:GetChildren() do
-		if sound:IsA("Sound") then
-			self.DefaultSounds[sound.Name] = sound
-		end
-	end
-end
-
--- Internal: Setup client listener
+-- // Client remote listener
 if not IS_SERVER then
 	SoundModule.PlaySoundRemote.OnClientEvent:Connect(function(...)
 		SoundModule:PlaySound(...)
 	end)
 end
-
-local function initialise()
-    -- Register default sounds
-    SoundModule:RegisterSounds(DEFAULT_SOUNDS_FOLDER)
-
-    -- Register custom sounds
-    if (SOUNDS_FOLDER) then
-        SoundModule:RegisterSounds(SOUNDS_FOLDER)
-    else
-        warn("Sounds folder not found in ReplicatedStorage.")
-    end
-end
-
--- Initialisation
-initialise()
 
 return SoundModule

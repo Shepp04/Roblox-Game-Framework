@@ -28,13 +28,13 @@ button.Select.MouseButton1Click:Connect(function()
         5
     )
 
-    local soundID = math.random(1, 2) == 1 and "Click_01" or "Bright_Click"
+    local soundID = math.random(1, 2) == 1 and "UIClick01" or "UISuccess01"
     Packages.Sounds:PlaySound(soundID)
 end)
 
 closeButton.Select.MouseButton1Click:Connect(function()
     Packages.UI:CloseMenu(menu1, true, true)
-    Packages.Sounds:PlaySound("Click_01")
+    Packages.Sounds:PlaySound("UIClick02")
 end)
 
 Packages.UI:OpenMenu(menu1, true, true, 90)

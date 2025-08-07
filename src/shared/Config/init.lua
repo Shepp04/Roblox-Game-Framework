@@ -18,6 +18,7 @@ type ConfigDict = {
 	DEV_MODE: boolean,
 	NAMETAGS: { [string]: any },
 	CURRENCY: { [string]: any },
+	SOUNDS: { [string]: any },
 	PROFILE_TEMPLATE: PlayerData,
 	INFO_TEMPLATE: PlayerInfo,
 }
@@ -32,6 +33,9 @@ Config = {
 
 	-- // Currency Data
 	CURRENCY = require('@self/Currency'),
+
+	-- // Sounds
+	SOUNDS = require('@self/Sounds'),
 
 	-- // Player Profile Template
 	PROFILE_TEMPLATE = {
