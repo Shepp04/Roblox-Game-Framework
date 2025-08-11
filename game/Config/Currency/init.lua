@@ -1,6 +1,4 @@
 --!strict
-local CurrencyConfig : { Types: { [string]: Currency } } = { Types = {} }
-
 -- // Type Defs
 export type Currency = {
 	Name : string,
@@ -21,11 +19,18 @@ export type Currency = {
 	Update : ({}, number) -> nil
 }
 
+export type CurrencyConfig = {
+	Types: { [string]: Currency },
+	GetCurrencyFromID : (self: CurrencyConfig, currencyID : string) -> Currency?,
+	GetCurrencyText : (self: CurrencyConfig, currencyID : string, amount : number) -> string,
+}
+
 -- // Assets
 local CurrencyModels = script:WaitForChild("Models")
 local CurrencySounds = script:WaitForChild("Sounds")
 
 -- // Configuration
+local CurrencyConfig = {} :: CurrencyConfig
 CurrencyConfig.Types = {
 	Cash = {
         Name = "Cash",
