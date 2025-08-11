@@ -239,6 +239,60 @@ function CurrencyService:SetMultiplier(p: Player, multiplierID: string, currency
 	return true
 end
 
+-- // Leaderstats
+local function buildLeaderstatsValues(profile): {NumberValue}
+	-- typed buckets
+	local specified = {} :: { { pos: number, val: NumberValue } }
+	local unspecified = {} :: { { val: NumberValue } }
+
+	for currencyID, currencyInfo in Config.CURRENCY.Types do
+		if currencyInfo.UseLeaderstats then
+			local val = Instance.new("NumberValue")
+			val.Name = currencyInfo.Name
+			val.Value = (currencyInfo.Get(profile) :: number?) or 0
+
+			local pos = (currencyInfo :: any).LeaderstatsPosition
+			if typeof(pos) == "number" and pos >= 1 then
+				table.insert(specified, { pos = pos, val = val })
+			else
+				table.insert(unspecified, { val = val })
+			end
+		end
+	end
+
+	-- sort by desired order
+	table.sort(specified, function(a, b)
+		return a.pos < b.pos
+	end)
+	table.sort(unspecified, function(a, b)
+		return a.val.Name < b.val.Name -- deterministic for those without positions
+	end)
+
+	-- build dense, final list; handle duplicate positions by pushing duplicates to the tail
+	local ordered = {} :: {NumberValue}
+	local seen = {} :: { [number]: boolean }
+	local dupTail = {} :: {NumberValue}
+
+	for _, entry in ipairs(specified) do
+		if not seen[entry.pos] then
+			seen[entry.pos] = true
+			table.insert(ordered, entry.val)
+		else
+			table.insert(dupTail, entry.val)
+		end
+	end
+
+	for _, entry in ipairs(unspecified) do
+		table.insert(ordered, entry.val)
+	end
+
+	for _, v in ipairs(dupTail) do
+		table.insert(ordered, v)
+	end
+
+	return ordered
+end
+
 -- // Player Added
 local function onPlayerAdded(p : Player)
 	-- Give them leaderstats
@@ -254,18 +308,9 @@ local function onPlayerAdded(p : Player)
         return
     end
 
-    local statsTemplate = {}
-	for currencyID, currencyInfo in Config.CURRENCY.Types do
-        statsTemplate[currencyID] = 0
-		if not (profile and profile.Data.Stats[currencyID]) then
-			profile.Data.Stats[currencyID] = 0
-		end
-		if (currencyInfo.UseLeaderstats) then
-			local val = Instance.new("NumberValue")
-			val.Name = currencyInfo.Name
-			val.Value = currencyInfo.Get(profile) or 0
-			val.Parent = leaderstats
-		end
+	local numValues = buildLeaderstatsValues(profile)
+	for _, val in numValues do
+		val.Parent = leaderstats
 	end
 end
 

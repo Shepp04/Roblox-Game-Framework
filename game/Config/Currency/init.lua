@@ -6,6 +6,7 @@ export type Currency = {
     DefaultValue : number?,
 	RebirthMultiplier : number,
 	UseLeaderstats : boolean,
+    LeaderstatsPosition : number?,
 	UseFriendBoost : boolean,
 	Collectables : {
 		{
@@ -39,6 +40,7 @@ CurrencyConfig.Types = {
         UseFriendBoost = true,
         RebirthMultiplier = 1.25,
         UseLeaderstats = true,
+        LeaderstatsPosition = 1,
         Collectables = {
             [1] = {
                 Name = "Coin",
@@ -61,6 +63,7 @@ CurrencyConfig.Types = {
         UseFriendBoost = true,
         RebirthMultiplier = 1.25,
         UseLeaderstats = true,
+        LeaderstatsPosition = 2,
         Collectables = {
             [1] = {
                 Name = "Rebirth",
